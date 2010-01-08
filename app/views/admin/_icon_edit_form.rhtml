@@ -1,0 +1,18 @@
+<%= error_messages_for 'icon' %>
+<!--[form:icon]-->
+
+<% if @icon.image -%>
+<!-- Image -->
+<%= image_tag(url_for_file_column( @icon, 'image', 'thumb'), :class => 'notes-img') %>
+<% end %>
+
+<p><label for="icon_image"><strong>Image</strong></label><br/>
+<%= file_column_field("icon", "image") %>
+</p>
+
+<p><label for="icon_name"><strong>Name</strong></label><br/>
+<%= text_field 'icon', 'name'  %></p>
+
+<p><label for="icon_summary"><strong>Description</strong></label><br/>
+<%= text_area 'icon', 'summary', :cols => "60", :rows => "10"  %></p>
+<!--[eoform:icon]-->

@@ -1,0 +1,15 @@
+<%= error_messages_for 'plane' %>
+<div class="form-box">
+<!--[form:plane]-->
+<%= hidden_field 'plane', 'product_id', :value => @product[:id] %>
+<p>
+<%= file_column_field("plane", "image") %>
+</p>
+
+<p><label for="plane_name"><strong>Name</strong></label><br/>
+<%= text_field 'plane', 'name'  %></p>
+
+<p><label for="plane_summary"><strong>Description</strong></label><br/>
+<%= text_area 'plane', 'summary', :cols => "60", :rows => "10"  %></p>
+<!--[eoform:plane]-->
+</div>

@@ -1,0 +1,47 @@
+<%= error_messages_for 'exhibition' %>
+
+<!--[form:exhibition]-->
+<p><label for="exhibition_name"><strong>Name</strong></label><br/>
+<%= text_field 'exhibition', 'name' %></p>
+
+<p><label for="exhibition_is_active"><strong>Active?</strong></label><br />
+<%= check_box 'exhibition', 'is_active', :checked => (@exhibition.is_active ? 'checked' : '') %>&nbsp;<span class="small">If the box is checked, the exhibition appears on the public site</span></p>
+
+<p><label for="exhibition_event_start_at"><strong>Exhibition Start</strong></label><br/>
+<%= datetime_select 'exhibition', 'event_start_at' %></p>
+<p><label for="exhibition_event_finish_at"><strong>Exhibition Finish</strong></label><br/>
+<%= datetime_select 'exhibition', 'event_finish_at' %></p>
+
+<p><label for="exhibition_summary"><strong>Summary</strong></label><br/>
+<%= text_area 'exhibition', 'summary', :cols => "60", :rows => "5" %></p>
+
+<p><label for="exhibition_opening"><strong>Opening (Date and Time)</strong></label><br/>
+<%= text_area 'exhibition', 'opening', :cols => "60", :rows => "1" %></p>
+
+
+<p><label for="exhibition_artist"><strong>Artist(s)</strong></label><br/>
+<% for artist in @artists %>
+<input type="checkbox" id="<%=artist.id%>" name="artist_ids[]" value="<%=artist.id%>" <%if @exhibition.artists.include? artist%>checked="checked" <%end%>/><%= h artist.name %>
+<% end %>
+</p>
+
+
+<p><a href="#" onclick="Effect.toggle('created_updated','blind', {duration: .3}); return false;">(Toggle Date Information)</a></p>
+
+<div id="created_updated" style="display: none;">
+<p><label for="exhibition_created_at"><strong>Created at</strong></label><br/>
+<%= datetime_select 'exhibition', 'created_at' %></p>
+
+<p><label for="exhibition_updated_at"><strong>Updated at</strong></label><br/>
+<%= datetime_select 'exhibition', 'updated_at' %></p>
+</div>
+
+<% if @exhibition.photos.count > 0 %>
+<div class="tiny-images">
+<p><strong><%= link_to 'Imagery', :controller => 'admin', :action => 'photo_list' %></strong> / <%= link_to 'Sort', :controller => 'admin', :action => 'exhibition_photo_sort', :id => @exhibition %> / <%= link_to 'Add', :controller => 'admin', :action => 'photo_new', :id => @exhibition %></p>
+<% @exhibition.photos.each do |photo| %>
+<%= link_to image_tag(url_for_file_column(photo, "image", "tiny")), { :action => 'photo_edit', :id => photo } %>
+<% end %>
+<p>
+</div>
+<% end %>

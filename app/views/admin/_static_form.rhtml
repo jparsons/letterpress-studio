@@ -1,0 +1,21 @@
+<%= error_messages_for 'static' %>
+
+<!--[form:static]-->
+<p><label for="static_name"><strong>Name</strong></label><br/>
+<%= text_field 'static', 'name' %></p>
+
+<p><label for="static_summary"><strong>Summary</strong></label><br/>
+<%= text_area 'static', 'summary', :cols => "60", :rows => "5" %></p>
+
+<p><label for="static_body"><strong>Longer Description</strong></label><br/>
+<%= text_area 'static', 'body', :cols => "60", :rows => "15" %></p>
+
+<% if @static.icons.count > 0 %>
+<div class="tiny-images">
+<p><strong><%= link_to 'Imagery', :controller => 'admin', :action => 'icon_list' %></strong> / <%= link_to 'Sort', :controller => 'admin', :action => 'static_icon_sort', :id => @static %> / <%= link_to 'Add', :controller => 'admin', :action => 'icon_new', :id => @static %></p>
+<% @static.icons.each do |icon| %>
+<%= link_to image_tag(url_for_file_column(icon, "image", "tiny")), { :action => 'icon_edit', :id => icon } %>
+<% end %>
+<p>
+</div>
+<% end %>

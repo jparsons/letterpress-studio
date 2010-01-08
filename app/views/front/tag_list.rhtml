@@ -1,0 +1,6 @@
+<ul class="tags">
+<% for tag in @tags %>
+<% if tag.note_counter.to_i>0 %>
+<li><em><%= link_to tag.name, {:controller => 'front', :action => "tag_find_by_urlname", :name => tag.urlname}, {:title => "Links to "+ tag.name + " Archive"}  %></em> (<%= tag.note_counter %>)</li>
+<% end %>
+<% end %></ul>

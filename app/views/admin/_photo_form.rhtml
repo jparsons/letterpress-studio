@@ -1,0 +1,15 @@
+<%= error_messages_for 'photo' %>
+<div class="form-box">
+<!--[form:photo]-->
+<%= hidden_field 'photo', 'exhibition_id', :value => @exhibition[:id] %>
+<p>
+<%= file_column_field("photo", "image") %>
+</p>
+
+<p><label for="photo_name"><strong>Name</strong></label><br/>
+<%= text_field 'photo', 'name'  %></p>
+
+<p><label for="photo_summary"><strong>Description</strong></label><br/>
+<%= text_area 'photo', 'summary', :cols => "60", :rows => "10"  %></p>
+<!--[eoform:photo]-->
+</div>

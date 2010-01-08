@@ -1,0 +1,7 @@
+<h1>Image for: <em><%=h @product.name %></em></h1>
+
+<%= start_form_tag({:action => 'plane_create'}, :multipart => true) %>
+  <%= render :partial => 'plane_form' %>
+  <%= submit_tag "Add Image" %>
+<%= end_form_tag %>
+<p><%= link_to 'Back', :action => 'plane_list' %></p>

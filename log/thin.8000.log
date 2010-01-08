@@ -1,0 +1,180 @@
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+>> Exiting!
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+>> Stopping ...
+>> Exiting!
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  No entropy device
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Stopping ...
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Exiting!
+/home/thearmn/thearm/config/boot.rb:28: undefined method `require_gem' for main:Object (NoMethodError)
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+	from /home/thearmn/thearm/config/environment.rb:9
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/rack/adapter/rails.rb:31:in `load_application'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/rack/adapter/rails.rb:23:in `initialize'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/rack/adapter/loader.rb:32:in `new'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/rack/adapter/loader.rb:32:in `for'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/thin/controllers/controller.rb:162:in `load_adapter'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/thin/controllers/controller.rb:66:in `start'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/thin/runner.rb:166:in `send'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/thin/runner.rb:166:in `run_command'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/thin/runner.rb:136:in `run!'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/bin/thin:6
+	from /usr/local/bin/thin:19:in `load'
+	from /usr/local/bin/thin:19
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Exiting!
+/home/thearmn/thearm/config/boot.rb:28: undefined method `require_gem' for main:Object (NoMethodError)
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+	from /home/thearmn/thearm/config/environment.rb:9
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+	from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/rack/adapter/rails.rb:31:in `load_application'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/rack/adapter/rails.rb:23:in `initialize'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/rack/adapter/loader.rb:32:in `new'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/rack/adapter/loader.rb:32:in `for'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/thin/controllers/controller.rb:162:in `load_adapter'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/thin/controllers/controller.rb:66:in `start'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/thin/runner.rb:166:in `send'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/thin/runner.rb:166:in `run_command'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/lib/thin/runner.rb:136:in `run!'
+	from /usr/local/lib/ruby/gems/1.8/gems/thin-0.8.2/bin/thin:6
+	from /usr/local/bin/thin:19:in `load'
+	from /usr/local/bin/thin:19
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+>> Stopping ...
+>> Exiting!
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+>> Stopping ...
+>> Exiting!
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+!! Invalid request
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+>> Stopping ...
+>> Exiting!
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+!! Invalid request
+!! Invalid request
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+>> Stopping ...
+>> Exiting!
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+>> Writing PID to /var/run/thin/thearmn.8000.pid
+>> Changing process privilege to thearmn:cust
+>> Using rails adapter
+>> Thin web server (v0.8.2 codename Double Margarita)
+>> Threaded mode OFF
+>> Maximum connections set to 1024
+>> Listening on 192.168.70.185:8000, CTRL+C to stop
+!! Invalid request

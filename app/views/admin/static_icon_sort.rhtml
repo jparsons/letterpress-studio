@@ -1,0 +1,21 @@
+<h1><%= @static.name %> / Sort Order</h1>
+
+<div class="form-box">
+<p>Drag and drop the icons below into the correct order you want them to appear on the site's front-end.</p>
+
+<p><%= link_to 'Edit Artist', :controller => 'admin', :action => 'artist_edit', :id => @artist %> / <%= link_to 'List Imagery', :controller => 'admin', :action => 'picture_list' %> / <%= link_to 'All Artists', :controller => 'admin', :action => 'artist_list' %></p>
+
+<ul id="photo-list">
+<% @static.icons.each do |icon| %>
+<li id="item_<%= icon.id %>">
+<%= image_tag(url_for_file_column( icon, 'image', 'thumb'), :class => 'icons-img') %>
+
+</li>
+<% end %>
+</ul>
+
+<%= sortable_element 'photo-list',
+:url => { :action => "icon_sort", :id => @static },
+:complete => visual_effect(:highlight, 'photo-list', {:endcolor => "'#222222'"})
+%>
+</div>

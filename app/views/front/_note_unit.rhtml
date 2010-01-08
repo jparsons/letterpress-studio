@@ -1,0 +1,39 @@
+<% for note in @notes %>
+<!-- Note <%= note.id %> -->
+<a name="note-<%= note.id %>"></a>
+<div class="unit">
+<!-- Title -->
+<h2><%= link_to note.name, {:controller => 'front', :action => "note_find_by_urlname", :year => note.created_at.year, :month => sprintf("%.2d", note.created_at.month), :name => note.urlname}, {:title => "Links to " + note.name} %></h2>
+
+<h3><%= note.created_at.to_formatted_s(:iasa) %></h3>
+
+<% if note.image -%>
+<!-- Image --> 
+<%= link_to image_tag(url_for_file_column( note, 'image', 'wide'), :class => 'notes-img'), {:controller => 'front', :action => "note_find_by_urlname", :year => note.created_at.year, :month => sprintf("%.2d", note.created_at.month), :name => note.urlname}, {:title => "Links to " + note.name} %>
+<% end %>
+
+<!-- Summary --> 
+<%=
+r = RedCloth.new(note.summary)
+r.to_html
+%>
+
+<% if note.additional != '' -%>
+<!-- Additional Data --> 
+<div class="additional">
+<%= note.additional %>
+</div>
+<% end %>
+
+
+<% if note.body != '' -%>
+<p><%= link_to "Read More", {:controller => 'front', :action => "note_find_by_urlname", :year => note.created_at.year, :month => sprintf("%.2d", note.created_at.month), :name => note.urlname}, {:title => "Links to " + note.name} %> </p>
+<% end %>
+
+<!-- Tags --> 
+	
+<% if note.tags.count > 0 %><h4><strong>Tags:</strong> <% for tag in note.tags %>
+<%= link_to tag.name, {:controller => 'front', :action => "tag_find_by_urlname", :name => tag.urlname}, {:title => "Links to "+ tag.name + " Archive", :class => 'tags'} %>
+<%end%></h4><%end%>
+</div>
+<% end %>

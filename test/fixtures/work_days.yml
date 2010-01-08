@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  start_hour: 1
+  end_hour: 1
+
+two:
+  name: MyString
+  start_hour: 1
+  end_hour: 1

@@ -1,0 +1,37 @@
+<!-- Note <%= @note.id %> -->
+<a name="@note-<%= @note.id %>"></a>
+
+<!-- Title -->
+<h2><%= @note.created_at.to_formatted_s(:iasa) %></h2>
+
+<% if @note.tags.count > 0 %><h3><strong>Tags:</strong> <% for tag in @note.tags %>
+<%= link_to tag.name, {:controller => 'front', :action => "tag_find_by_urlname", :name => tag.urlname}, {:title => "Links to "+ tag.name + " Archive", :class => 'tags'} %>
+<%end%></h3><%end%>
+
+<% if @note.image -%>
+<!-- Image --> 
+<%= image_tag(url_for_file_column( @note, 'image', 'wide'), :class => '@notes-img') %>
+<% end %>
+
+<!-- Summary --> 
+<%=
+r = RedCloth.new(@note.summary)
+r.to_html
+%>
+
+<% if @note.additional != '' -%>
+<!-- Additional Data --> 
+<div class="additional">
+<%= @note.additional %>
+</div>
+<% end %>
+
+
+<% if @note.body != '' -%>
+<!-- Summary --> 
+<%=
+r = RedCloth.new(@note.body)
+r.to_html
+%>
+<% end %>
+

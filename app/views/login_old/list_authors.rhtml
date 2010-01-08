@@ -1,0 +1,8 @@
+<h1>Administrators</h1>
+<h4><em>+ <%= link_to 'New Author', :action => 'add_author' %></em></h4>
+<ul>
+  <% for author in @all_authors %>
+    <li><%= author.name %> [ <%= link_to "Edit", :controller => 'login', :action => 'edit_author', :id => author %> / <%= link_to "Delete", :controller => 'login', :action => 'delete_author', :id => author %> ]
+    </li>
+  <% end %>
+</ul>

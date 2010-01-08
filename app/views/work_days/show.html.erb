@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @work_day.name %>
+</p>
+
+<p>
+  <b>Start hour:</b>
+  <%=h @work_day.start_hour %>
+</p>
+
+<p>
+  <b>End hour:</b>
+  <%=h @work_day.end_hour %>
+</p>
+
+
+<%= link_to 'Edit', edit_work_day_path(@work_day) %> |
+<%= link_to 'Back', work_days_path %>

@@ -1,0 +1,8 @@
+<% if flash[:notice] %>
+<div class="notice">
+<h2>Problem!</h2>
+<p><%= flash[:notice] %></p>
+</div>
+<% end %>
+
+<%= render :partial => 'note_unit' %>

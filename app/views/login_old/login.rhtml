@@ -1,0 +1,20 @@
+<h1>Login</h1>
+
+<div class="form-box">
+  <%= start_form_tag %>
+    <p>
+      <label for="name">Name:</label><br />
+      <%= text_field_tag :name, params[:name] %>
+    </p>
+
+    <p>
+      <label for="password">Password:</label><br />
+      <%= password_field_tag :password, params[:password] %>
+    </p>
+
+    <p>
+      <%= submit_tag "Login" %>
+    </p>
+  <%= end_form_tag %>
+
+</div>

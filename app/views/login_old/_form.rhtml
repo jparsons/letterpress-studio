@@ -1,0 +1,20 @@
+<%= error_messages_for 'author' %>
+
+     <p>
+       <label for="author_name">Username:</label><br />
+       <%= text_field 'author', 'name', :size => 40 %>
+     </p>
+     <p>
+       <label for="author_password">Password:</label><br />
+       <%= password_field 'author', 'password', :size => 40 %>
+     </p>
+
+     <p>
+       <label for="author_password_confirmation">Confirm:</label><br />
+       <%= password_field 'author', 'password_confirmation', :size => 40 %>
+     </p>
+
+     <p>
+       <label for="author_display_name">Display Name:</label><br />
+       <%= text_field 'author', 'display_name', :size => 40 %>
+     </p>

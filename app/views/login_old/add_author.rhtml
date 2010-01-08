@@ -1,0 +1,30 @@
+<%= error_messages_for 'author' %>
+<h1>Add an Author</h1>
+<div class="form-box">
+
+   <% form_for :author do |form| %>
+
+
+     <p>
+       <label for="author_name">Username:</label><br />
+       <%= form.text_field :name, :size => 40 %>
+     </p>
+     <p>
+       <label for="author_password">Password:</label><br />
+       <%= form.password_field :password, :size => 40 %>
+     </p>
+
+     <p>
+       <label for="author_password_confirmation">Confirm:</label><br />
+       <%= form.password_field :password_confirmation, :size => 40 %>
+     </p>
+
+	 <p>
+       <label for="author_display_name">Display Name:</label><br />
+       <%= form.text_field :display_name, :size => 40 %>
+     </p>
+
+     <%= submit_tag "Add author", :class => "submit" %>
+   
+   <% end %>  
+</div>

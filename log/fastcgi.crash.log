@@ -1,0 +1,210 @@
+# Logfile created on Thu Nov 02 17:55:56 EST 2006 by logger.rb/1.5.2.7
+[02/Nov/2006:17:55:56 :: 5080] starting
+[02/Nov/2006:20:05:05 :: 5080] Dispatcher failed to catch:  (Interrupt)
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each'
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+  /Users/Dylan/IASA/Rails/thearm/public/dispatch.fcgi:24
+killed by this error
+[02/Nov/2006:20:06:09 :: 5181] starting
+[02/Nov/2006:20:17:42 :: 5181] Dispatcher failed to catch:  (Interrupt)
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each'
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+  /Users/Dylan/IASA/Rails/thearm/public/dispatch.fcgi:24
+killed by this error
+[02/Nov/2006:20:17:52 :: 5199] starting
+[03/Nov/2006:09:20:24 :: 5199] Dispatcher failed to catch:  (Interrupt)
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each'
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+  /Users/Dylan/IASA/Rails/thearm/public/dispatch.fcgi:24
+killed by this error
+[03/Nov/2006:09:20:56 :: 5259] starting
+[03/Nov/2006:10:39:43 :: 5259] Dispatcher failed to catch:  (Interrupt)
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each'
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+  /Users/Dylan/IASA/Rails/thearm/public/dispatch.fcgi:24
+killed by this error
+[03/Nov/2006:10:44:42 :: 5440] starting
+[03/Nov/2006:10:59:57 :: 5440] Dispatcher failed to catch:  (Interrupt)
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each'
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+  /Users/Dylan/IASA/Rails/thearm/public/dispatch.fcgi:24
+killed by this error
+[03/Nov/2006:11:00:03 :: 5460] starting
+[03/Nov/2006:12:12:08 :: 5460] Dispatcher failed to catch:  (Interrupt)
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each'
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+  /Users/Dylan/IASA/Rails/thearm/public/dispatch.fcgi:24
+killed by this error
+[03/Nov/2006:12:12:44 :: 5522] starting
+[03/Nov/2006:16:41:01 :: 5522] Dispatcher failed to catch:  (Interrupt)
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each'
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+  /Users/Dylan/IASA/Rails/thearm/public/dispatch.fcgi:24
+killed by this error
+[03/Nov/2006:16:41:59 :: 5986] starting
+[05/Nov/2006:15:57:14 :: 5986] Dispatcher failed to catch:  (Interrupt)
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each'
+  /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+  /Users/Dylan/IASA/Rails/thearm/public/dispatch.fcgi:24
+killed by this error
+[07/Nov/2006:09:31:54 :: 86461] starting
+[07/Nov/2006:09:35:53 :: 86461] asked to terminate immediately
+[07/Nov/2006:09:35:53 :: 86461] terminated by explicit exit
+[07/Nov/2006:09:35:55 :: 89741] starting
+[07/Nov/2006:14:58:35 :: 55467] starting
+[07/Nov/2006:15:02:13 :: 59719] starting
+[07/Nov/2006:15:06:16 :: 62993] starting
+[07/Nov/2006:15:17:47 :: 72274] starting
+[08/Nov/2006:03:10:59 :: 56040] starting
+[08/Nov/2006:03:12:47 :: 57506] starting
+[10/Nov/2006:13:29:14 :: 4378] starting
+[13/Nov/2006:20:11:37 :: 77964] starting
+[13/Nov/2006:20:15:58 :: 81443] starting
+[14/Nov/2006:09:21:51 :: 31412] starting
+[14/Nov/2006:09:24:16 :: 33348] starting
+[14/Nov/2006:09:49:53 :: 53909] starting
+[14/Nov/2006:09:50:45 :: 54619] starting
+[14/Nov/2006:09:54:15 :: 57400] starting
+[14/Nov/2006:09:56:25 :: 59150] starting
+[14/Nov/2006:09:57:36 :: 60112] starting
+[14/Nov/2006:10:19:52 :: 79385] starting
+[14/Nov/2006:10:21:54 :: 81024] starting
+[14/Nov/2006:10:24:16 :: 82960] starting
+[14/Nov/2006:10:31:14 :: 88559] starting
+[14/Nov/2006:10:31:58 :: 89147] starting
+[14/Nov/2006:10:32:42 :: 89712] starting
+[14/Nov/2006:10:39:05 :: 94791] starting
+[14/Nov/2006:10:39:47 :: 95344] starting
+[14/Nov/2006:10:40:26 :: 95887] starting
+[14/Nov/2006:10:40:46 :: 96154] starting
+[14/Nov/2006:10:41:30 :: 96746] starting
+[14/Nov/2006:10:42:25 :: 97492] starting
+[14/Nov/2006:11:23:35 :: 32645] starting
+[16/Nov/2006:23:49:31 :: 22447] starting
+[16/Nov/2006:23:53:46 :: 25868] starting
+[16/Nov/2006:23:54:28 :: 26430] starting
+[16/Nov/2006:23:55:13 :: 27061] starting
+[05/Dec/2006:10:51:57 :: 77193] starting
+[05/Dec/2006:10:53:25 :: 78442] starting
+[05/Jan/2007:13:24:08 :: 5899] starting
+[10/Jan/2007:12:20:50 :: 5946] starting
+[11/Jan/2007:12:46:31 :: 10111] starting
+[11/Jan/2007:23:46:11 :: 5649] starting
+[12/Jan/2007:00:22:45 :: 5649] asked to terminate immediately
+[12/Jan/2007:00:22:45 :: 5649] terminated by explicit exit
+[12/Jan/2007:00:31:50 :: 4373] starting
+[17/Jan/2007:03:40:56 :: 4936] starting
+[20/Jan/2007:13:50:57 :: 5953] starting
+[24/Jan/2007:01:02:42 :: 5953] asked to terminate immediately
+[24/Jan/2007:01:02:42 :: 5953] asked to terminate immediately
+[24/Jan/2007:01:02:42 :: 5953] Dispatcher failed to catch: Input/output error (Errno::EIO)
+  /home/thearmn/thearm/public/../config/../vendor/rails/railties/lib/fcgi_handler.rb:101:in `write'
+  /home/thearmn/thearm/public/../config/../vendor/rails/railties/lib/fcgi_handler.rb:101:in `<<'
+  /home/thearmn/thearm/public/../config/../vendor/rails/railties/lib/fcgi_handler.rb:101:in `dispatcher_log'
+  /home/thearmn/thearm/public/../config/../vendor/rails/railties/lib/fcgi_handler.rb:125:in `exit_now_handler'
+  /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:21:in `to_proc'
+  /usr/local/lib/ruby/gems/1.8/gems/fcgi-0.8.6.1/./fcgi.rb:597:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/fcgi-0.8.6.1/./fcgi.rb:597:in `each'
+  /usr/local/lib/ruby/gems/1.8/gems/fcgi-0.8.6.1/./fcgi.rb:597:in `each_cgi'
+  /home/thearmn/thearm/public/../config/../vendor/rails/railties/lib/fcgi_handler.rb:53:in `process!'
+  /home/thearmn/thearm/public/../config/../vendor/rails/railties/lib/fcgi_handler.rb:23:in `process!'
+  /home/thearmn/thearm/public/dispatch.fcgi:24
+almost killed by this error
+[24/Jan/2007:01:31:32 :: 6586] starting
+[30/Jan/2007:01:01:51 :: 7944] starting
+[04/Feb/2007:18:48:47 :: 5820] starting
+[07/Feb/2007:16:11:13 :: 5043] starting
+[07/Feb/2007:18:42:24 :: 5043] asked to terminate immediately
+[07/Feb/2007:18:42:24 :: 5043] terminated by explicit exit
+[07/Feb/2007:18:42:26 :: 23777] starting
+[09/Feb/2007:09:36:45 :: 5995] starting
+[09/Feb/2007:09:46:55 :: 5995] asked to terminate immediately
+[09/Feb/2007:09:46:55 :: 5995] terminated by explicit exit
+[09/Feb/2007:09:46:57 :: 14079] starting
+[17/Feb/2007:20:49:08 :: 5730] starting
+[17/Feb/2007:23:05:53 :: 5730] asked to terminate immediately
+[17/Feb/2007:23:05:53 :: 5730] terminated by explicit exit
+[17/Feb/2007:23:05:58 :: 15077] starting
+[22/Feb/2007:12:37:00 :: 12225] starting
+[23/Feb/2007:01:48:30 :: 6563] starting
+[23/Feb/2007:15:08:15 :: 33863] starting
+[25/Feb/2007:11:19:48 :: 6612] starting
+[25/Feb/2007:23:24:57 :: 978] starting
+[26/Feb/2007:10:36:16 :: 6593] starting
+[27/Feb/2007:06:33:10 :: 6673] starting
+[27/Feb/2007:18:38:49 :: 6790] starting
+[01/Mar/2007:22:34:14 :: 9822] starting
+[02/Mar/2007:10:35:06 :: 7279] starting
+[02/Mar/2007:15:56:16 :: 36887] starting
+[04/Mar/2007:06:34:18 :: 7185] starting
+[05/Mar/2007:13:32:41 :: 7815] starting
+[06/Mar/2007:04:12:49 :: 7815] asked to terminate immediately
+[06/Mar/2007:04:12:49 :: 7815] terminated by explicit exit
+[06/Mar/2007:04:24:46 :: 6927] starting
+[07/Mar/2007:02:48:18 :: 6927] asked to terminate immediately
+[07/Mar/2007:02:48:18 :: 6927] asked to terminate immediately
+[07/Mar/2007:03:00:16 :: 9928] starting
+[08/Mar/2007:02:59:06 :: 9928] asked to terminate immediately
+[08/Mar/2007:02:59:06 :: 9928] terminated by explicit exit
+[08/Mar/2007:03:23:19 :: 7342] starting
+[08/Mar/2007:08:45:02 :: 7196] starting
+[08/Mar/2007:22:52:15 :: 3435] starting
+[09/Mar/2007:10:29:09 :: 3240] starting
+[09/Mar/2007:19:36:00 :: 3369] starting
+[10/Mar/2007:03:24:25 :: 3369] asked to terminate immediately
+[10/Mar/2007:03:24:25 :: 3369] terminated by explicit exit
+[10/Mar/2007:03:31:35 :: 1543] starting
+[10/Mar/2007:23:48:39 :: 2957] starting
+[10/Mar/2007:23:51:34 :: 2957] asked to terminate immediately
+[10/Mar/2007:23:51:34 :: 2957] terminated by explicit exit
+[10/Mar/2007:23:51:36 :: 5739] starting
+[11/Mar/2007:04:32:33 :: 5739] asked to terminate immediately
+[11/Mar/2007:04:32:33 :: 5739] terminated by explicit exit
+[11/Mar/2007:04:39:35 :: 3217] starting
+[12/Mar/2007:03:14:07 :: 3217] asked to terminate immediately
+[12/Mar/2007:03:14:07 :: 3217] terminated by explicit exit
+[12/Mar/2007:03:20:41 :: 2957] starting
+[12/Mar/2007:12:33:58 :: 2994] starting
+[13/Mar/2007:02:27:26 :: 3174] starting
+[13/Mar/2007:03:16:44 :: 3276] starting
+[13/Mar/2007:04:49:53 :: 3420] starting
+[13/Mar/2007:17:47:08 :: 3420] asked to terminate immediately
+[13/Mar/2007:17:47:08 :: 3420] terminated by explicit exit
+[13/Mar/2007:17:47:11 :: 37481] starting
+[13/Mar/2007:23:32:50 :: 37481] asked to terminate immediately
+[13/Mar/2007:23:32:50 :: 37481] terminated by explicit exit
+[13/Mar/2007:23:51:45 :: 3449] starting
+[14/Mar/2007:20:30:27 :: 3378] starting
+[16/Mar/2007:12:09:05 :: 3734] starting
+[18/Mar/2007:08:42:20 :: 6593] starting
+[18/Mar/2007:21:07:43 :: 3232] starting
+[19/Mar/2007:11:46:35 :: 3378] starting
+[19/Mar/2007:11:46:43 :: 3378] asked to terminate immediately
+[19/Mar/2007:11:46:43 :: 3378] terminated by explicit exit
+[20/Mar/2007:07:40:42 :: 7128] starting
+[21/Apr/2007:03:25:52 :: 9539] starting
+[05/Jun/2007:09:32:41 :: 10632] starting
+[09/Jul/2007:00:37:09 :: 6252] starting
+[07/Aug/2007:23:40:43 :: 5815] starting
+[03/Sep/2007:23:26:13 :: 28989] starting
+[19/Sep/2007:02:38:54 :: 28989] asked to terminate immediately
+[19/Sep/2007:02:38:54 :: 28989] terminated by explicit exit
+[19/Sep/2007:02:43:45 :: 4898] starting
+[20/Sep/2007:08:00:33 :: 4898] asked to terminate immediately
+[20/Sep/2007:08:00:33 :: 4898] terminated by explicit exit

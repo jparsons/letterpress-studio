@@ -1,0 +1,27 @@
+<h1>All Imagery</h1>
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr valign="top" style="background-color: #191919; color: #eee; text-align:left;">
+<th>Artist</th>
+<th>Images (click on image to edit it) or <em><%= link_to 'Delete Images', { :action => 'photo_deletes' } %></em></th>
+<th width="20">Actions</th>
+</tr>
+<%
+odd_or_even = 1
+for @exhibition in @exhibitions
+odd_or_even = 1 - odd_or_even
+%>
+<tr valign="top" class="row-<%=odd_or_even%>">
+<td width="80">
+<strong><%=h @exhibition.name %></strong>
+</td>
+<td>
+<% for @photo in @exhibition.photos -%>
+<%= link_to image_tag(url_for_file_column("photo", "image", "tiny")), { :action => 'photo_edit', :id => @photo } %>
+<% end -%>
+</td>
+<td width="60"><%= link_to 'New', :controller => 'admin', :action => 'photo_new', :id => @exhibition %><br />
+<%= link_to 'Sort', :controller => 'admin', :action => 'exhibition_photo_sort', :id => @exhibition %></td>
+</tr>
+<% end %>
+</table>

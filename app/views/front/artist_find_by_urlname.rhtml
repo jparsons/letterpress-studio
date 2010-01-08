@@ -1,0 +1,27 @@
+<% if @artist.summary != '' -%>
+<!-- BIO -->
+<%=
+r = RedCloth.new(@artist.summary)
+r.to_html
+%>
+<% end %>
+
+<% if @artist.pictures.count > 0 %>
+<div id="img-ctnr">
+<% @artist.pictures.each do |picture| %>
+<div class="img-img">
+<a href="<%= url_for_file_column( picture, 'image', 'wide') %>" rel="lightbox[gallery]" title="<%= picture.name %>"><%= image_tag(url_for_file_column( picture, 'image', 'square')) %></a>
+</div>
+<% end %>
+</div>
+<div class="img-clear"></div>
+<% end %>
+
+<% if @artist.body != '' -%>
+<!-- CV -->
+<h6>CV</h6>
+<%=
+r = RedCloth.new(@artist.body)
+r.to_html
+%>
+<% end %>

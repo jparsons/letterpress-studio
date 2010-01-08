@@ -1,0 +1,17 @@
+<h1>Shows</h1>
+
+
+<h4><em>+ <%= link_to 'New Exhibition', :action => 'exhibition_new' %></em></h4>
+  
+<% for exhibition in @exhibitions %>
+  
+<h2><em><%= exhibition.name %></em> / <%= exhibition.created_at.to_formatted_s(:iasa) %></h2>
+
+<h3>
+<%= link_to 'Edit', :action => 'exhibition_edit', :id => exhibition %> / <%= link_to 'Destroy', { :action => 'exhibition_destroy', :id => exhibition }, :confirm => 'Are you sure?', :post => true %> </h3>
+
+<% end %>
+
+<p class="pagination">
+<%= will_paginate(@exhibitions) %>
+</p>

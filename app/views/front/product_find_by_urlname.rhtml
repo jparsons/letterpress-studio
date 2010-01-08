@@ -1,0 +1,50 @@
+<h2><%= @product.artist %></h2>
+<h3>$<%= @product.price %>
+<% if @product.medium != '' -%>
+<br /><%= @product.medium %>
+<% end %>
+<% if @product.size != '' -%>
+<br /><%= @product.size %>
+<% end %>	
+</h3>
+<!-- Summary --> 
+<%=
+r = RedCloth.new(@product.summary)
+r.to_html
+%>
+
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="image" src="/images/add.png" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input type="hidden" name="add" value="1">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="paypal@thearmnyc.com">
+<input type="hidden" name="item_name" value="<%= @product.name %>">
+<input type="hidden" name="item_number" value="<%= @product.id %>">
+<input type="hidden" name="amount" value="<%= @product.price %>">
+<input type="hidden" name="no_shipping" value="2">
+<input type="hidden" name="return" value="http://thearmnyc.com/goods/thanks">
+<input type="hidden" name="cancel_return" value="http://thearmnyc.com/goods">
+<input type="hidden" name="no_note" value="1">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="bn" value="PP-ShopCartBF">
+</form>
+
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="paypal@thearmnyc.com">
+<input type="image" src="/images/view.png" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<input type="hidden" name="display" value="1">
+</form>
+
+<% if @product.planes.count > 0 %>
+<div id="img-ctnr">
+<% @product.planes.each do |plane| %>
+<div class="img-img">
+<a href="<%= url_for_file_column( plane, 'image', 'wide') %>" rel="lightbox[gallery]" title="<%= plane.name %>"><%= image_tag(url_for_file_column( plane, 'image', 'square')) %></a>
+</div>
+<% end %>
+</div>
+<div class="img-clear"></div>
+<% end %>

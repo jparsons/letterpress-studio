@@ -1,0 +1,15 @@
+<%= error_messages_for 'icon' %>
+<div class="form-box">
+<!--[form:icon]-->
+<%= hidden_field 'icon', 'static_id', :value => @static[:id] %>
+<p>
+<%= file_column_field("icon", "image") %>
+</p>
+
+<p><label for="icon_name"><strong>Name</strong></label><br/>
+<%= text_field 'icon', 'name'  %></p>
+
+<p><label for="icon_summary"><strong>Description</strong></label><br/>
+<%= text_area 'icon', 'summary', :cols => "60", :rows => "10"  %></p>
+<!--[eoform:icon]-->
+</div>

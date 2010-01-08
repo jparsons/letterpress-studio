@@ -1,0 +1,20 @@
+<h1>Listing presses</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @presses.each do |press| %>
+  <tr>
+    <td><%=h press.name %></td>
+    <td><%= link_to 'Show', press %></td>
+    <td><%= link_to 'Edit', edit_press_path(press) %></td>
+    <td><%= link_to 'Destroy', press, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New press', new_press_path %>

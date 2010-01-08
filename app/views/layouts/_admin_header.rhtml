@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>The Arm / Admin </title>
+<%= javascript_include_tag :defaults %>
+<%= javascript_include_tag 'admin' %>
+<%= stylesheet_link_tag 'admin' %>
+</head>
+<body>
+<a name="top"></a>
+<div id="header-wrap">
+<div id="header">
+<h1><%= link_to("The Arm", :controller => "front", :action => "index") %></h1>
+</div><!-- END header -->
+</div><!-- END header-wrap -->
+<div id="header-clear"></div>
+<% if session[:author_id] -%>
+<!-- START Nav -->
+<div id="nav-wrap">
+<div id="nav">
+<ul>
+<!--
+<li><%= link_to("Admin Home", :controller => "admin", :action => "index") %></li>
+-->
+<li><%= link_to("News", :controller => "admin", :action => "note_list") %></li>
+<li><%= link_to("Shows", :controller => "admin", :action => "exhibition_list") %></li>
+<li><%= link_to("Artists", :controller => "admin", :action => "artist_list") %></li>
+<li><%= link_to("Goods", :controller => "admin", :action => "product_list") %></li>
+<li><%= link_to("Information", :controller => "admin", :action => "static_list") %></li>
+<li><%= link_to("Authors", :controller => "login", :action => "list_authors") %></li>
+<li><%= link_to("Logout", :controller => "login", :action => "logout") %></li>
+</ul>
+</div><!-- END nav -->
+</div><!-- END nav-wrap -->
+<div id="nav-clear"></div>
+
+
+
+<!-- START Subnav -->
+<div id="subnav-wrap">
+<div id="subnav">
+<ul>
+
+
+<% if @nav == 'notes' -%>
+<li><%= link_to("All News", :controller => "admin", :action => "note_list") %></li>
+<li><%= link_to("New News Item", :controller => "admin", :action => "note_new") %></li>
+<% end -%>
+
+<% if @nav == 'exhibitions' -%>
+<li><%= link_to("All Shows", :controller => "admin", :action => "exhibition_list") %></li>
+<li><%= link_to("New Shows", :controller => "admin", :action => "exhibition_new") %></li>
+<li><%= link_to("Imagery", :controller => "admin", :action => "photo_list") %></li>
+<% end -%>
+
+<% if @nav == 'artists' -%>
+<li><%= link_to("All Artists", :controller => "admin", :action => "artist_list") %></li>
+<li><%= link_to("New Artist", :controller => "admin", :action => "artist_new") %></li>
+<li><%= link_to("Imagery", :controller => "admin", :action => "picture_list") %></li>
+<% end -%>
+
+<% if @nav == 'products' -%>
+<li><%= link_to("All Goods", :controller => "admin", :action => "product_list") %></li>
+<li><%= link_to("New Good", :controller => "admin", :action => "product_new") %></li>
+<li><%= link_to("Imagery", :controller => "admin", :action => "plane_list") %></li>
+<% end -%>
+
+<% if @nav == 'information' -%>
+<li><%= link_to("Information Pages", :controller => "admin", :action => "static_list") %></li>
+<li><%= link_to("New Information Page", :controller => "admin", :action => "static_new") %></li>
+<li><%= link_to("Imagery", :controller => "admin", :action => "icon_list") %></li>
+<% end -%>
+
+<% if @nav == 'authors' -%>
+<li><%= link_to("All Users", :controller => "/login", :action => "list_authors") %></li>
+<li><%= link_to("Add User", :controller => "/login", :action => "add_author") %></li>
+<% end -%>
+</ul>
+</div><!-- END subnav -->
+</div><!-- END subnav-wrap -->
+<div id="subnav-clear"></div>
+
+<% end -%>

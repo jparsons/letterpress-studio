@@ -1,0 +1,79 @@
+class LoginController < ApplicationController
+  before_filter :authorize, :except => :login
+  layout "admin"
+
+
+  
+  def index
+  @nav = "authors"
+  end
+  
+  
+  def login
+    session[:author_id] = nil
+    if request.post?
+      author = Author.authenticate(params[:name], params[:password])
+      if author
+        session[:author_id] = author.id
+        redirect_to(:action => "index")
+      else
+        flash[:notice] = "Invalid author/password combination"
+      end
+    end
+  end
+  
+
+  
+  def add_author
+    @author = Author.new(params[:author])
+    @nav = "authors"
+    if request.post? and @author.save
+      flash[:notice] = "Author #{@author.name} created"
+      @author = Author.new
+    end
+  end
+
+  def delete_author
+    id = params[:id]
+    if id && author = Author.find(id)
+      begin
+        author.safe_delete
+        flash[:notice] = "Author #{author.name} deleted"
+      rescue Exception => e
+        flash[:notice] = e.message
+      end
+    end
+    redirect_to(:action => :list_authors)
+  end
+  
+  def edit_author
+    @author = Author.find(params[:id])
+    @nav = "authors"  
+  end
+
+  def update_author
+    @author = Author.find(params[:id])  
+    if @author.update_attributes(params[:author])
+      flash[:notice] = 'author was successfully updated.'
+      redirect_to :action => 'edit_author', :id => @author
+    else
+      render :action => 'edit_author'
+    end
+  end
+
+  
+  def list_authors
+    @all_authors = Author.find(:all)
+    @nav = "authors"
+  end
+  
+  
+  
+  def logout
+    session[:author_id] = nil
+    flash[:notice] = "Logged out"
+    redirect_to(:action => "login")
+  end
+  
+
+end

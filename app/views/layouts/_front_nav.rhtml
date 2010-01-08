@@ -1,0 +1,15 @@
+<!-- START Nav -->
+<div id="nav">
+<ul>
+<li><%= link_to("News", :controller => "front", :action => "index") %></li>
+<li><%= link_to("Shows", :controller => "front", :action => "exhibition_list") %></li>
+<li><%= link_to("Artists", :controller => "front", :action => "artist_list") %></li>
+<li><%= link_to("Goods", :controller => "front", :action => "product_list") %></li>
+<li><%= link_to("Reserve Press Time", :controller => "reservations", :action=> "index ")%>
+<% all_static do |static| -%>
+<li><%= link_to static.name, {:controller => 'front', :action => "static_find_by_urlname", :name => static.urlname}, {:title => "Links to " + static.name} %></li>
+<% end -%>
+
+</ul>
+</div><!-- END nav -->
+

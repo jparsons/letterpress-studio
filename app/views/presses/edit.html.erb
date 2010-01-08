@@ -1,0 +1,16 @@
+<h1>Editing press</h1>
+
+<% form_for(@press) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @press %> |
+<%= link_to 'Back', presses_path %>

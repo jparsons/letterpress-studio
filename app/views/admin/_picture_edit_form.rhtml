@@ -1,0 +1,15 @@
+<%= error_messages_for 'picture' %>
+<!--[form:picture]-->
+<% if @picture.image -%>
+<!-- Image -->
+<%= image_tag(url_for_file_column( @picture, 'image', 'thumb')) %>
+<% end %>
+<p><label for="picture_image"><strong>Image</strong></label><br/>
+<%= file_column_field("picture", "image") %>
+</p>
+<p><label for="picture_name"><strong>Name</strong></label><br/>
+<%= text_field 'picture', 'name'  %></p>
+
+<p><label for="picture_summary"><strong>Description</strong></label><br/>
+<%= text_area 'picture', 'summary', :cols => "60", :rows => "10"  %></p>
+<!--[eoform:picture]-->

@@ -1,0 +1,16 @@
+<h1>Information Pages</h1>
+
+
+<h4><em>+ <%= link_to 'New Information Page', :action => 'static_new' %></em></h4>
+  
+<% for static in @statics %>
+  
+<h2><em><%= static.name %></em></h2>
+
+<h3>
+<%= link_to 'Edit', :action => 'static_edit', :id => static %> / <%= link_to 'Destroy', { :action => 'static_destroy', :id => static }, :confirm => 'Are you sure?', :post => true %> </h3>
+<% end %>
+
+<p class="pagination">
+<%= will_paginate(@statics) %>
+</p>

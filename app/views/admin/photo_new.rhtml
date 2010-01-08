@@ -1,0 +1,9 @@
+<%= error_messages_for 'photo' %>
+
+<h1>Image for: <em><%=h @exhibition.name %></em></h1>
+
+<%= start_form_tag({:action => 'photo_create'}, :multipart => true) %>
+  <%= render :partial => 'photo_form' %>
+  <%= submit_tag "Add Image" %>
+<%= end_form_tag %>
+<p><%= link_to 'Back', :action => 'photo_list' %></p>

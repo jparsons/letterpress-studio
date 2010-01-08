@@ -1,0 +1,23 @@
+<p>
+  <b>User:</b>
+  <%=h @reservation.user_id %>
+</p>
+
+<p>
+  <b>Press:</b>
+  <%=h @reservation.press_id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @reservation.date %>
+</p>
+
+<p>
+  <b>Hour:</b>
+  <%=h @reservation.hour %>
+</p>
+
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

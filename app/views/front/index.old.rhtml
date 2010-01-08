@@ -1,0 +1,11 @@
+<% if flash[:notice] %>
+<div class="notice">
+<h2>Problem!</h2>
+<p><%= flash[:notice] %></p>
+</div>
+<% end %>
+
+<%= render :partial => 'note_unit' %>
+
+<p class="pagination">
+<%= link_to 'Previous Page', { :page => @note_pages.current.previous } if @note_pages.current.previous %> <%= h '/' if @note_pages.current.previous %> <%= pagination_links(@note_pages, :window_size => 3) %> <%= h '/' if @note_pages.current.next %> <%= link_to 'Next Page', { :page => @note_pages.current.next } if @note_pages.current.next %></p>

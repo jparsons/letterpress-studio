@@ -1,0 +1,10 @@
+<p>
+  <b>Name:</b>
+  <%=h @press.name %>
+</p>
+
+<%= image_tag @press.image.url(:medium) %><br />
+<%= image_tag @press.image.url(:thumb) %>
+
+<%= link_to 'Edit', edit_press_path(@press) %> |
+<%= link_to 'Back', presses_path %>

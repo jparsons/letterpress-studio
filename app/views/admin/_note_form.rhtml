@@ -1,0 +1,47 @@
+<%= error_messages_for 'note' %>
+<%
+tag_list = ''
+for tag in @tags
+	tag_list += link_to(tag.name, 'javascript://', :id => 'tag_' + tag.name, :class => 'tag_tag', :onclick => 'tag_swap(document.forms[\'note_form\'].elements[\'tag_input\'], \'' + tag.name + '\')') + ' '
+end
+%>
+
+
+<!--[form:note]-->
+<p><label for="note_name"><strong>Name</strong></label><br/>
+<%= text_field 'note', 'name' %></p>
+
+<p><label for="note_is_active"><strong>Active?</strong></label><br />
+<%= check_box 'note', 'is_active', :checked => (@note.is_active ? 'checked' : '') %>&nbsp;<span class="small">If the box is checked, the note appears on the public site</span></p>
+
+<p><label for="note_summary"><strong>Summary</strong></label><br/>
+<%= text_area 'note', 'summary', :cols => "60", :rows => "15" %></p>
+
+<p><label for="note_body"><strong>Body</strong></label><br/>
+<%= text_area 'note', 'body', :cols => "60", :rows => "15" %></p>
+
+<p><strong><a href="#" onclick="Effect.toggle('add_additional','blind', {duration: .3}); return false;">Additional Data</a></strong><br />
+
+<div id="add_additional" style="display: none;">
+<%= text_area 'note', 'additional', :cols => "60", :rows => "5" %>
+</div>
+</p>
+<p>
+<label for="note_image"><strong>Image</strong></label><br />
+<%= file_column_field("note", "image") %>
+</p>
+
+<% if @note.image -%>
+<!-- Image --> 
+<%= image_tag(url_for_file_column( @note, 'image', 'thumb'), :class => 'notes-img') %>
+<% end %>
+
+<p><label for="tag_input"><strong>Tags</strong></label><br />
+<%= text_field_tag 'tag_input', @note.tag_names.join(' '), :size => '50', :id => 'tag_input', :onkeyup => 'highlight_tags(this)' %></p><p>
+<%= tag_list %></span></p>
+
+<p><label for="note_created_at"><strong>Created at</strong></label><br/>
+<%= datetime_select 'note', 'created_at' %></p>
+
+<p><label for="note_updated_at"><strong>Updated at</strong></label><br/>
+<%= datetime_select 'note', 'updated_at' %></p>

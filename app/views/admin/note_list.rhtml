@@ -1,0 +1,17 @@
+<h1>News Items</h1>
+
+
+<h4><em>+ <%= link_to 'Create News Item', :action => 'note_new' %></em></h4>
+  
+<% for note in @notes %>
+  
+<h2><em><%= note.name %></em> / <%= note.created_at.to_formatted_s(:iasa) %></h2>
+
+<h3>
+<%= link_to 'Edit', :action => 'note_edit', :id => note %> / <%= link_to 'Destroy', { :action => 'note_destroy', :id => note }, :confirm => 'Are you sure?', :post => true %> </h3>
+
+<% end %>
+
+<p class="pagination">
+<%= will_paginate(@notes) %>
+</p>

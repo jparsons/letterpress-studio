@@ -1,0 +1,18 @@
+<%= error_messages_for 'plane' %>
+<!--[form:plane]-->
+
+<% if @plane.image -%>
+<!-- Image -->
+<%= image_tag(url_for_file_column( @plane, 'image', 'thumb'), :class => 'notes-img') %>
+<% end %>
+
+<p><label for="plane_image"><strong>Image</strong></label><br/>
+<%= file_column_field("plane", "image") %>
+</p>
+
+<p><label for="plane_name"><strong>Name</strong></label><br/>
+<%= text_field 'plane', 'name'  %></p>
+
+<p><label for="plane_summary"><strong>Description</strong></label><br/>
+<%= text_area 'plane', 'summary', :cols => "60", :rows => "10"  %></p>
+<!--[eoform:plane]-->

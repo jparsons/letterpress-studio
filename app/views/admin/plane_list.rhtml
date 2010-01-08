@@ -1,0 +1,27 @@
+<h1>All Imagery</h1>
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr valign="top" style="background-color: #191919; color: #eee; text-align:left;">
+<th>Artist</th>
+<th>Images (click on image to edit it) or <em><%= link_to 'Delete Images', { :action => 'plane_deletes' } %></em></th>
+<th width="20">Actions</th>
+</tr>
+<%
+odd_or_even = 1
+for @product in @products
+odd_or_even = 1 - odd_or_even
+%>
+<tr valign="top" class="row-<%=odd_or_even%>">
+<td width="80">
+<strong><%=h @product.name %></strong>
+</td>
+<td>
+<% for @plane in @product.planes -%>
+<%= link_to image_tag(url_for_file_column("plane", "image", "tiny")), { :action => 'plane_edit', :id => @plane } %>
+<% end -%>
+</td>
+<td width="60"><%= link_to 'New', :controller => 'admin', :action => 'plane_new', :id => @product %><br />
+<%= link_to 'Sort', :controller => 'admin', :action => 'product_plane_sort', :id => @product %></td>
+</tr>
+<% end %>
+</table>

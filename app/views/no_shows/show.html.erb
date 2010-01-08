@@ -1,0 +1,13 @@
+<p>
+  <b>User:</b>
+  <%=h @no_show.user_id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @no_show.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_no_show_path(@no_show) %> |
+<%= link_to 'Back', no_shows_path %>

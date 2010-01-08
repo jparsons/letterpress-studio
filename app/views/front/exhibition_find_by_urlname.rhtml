@@ -1,0 +1,36 @@
+<% if @exhibition.artists.count > 0 %>
+<h2><% for artist in @exhibition.artists %>
+<%= artist.name %> <%end%></h2><%end%>
+
+<h3><%= @exhibition.event_start_at.to_formatted_s(:iasa) %> - <%= @exhibition.event_finish_at.to_formatted_s(:iasa) %> </h3>
+
+<% if @exhibition.opening != '' -%>
+<!-- Opening --> 
+<p class="opening">Opens: <em><%= @exhibition.opening %></em></p>
+<% end %>
+
+<% if @exhibition.photos.count > 0 %>
+<div id="img-ctnr">
+<% @exhibition.photos.each do |photo| %>
+<div class="exhibition_img">
+<a href="<%= url_for_file_column( photo, 'image', 'wide') %>" rel="lightbox[gallery]" title="<%= photo.name %>"><%= image_tag(url_for_file_column( photo, 'image', 'square')) %></a>
+</div>
+<% end %>
+</div>
+<% end %>
+
+<% if @exhibition.summary != '' -%>
+<!-- Summary --> 
+<%=
+r = RedCloth.new(@exhibition.summary)
+r.to_html
+%>
+<% end %>
+
+<% if @exhibition.body != '' -%>
+<!-- Longer Description --> 
+<%=
+r = RedCloth.new(@exhibition.body)
+r.to_html
+%>
+<% end %>

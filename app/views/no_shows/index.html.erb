@@ -1,0 +1,22 @@
+<h1>Listing no_shows</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Date</th>
+  </tr>
+
+<% @no_shows.each do |no_show| %>
+  <tr>
+    <td><%=h no_show.user_id %></td>
+    <td><%=h no_show.date %></td>
+    <td><%= link_to 'Show', no_show %></td>
+    <td><%= link_to 'Edit', edit_no_show_path(no_show) %></td>
+    <td><%= link_to 'Destroy', no_show, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New no_show', new_no_show_path %>

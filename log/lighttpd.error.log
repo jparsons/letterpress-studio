@@ -1,0 +1,1608 @@
+2006-11-02 17:55:54: (log.c.75) server started 
+2006-11-02 17:57:50: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-02 17:57:50: (connections.c.1396) returning the original status 404 
+2006-11-02 17:57:50: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-02 17:59:45: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-02 17:59:45: (connections.c.1396) returning the original status 404 
+2006-11-02 17:59:45: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-02 17:59:45: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-02 17:59:45: (connections.c.1396) returning the original status 404 
+2006-11-02 17:59:45: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-02 18:23:54: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-02 18:23:54: (connections.c.1396) returning the original status 404 
+2006-11-02 18:23:54: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-02 20:05:05: (server.c.1216) [note] graceful shutdown started 
+2006-11-02 20:05:05: (log.c.135) server stopped 
+2006-11-02 20:05:11: (log.c.75) server started 
+2006-11-02 20:05:12: (server.c.1216) [note] graceful shutdown started 
+2006-11-02 20:05:12: (log.c.135) server stopped 
+2006-11-02 20:06:08: (log.c.75) server started 
+2006-11-02 20:17:42: (server.c.1216) [note] graceful shutdown started 
+2006-11-02 20:17:42: (log.c.135) server stopped 
+2006-11-02 20:17:51: (log.c.75) server started 
+2006-11-02 20:17:57: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-02 20:17:57: (connections.c.1396) returning the original status 404 
+2006-11-02 20:17:57: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 09:05:22: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 09:05:22: (connections.c.1396) returning the original status 404 
+2006-11-03 09:05:22: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 09:11:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 09:11:12: (connections.c.1396) returning the original status 404 
+2006-11-03 09:11:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 09:20:24: (server.c.1216) [note] graceful shutdown started 
+2006-11-03 09:20:24: (log.c.135) server stopped 
+2006-11-03 09:20:55: (log.c.75) server started 
+2006-11-03 10:39:43: (server.c.1216) [note] graceful shutdown started 
+2006-11-03 10:39:43: (log.c.135) server stopped 
+2006-11-03 10:44:41: (log.c.75) server started 
+2006-11-03 10:59:57: (server.c.1216) [note] graceful shutdown started 
+2006-11-03 10:59:57: (log.c.135) server stopped 
+2006-11-03 11:00:02: (log.c.75) server started 
+2006-11-03 12:04:57: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 12:04:57: (connections.c.1396) returning the original status 404 
+2006-11-03 12:04:57: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 12:10:02: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 12:10:02: (connections.c.1396) returning the original status 404 
+2006-11-03 12:10:02: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 12:12:08: (server.c.1216) [note] graceful shutdown started 
+2006-11-03 12:12:08: (log.c.135) server stopped 
+2006-11-03 12:12:43: (log.c.75) server started 
+2006-11-03 13:24:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:24:11: (connections.c.1396) returning the original status 404 
+2006-11-03 13:24:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:24:38: (mod_fastcgi.c.2536) FastCGI-stderr: /Users/Dylan/IASA/Rails/thearm/public/../config/../app/views/layouts/_front_nav.rhtml:39: warning: don't put space before argument parentheses
+ 
+2006-11-03 13:24:38: (mod_fastcgi.c.2536) FastCGI-stderr:  
+2006-11-03 13:25:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:25:08: (connections.c.1396) returning the original status 404 
+2006-11-03 13:25:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:25:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:25:08: (connections.c.1396) returning the original status 404 
+2006-11-03 13:25:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:25:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:25:09: (connections.c.1396) returning the original status 404 
+2006-11-03 13:25:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:25:34: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:25:34: (connections.c.1396) returning the original status 404 
+2006-11-03 13:25:34: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:25:34: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:25:34: (connections.c.1396) returning the original status 404 
+2006-11-03 13:25:34: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:25:35: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:25:35: (connections.c.1396) returning the original status 404 
+2006-11-03 13:25:35: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:26:53: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:26:53: (connections.c.1396) returning the original status 404 
+2006-11-03 13:26:53: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:26:53: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:26:53: (connections.c.1396) returning the original status 404 
+2006-11-03 13:26:53: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:30:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:30:43: (connections.c.1396) returning the original status 404 
+2006-11-03 13:30:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:30:44: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:30:44: (connections.c.1396) returning the original status 404 
+2006-11-03 13:30:44: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:34:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:34:20: (connections.c.1396) returning the original status 404 
+2006-11-03 13:34:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:34:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:34:20: (connections.c.1396) returning the original status 404 
+2006-11-03 13:34:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:34:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:34:37: (connections.c.1396) returning the original status 404 
+2006-11-03 13:34:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:34:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:34:37: (connections.c.1396) returning the original status 404 
+2006-11-03 13:34:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:35:22: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:35:22: (connections.c.1396) returning the original status 404 
+2006-11-03 13:35:22: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:35:22: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:35:22: (connections.c.1396) returning the original status 404 
+2006-11-03 13:35:22: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:35:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:35:37: (connections.c.1396) returning the original status 404 
+2006-11-03 13:35:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:35:38: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:35:38: (connections.c.1396) returning the original status 404 
+2006-11-03 13:35:38: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:35:51: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:35:51: (connections.c.1396) returning the original status 404 
+2006-11-03 13:35:51: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:35:51: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:35:51: (connections.c.1396) returning the original status 404 
+2006-11-03 13:35:51: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:52:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:52:12: (connections.c.1396) returning the original status 404 
+2006-11-03 13:52:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:52:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:52:12: (connections.c.1396) returning the original status 404 
+2006-11-03 13:52:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:53:29: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:53:29: (connections.c.1396) returning the original status 404 
+2006-11-03 13:53:29: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:53:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:53:30: (connections.c.1396) returning the original status 404 
+2006-11-03 13:53:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:53:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:53:40: (connections.c.1396) returning the original status 404 
+2006-11-03 13:53:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:53:41: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:53:41: (connections.c.1396) returning the original status 404 
+2006-11-03 13:53:41: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:54:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:54:11: (connections.c.1396) returning the original status 404 
+2006-11-03 13:54:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:54:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:54:11: (connections.c.1396) returning the original status 404 
+2006-11-03 13:54:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:54:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:54:26: (connections.c.1396) returning the original status 404 
+2006-11-03 13:54:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:54:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:54:27: (connections.c.1396) returning the original status 404 
+2006-11-03 13:54:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:55:04: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:55:04: (connections.c.1396) returning the original status 404 
+2006-11-03 13:55:04: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:55:04: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:55:04: (connections.c.1396) returning the original status 404 
+2006-11-03 13:55:04: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:55:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:55:08: (connections.c.1396) returning the original status 404 
+2006-11-03 13:55:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:55:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:55:09: (connections.c.1396) returning the original status 404 
+2006-11-03 13:55:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:55:25: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:55:25: (connections.c.1396) returning the original status 404 
+2006-11-03 13:55:25: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:55:25: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:55:25: (connections.c.1396) returning the original status 404 
+2006-11-03 13:55:25: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:55:55: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:55:55: (connections.c.1396) returning the original status 404 
+2006-11-03 13:55:55: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:55:56: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:55:56: (connections.c.1396) returning the original status 404 
+2006-11-03 13:55:56: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:56:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:56:12: (connections.c.1396) returning the original status 404 
+2006-11-03 13:56:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:56:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:56:12: (connections.c.1396) returning the original status 404 
+2006-11-03 13:56:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:56:35: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:56:35: (connections.c.1396) returning the original status 404 
+2006-11-03 13:56:35: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:56:35: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:56:35: (connections.c.1396) returning the original status 404 
+2006-11-03 13:56:35: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:57:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:57:07: (connections.c.1396) returning the original status 404 
+2006-11-03 13:57:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:57:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:57:07: (connections.c.1396) returning the original status 404 
+2006-11-03 13:57:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:58:15: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:58:15: (connections.c.1396) returning the original status 404 
+2006-11-03 13:58:15: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:58:15: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:58:15: (connections.c.1396) returning the original status 404 
+2006-11-03 13:58:15: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:59:01: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:59:01: (connections.c.1396) returning the original status 404 
+2006-11-03 13:59:01: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:59:01: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:59:01: (connections.c.1396) returning the original status 404 
+2006-11-03 13:59:01: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:59:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:59:27: (connections.c.1396) returning the original status 404 
+2006-11-03 13:59:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:59:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:59:27: (connections.c.1396) returning the original status 404 
+2006-11-03 13:59:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:59:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:59:43: (connections.c.1396) returning the original status 404 
+2006-11-03 13:59:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 13:59:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 13:59:43: (connections.c.1396) returning the original status 404 
+2006-11-03 13:59:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:04:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:04:09: (connections.c.1396) returning the original status 404 
+2006-11-03 14:04:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:04:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:04:09: (connections.c.1396) returning the original status 404 
+2006-11-03 14:04:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:04:42: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:04:42: (connections.c.1396) returning the original status 404 
+2006-11-03 14:04:42: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:04:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:04:43: (connections.c.1396) returning the original status 404 
+2006-11-03 14:04:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:05:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:05:37: (connections.c.1396) returning the original status 404 
+2006-11-03 14:05:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:05:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:05:37: (connections.c.1396) returning the original status 404 
+2006-11-03 14:05:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:09:58: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:09:58: (connections.c.1396) returning the original status 404 
+2006-11-03 14:09:58: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:09:58: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:09:58: (connections.c.1396) returning the original status 404 
+2006-11-03 14:09:58: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:11:03: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:11:03: (connections.c.1396) returning the original status 404 
+2006-11-03 14:11:03: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:11:03: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:11:03: (connections.c.1396) returning the original status 404 
+2006-11-03 14:11:03: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:11:39: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:11:39: (connections.c.1396) returning the original status 404 
+2006-11-03 14:11:39: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:11:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:11:40: (connections.c.1396) returning the original status 404 
+2006-11-03 14:11:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:12:05: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:12:05: (connections.c.1396) returning the original status 404 
+2006-11-03 14:12:05: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:12:05: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:12:05: (connections.c.1396) returning the original status 404 
+2006-11-03 14:12:05: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:12:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:12:36: (connections.c.1396) returning the original status 404 
+2006-11-03 14:12:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:12:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:12:37: (connections.c.1396) returning the original status 404 
+2006-11-03 14:12:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:12:53: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:12:53: (connections.c.1396) returning the original status 404 
+2006-11-03 14:12:53: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:12:54: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:12:54: (connections.c.1396) returning the original status 404 
+2006-11-03 14:12:54: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:13:29: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:13:29: (connections.c.1396) returning the original status 404 
+2006-11-03 14:13:29: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:13:29: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:13:29: (connections.c.1396) returning the original status 404 
+2006-11-03 14:13:29: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:13:38: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:13:38: (connections.c.1396) returning the original status 404 
+2006-11-03 14:13:38: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:13:38: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:13:38: (connections.c.1396) returning the original status 404 
+2006-11-03 14:13:38: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:14:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:14:36: (connections.c.1396) returning the original status 404 
+2006-11-03 14:14:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:14:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:14:37: (connections.c.1396) returning the original status 404 
+2006-11-03 14:14:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:15:14: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:15:14: (connections.c.1396) returning the original status 404 
+2006-11-03 14:15:14: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:15:14: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:15:14: (connections.c.1396) returning the original status 404 
+2006-11-03 14:15:14: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:15:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:15:26: (connections.c.1396) returning the original status 404 
+2006-11-03 14:15:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:15:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:15:26: (connections.c.1396) returning the original status 404 
+2006-11-03 14:15:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:16:41: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:16:41: (connections.c.1396) returning the original status 404 
+2006-11-03 14:16:41: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:16:41: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:16:41: (connections.c.1396) returning the original status 404 
+2006-11-03 14:16:41: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:16:59: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:16:59: (connections.c.1396) returning the original status 404 
+2006-11-03 14:16:59: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:16:59: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:16:59: (connections.c.1396) returning the original status 404 
+2006-11-03 14:16:59: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:17:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:17:26: (connections.c.1396) returning the original status 404 
+2006-11-03 14:17:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:17:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:17:26: (connections.c.1396) returning the original status 404 
+2006-11-03 14:17:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:19:44: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:19:44: (connections.c.1396) returning the original status 404 
+2006-11-03 14:19:44: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:19:44: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:19:44: (connections.c.1396) returning the original status 404 
+2006-11-03 14:19:44: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:20:15: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:20:15: (connections.c.1396) returning the original status 404 
+2006-11-03 14:20:15: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:20:16: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:20:16: (connections.c.1396) returning the original status 404 
+2006-11-03 14:20:16: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:20:38: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:20:38: (connections.c.1396) returning the original status 404 
+2006-11-03 14:20:38: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:20:38: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:20:38: (connections.c.1396) returning the original status 404 
+2006-11-03 14:20:38: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:23:03: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:23:03: (connections.c.1396) returning the original status 404 
+2006-11-03 14:23:03: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:23:03: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:23:03: (connections.c.1396) returning the original status 404 
+2006-11-03 14:23:03: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:23:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:23:20: (connections.c.1396) returning the original status 404 
+2006-11-03 14:23:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:23:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:23:20: (connections.c.1396) returning the original status 404 
+2006-11-03 14:23:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:23:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:23:26: (connections.c.1396) returning the original status 404 
+2006-11-03 14:23:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:23:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:23:26: (connections.c.1396) returning the original status 404 
+2006-11-03 14:23:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:44:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:44:07: (connections.c.1396) returning the original status 404 
+2006-11-03 14:44:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:44:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:44:07: (connections.c.1396) returning the original status 404 
+2006-11-03 14:44:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:44:19: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:44:19: (connections.c.1396) returning the original status 404 
+2006-11-03 14:44:19: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:44:19: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:44:19: (connections.c.1396) returning the original status 404 
+2006-11-03 14:44:19: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:44:29: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:44:29: (connections.c.1396) returning the original status 404 
+2006-11-03 14:44:29: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:44:29: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:44:29: (connections.c.1396) returning the original status 404 
+2006-11-03 14:44:29: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:45:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:45:27: (connections.c.1396) returning the original status 404 
+2006-11-03 14:45:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:45:28: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:45:28: (connections.c.1396) returning the original status 404 
+2006-11-03 14:45:28: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:45:59: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:45:59: (connections.c.1396) returning the original status 404 
+2006-11-03 14:45:59: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:45:59: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:45:59: (connections.c.1396) returning the original status 404 
+2006-11-03 14:45:59: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:46:18: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:46:18: (connections.c.1396) returning the original status 404 
+2006-11-03 14:46:18: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:46:19: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:46:19: (connections.c.1396) returning the original status 404 
+2006-11-03 14:46:19: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:46:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:46:40: (connections.c.1396) returning the original status 404 
+2006-11-03 14:46:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:46:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:46:40: (connections.c.1396) returning the original status 404 
+2006-11-03 14:46:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:46:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:46:47: (connections.c.1396) returning the original status 404 
+2006-11-03 14:46:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:46:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:46:47: (connections.c.1396) returning the original status 404 
+2006-11-03 14:46:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:46:58: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:46:58: (connections.c.1396) returning the original status 404 
+2006-11-03 14:46:58: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:46:58: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:46:58: (connections.c.1396) returning the original status 404 
+2006-11-03 14:46:58: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:47:39: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:47:39: (connections.c.1396) returning the original status 404 
+2006-11-03 14:47:39: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:47:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:47:40: (connections.c.1396) returning the original status 404 
+2006-11-03 14:47:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:48:03: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:48:03: (connections.c.1396) returning the original status 404 
+2006-11-03 14:48:03: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:48:04: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:48:04: (connections.c.1396) returning the original status 404 
+2006-11-03 14:48:04: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:48:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:48:10: (connections.c.1396) returning the original status 404 
+2006-11-03 14:48:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:48:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:48:10: (connections.c.1396) returning the original status 404 
+2006-11-03 14:48:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:48:48: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:48:48: (connections.c.1396) returning the original status 404 
+2006-11-03 14:48:48: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:48:48: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:48:48: (connections.c.1396) returning the original status 404 
+2006-11-03 14:48:48: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:58:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:58:47: (connections.c.1396) returning the original status 404 
+2006-11-03 14:58:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:58:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:58:47: (connections.c.1396) returning the original status 404 
+2006-11-03 14:58:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:59:01: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:59:01: (connections.c.1396) returning the original status 404 
+2006-11-03 14:59:01: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 14:59:01: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 14:59:01: (connections.c.1396) returning the original status 404 
+2006-11-03 14:59:01: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:09:03: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:09:03: (connections.c.1396) returning the original status 404 
+2006-11-03 15:09:03: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:09:03: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:09:03: (connections.c.1396) returning the original status 404 
+2006-11-03 15:09:03: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:09:52: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:09:52: (connections.c.1396) returning the original status 404 
+2006-11-03 15:09:52: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:09:52: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:09:52: (connections.c.1396) returning the original status 404 
+2006-11-03 15:09:52: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:10:57: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:10:57: (connections.c.1396) returning the original status 404 
+2006-11-03 15:10:57: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:10:58: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:10:58: (connections.c.1396) returning the original status 404 
+2006-11-03 15:10:58: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:12:33: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:12:33: (connections.c.1396) returning the original status 404 
+2006-11-03 15:12:33: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:12:34: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:12:34: (connections.c.1396) returning the original status 404 
+2006-11-03 15:12:34: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:14:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:14:06: (connections.c.1396) returning the original status 404 
+2006-11-03 15:14:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:14:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:14:06: (connections.c.1396) returning the original status 404 
+2006-11-03 15:14:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:14:59: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:14:59: (connections.c.1396) returning the original status 404 
+2006-11-03 15:14:59: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:14:59: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:14:59: (connections.c.1396) returning the original status 404 
+2006-11-03 15:14:59: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:15:21: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:15:21: (connections.c.1396) returning the original status 404 
+2006-11-03 15:15:21: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:15:21: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:15:21: (connections.c.1396) returning the original status 404 
+2006-11-03 15:15:21: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:15:53: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:15:53: (connections.c.1396) returning the original status 404 
+2006-11-03 15:15:53: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:15:54: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:15:54: (connections.c.1396) returning the original status 404 
+2006-11-03 15:15:54: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:16:05: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:16:05: (connections.c.1396) returning the original status 404 
+2006-11-03 15:16:05: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:16:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:16:06: (connections.c.1396) returning the original status 404 
+2006-11-03 15:16:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:17:56: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:17:56: (connections.c.1396) returning the original status 404 
+2006-11-03 15:17:56: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:17:57: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:17:57: (connections.c.1396) returning the original status 404 
+2006-11-03 15:17:57: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:19:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:19:43: (connections.c.1396) returning the original status 404 
+2006-11-03 15:19:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:19:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:19:43: (connections.c.1396) returning the original status 404 
+2006-11-03 15:19:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:20:16: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:20:16: (connections.c.1396) returning the original status 404 
+2006-11-03 15:20:16: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:20:16: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:20:16: (connections.c.1396) returning the original status 404 
+2006-11-03 15:20:16: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:20:41: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:20:41: (connections.c.1396) returning the original status 404 
+2006-11-03 15:20:41: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:20:41: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:20:41: (connections.c.1396) returning the original status 404 
+2006-11-03 15:20:41: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:21:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:21:08: (connections.c.1396) returning the original status 404 
+2006-11-03 15:21:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:21:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:21:08: (connections.c.1396) returning the original status 404 
+2006-11-03 15:21:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:21:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:21:40: (connections.c.1396) returning the original status 404 
+2006-11-03 15:21:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:21:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:21:40: (connections.c.1396) returning the original status 404 
+2006-11-03 15:21:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:22:33: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:22:33: (connections.c.1396) returning the original status 404 
+2006-11-03 15:22:33: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:22:33: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:22:33: (connections.c.1396) returning the original status 404 
+2006-11-03 15:22:33: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:22:57: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:22:57: (connections.c.1396) returning the original status 404 
+2006-11-03 15:22:57: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:22:58: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:22:58: (connections.c.1396) returning the original status 404 
+2006-11-03 15:22:58: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:23:16: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:23:16: (connections.c.1396) returning the original status 404 
+2006-11-03 15:23:16: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:23:17: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:23:17: (connections.c.1396) returning the original status 404 
+2006-11-03 15:23:17: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:25:56: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:25:56: (connections.c.1396) returning the original status 404 
+2006-11-03 15:25:56: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:25:56: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:25:56: (connections.c.1396) returning the original status 404 
+2006-11-03 15:25:56: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:26:48: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:26:48: (connections.c.1396) returning the original status 404 
+2006-11-03 15:26:48: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:26:48: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:26:48: (connections.c.1396) returning the original status 404 
+2006-11-03 15:26:48: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:27:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:27:08: (connections.c.1396) returning the original status 404 
+2006-11-03 15:27:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:27:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:27:09: (connections.c.1396) returning the original status 404 
+2006-11-03 15:27:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:29:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:29:06: (connections.c.1396) returning the original status 404 
+2006-11-03 15:29:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:29:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:29:06: (connections.c.1396) returning the original status 404 
+2006-11-03 15:29:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:29:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:29:11: (connections.c.1396) returning the original status 404 
+2006-11-03 15:29:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:29:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:29:12: (connections.c.1396) returning the original status 404 
+2006-11-03 15:29:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:29:13: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:29:13: (connections.c.1396) returning the original status 404 
+2006-11-03 15:29:13: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:29:14: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:29:14: (connections.c.1396) returning the original status 404 
+2006-11-03 15:29:14: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:29:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:29:47: (connections.c.1396) returning the original status 404 
+2006-11-03 15:29:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:29:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:29:47: (connections.c.1396) returning the original status 404 
+2006-11-03 15:29:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:30:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:30:12: (connections.c.1396) returning the original status 404 
+2006-11-03 15:30:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:30:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:30:12: (connections.c.1396) returning the original status 404 
+2006-11-03 15:30:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:31:04: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:31:04: (connections.c.1396) returning the original status 404 
+2006-11-03 15:31:04: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:31:05: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:31:05: (connections.c.1396) returning the original status 404 
+2006-11-03 15:31:05: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:31:19: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:31:19: (connections.c.1396) returning the original status 404 
+2006-11-03 15:31:19: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:31:19: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:31:19: (connections.c.1396) returning the original status 404 
+2006-11-03 15:31:19: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:31:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:31:20: (connections.c.1396) returning the original status 404 
+2006-11-03 15:31:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:31:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:31:20: (connections.c.1396) returning the original status 404 
+2006-11-03 15:31:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:31:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:31:30: (connections.c.1396) returning the original status 404 
+2006-11-03 15:31:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:31:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:31:30: (connections.c.1396) returning the original status 404 
+2006-11-03 15:31:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:31:51: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:31:51: (connections.c.1396) returning the original status 404 
+2006-11-03 15:31:51: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:31:51: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:31:51: (connections.c.1396) returning the original status 404 
+2006-11-03 15:31:51: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:32:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:32:30: (connections.c.1396) returning the original status 404 
+2006-11-03 15:32:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:32:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:32:30: (connections.c.1396) returning the original status 404 
+2006-11-03 15:32:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:33:46: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:33:46: (connections.c.1396) returning the original status 404 
+2006-11-03 15:33:46: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:33:46: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:33:46: (connections.c.1396) returning the original status 404 
+2006-11-03 15:33:46: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:34:19: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:34:19: (connections.c.1396) returning the original status 404 
+2006-11-03 15:34:19: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:34:19: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:34:19: (connections.c.1396) returning the original status 404 
+2006-11-03 15:34:19: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:35:17: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:35:17: (connections.c.1396) returning the original status 404 
+2006-11-03 15:35:17: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:35:17: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:35:17: (connections.c.1396) returning the original status 404 
+2006-11-03 15:35:17: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:35:46: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:35:46: (connections.c.1396) returning the original status 404 
+2006-11-03 15:35:46: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:35:46: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:35:46: (connections.c.1396) returning the original status 404 
+2006-11-03 15:35:46: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:38:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:38:23: (connections.c.1396) returning the original status 404 
+2006-11-03 15:38:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:38:52: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:38:52: (connections.c.1396) returning the original status 404 
+2006-11-03 15:38:52: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:39:31: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:39:31: (connections.c.1396) returning the original status 404 
+2006-11-03 15:39:31: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:39:32: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:39:32: (connections.c.1396) returning the original status 404 
+2006-11-03 15:39:32: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:39:35: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:39:35: (connections.c.1396) returning the original status 404 
+2006-11-03 15:39:35: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:39:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:39:36: (connections.c.1396) returning the original status 404 
+2006-11-03 15:39:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:39:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:39:37: (connections.c.1396) returning the original status 404 
+2006-11-03 15:39:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:39:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:39:37: (connections.c.1396) returning the original status 404 
+2006-11-03 15:39:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:39:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:39:43: (connections.c.1396) returning the original status 404 
+2006-11-03 15:39:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:39:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:39:43: (connections.c.1396) returning the original status 404 
+2006-11-03 15:39:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:43:54: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:43:54: (connections.c.1396) returning the original status 404 
+2006-11-03 15:43:54: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:43:54: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:43:54: (connections.c.1396) returning the original status 404 
+2006-11-03 15:43:54: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:44:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:44:10: (connections.c.1396) returning the original status 404 
+2006-11-03 15:44:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:44:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:44:11: (connections.c.1396) returning the original status 404 
+2006-11-03 15:44:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:44:52: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:44:52: (connections.c.1396) returning the original status 404 
+2006-11-03 15:44:52: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:44:52: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:44:52: (connections.c.1396) returning the original status 404 
+2006-11-03 15:44:52: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:49:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:49:20: (connections.c.1396) returning the original status 404 
+2006-11-03 15:49:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:49:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:49:20: (connections.c.1396) returning the original status 404 
+2006-11-03 15:49:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:51:13: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:51:13: (connections.c.1396) returning the original status 404 
+2006-11-03 15:51:13: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:51:13: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:51:13: (connections.c.1396) returning the original status 404 
+2006-11-03 15:51:13: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:53:35: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:53:35: (connections.c.1396) returning the original status 404 
+2006-11-03 15:53:35: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:53:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:53:36: (connections.c.1396) returning the original status 404 
+2006-11-03 15:53:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:54:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:54:07: (connections.c.1396) returning the original status 404 
+2006-11-03 15:54:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:54:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:54:07: (connections.c.1396) returning the original status 404 
+2006-11-03 15:54:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:54:34: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:54:34: (connections.c.1396) returning the original status 404 
+2006-11-03 15:54:34: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:54:34: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:54:34: (connections.c.1396) returning the original status 404 
+2006-11-03 15:54:34: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:54:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:54:40: (connections.c.1396) returning the original status 404 
+2006-11-03 15:54:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:54:41: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:54:41: (connections.c.1396) returning the original status 404 
+2006-11-03 15:54:41: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:56:13: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:56:13: (connections.c.1396) returning the original status 404 
+2006-11-03 15:56:13: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:56:13: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:56:13: (connections.c.1396) returning the original status 404 
+2006-11-03 15:56:13: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:57:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:57:06: (connections.c.1396) returning the original status 404 
+2006-11-03 15:57:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:57:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:57:06: (connections.c.1396) returning the original status 404 
+2006-11-03 15:57:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:57:34: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:57:34: (connections.c.1396) returning the original status 404 
+2006-11-03 15:57:34: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 15:57:34: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 15:57:34: (connections.c.1396) returning the original status 404 
+2006-11-03 15:57:34: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:00:39: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:00:39: (connections.c.1396) returning the original status 404 
+2006-11-03 16:00:39: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:00:39: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:00:39: (connections.c.1396) returning the original status 404 
+2006-11-03 16:00:39: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:01:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:01:08: (connections.c.1396) returning the original status 404 
+2006-11-03 16:01:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:01:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:01:08: (connections.c.1396) returning the original status 404 
+2006-11-03 16:01:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:01:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:01:10: (connections.c.1396) returning the original status 404 
+2006-11-03 16:01:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:01:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:01:10: (connections.c.1396) returning the original status 404 
+2006-11-03 16:01:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:02:49: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:02:49: (connections.c.1396) returning the original status 404 
+2006-11-03 16:02:49: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:02:49: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:02:49: (connections.c.1396) returning the original status 404 
+2006-11-03 16:02:49: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:02:53: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:02:53: (connections.c.1396) returning the original status 404 
+2006-11-03 16:02:53: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:02:53: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:02:53: (connections.c.1396) returning the original status 404 
+2006-11-03 16:02:53: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:05:50: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:05:50: (connections.c.1396) returning the original status 404 
+2006-11-03 16:05:50: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:05:50: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:05:50: (connections.c.1396) returning the original status 404 
+2006-11-03 16:05:50: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:06:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:06:37: (connections.c.1396) returning the original status 404 
+2006-11-03 16:06:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:06:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:06:37: (connections.c.1396) returning the original status 404 
+2006-11-03 16:06:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:07:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:07:23: (connections.c.1396) returning the original status 404 
+2006-11-03 16:07:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:07:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:07:23: (connections.c.1396) returning the original status 404 
+2006-11-03 16:07:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:07:28: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:07:28: (connections.c.1396) returning the original status 404 
+2006-11-03 16:07:28: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:07:28: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:07:28: (connections.c.1396) returning the original status 404 
+2006-11-03 16:07:28: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:07:57: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:07:57: (connections.c.1396) returning the original status 404 
+2006-11-03 16:07:57: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:07:57: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:07:57: (connections.c.1396) returning the original status 404 
+2006-11-03 16:07:57: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:08:04: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:08:04: (connections.c.1396) returning the original status 404 
+2006-11-03 16:08:04: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:08:04: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:08:04: (connections.c.1396) returning the original status 404 
+2006-11-03 16:08:04: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:08:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:08:12: (connections.c.1396) returning the original status 404 
+2006-11-03 16:08:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:08:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:08:12: (connections.c.1396) returning the original status 404 
+2006-11-03 16:08:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:09:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:09:11: (connections.c.1396) returning the original status 404 
+2006-11-03 16:09:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:09:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:09:12: (connections.c.1396) returning the original status 404 
+2006-11-03 16:09:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:09:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:09:36: (connections.c.1396) returning the original status 404 
+2006-11-03 16:09:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:09:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:09:36: (connections.c.1396) returning the original status 404 
+2006-11-03 16:09:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:10:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:10:47: (connections.c.1396) returning the original status 404 
+2006-11-03 16:10:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:10:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:10:47: (connections.c.1396) returning the original status 404 
+2006-11-03 16:10:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:16:35: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:16:35: (connections.c.1396) returning the original status 404 
+2006-11-03 16:16:35: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:16:35: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:16:35: (connections.c.1396) returning the original status 404 
+2006-11-03 16:16:35: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:17:14: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:17:14: (connections.c.1396) returning the original status 404 
+2006-11-03 16:17:14: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:17:15: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:17:15: (connections.c.1396) returning the original status 404 
+2006-11-03 16:17:15: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:18:58: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:18:58: (connections.c.1396) returning the original status 404 
+2006-11-03 16:18:58: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:18:58: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:18:58: (connections.c.1396) returning the original status 404 
+2006-11-03 16:18:58: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:19:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:19:08: (connections.c.1396) returning the original status 404 
+2006-11-03 16:19:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:19:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:19:09: (connections.c.1396) returning the original status 404 
+2006-11-03 16:19:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:19:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:19:11: (connections.c.1396) returning the original status 404 
+2006-11-03 16:19:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:21:33: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:21:33: (connections.c.1396) returning the original status 404 
+2006-11-03 16:21:33: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:21:33: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:21:33: (connections.c.1396) returning the original status 404 
+2006-11-03 16:21:33: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:21:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:21:36: (connections.c.1396) returning the original status 404 
+2006-11-03 16:21:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:21:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:21:36: (connections.c.1396) returning the original status 404 
+2006-11-03 16:21:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:21:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:21:37: (connections.c.1396) returning the original status 404 
+2006-11-03 16:21:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:21:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:21:37: (connections.c.1396) returning the original status 404 
+2006-11-03 16:21:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:23:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:23:23: (connections.c.1396) returning the original status 404 
+2006-11-03 16:23:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:23:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:23:23: (connections.c.1396) returning the original status 404 
+2006-11-03 16:23:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:23:24: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:23:24: (connections.c.1396) returning the original status 404 
+2006-11-03 16:23:24: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:23:24: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:23:24: (connections.c.1396) returning the original status 404 
+2006-11-03 16:23:24: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:24:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:24:07: (connections.c.1396) returning the original status 404 
+2006-11-03 16:24:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:24:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:24:07: (connections.c.1396) returning the original status 404 
+2006-11-03 16:24:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:24:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:24:23: (connections.c.1396) returning the original status 404 
+2006-11-03 16:24:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:24:24: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:24:24: (connections.c.1396) returning the original status 404 
+2006-11-03 16:24:24: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:27:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:27:27: (connections.c.1396) returning the original status 404 
+2006-11-03 16:27:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:27:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:27:27: (connections.c.1396) returning the original status 404 
+2006-11-03 16:27:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:28:01: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:28:01: (connections.c.1396) returning the original status 404 
+2006-11-03 16:28:01: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:28:02: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:28:02: (connections.c.1396) returning the original status 404 
+2006-11-03 16:28:02: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:29:56: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:29:56: (connections.c.1396) returning the original status 404 
+2006-11-03 16:29:56: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:29:57: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:29:57: (connections.c.1396) returning the original status 404 
+2006-11-03 16:29:57: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:30:02: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:30:02: (connections.c.1396) returning the original status 404 
+2006-11-03 16:30:02: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:30:02: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:30:02: (connections.c.1396) returning the original status 404 
+2006-11-03 16:30:02: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:30:05: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:30:05: (connections.c.1396) returning the original status 404 
+2006-11-03 16:30:05: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:40:24: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:40:24: (connections.c.1396) returning the original status 404 
+2006-11-03 16:40:24: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:40:24: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:40:24: (connections.c.1396) returning the original status 404 
+2006-11-03 16:40:24: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:41:01: (server.c.1216) [note] graceful shutdown started 
+2006-11-03 16:41:01: (log.c.135) server stopped 
+2006-11-03 16:41:58: (log.c.75) server started 
+2006-11-03 16:44:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:44:23: (connections.c.1396) returning the original status 404 
+2006-11-03 16:44:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:44:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:44:23: (connections.c.1396) returning the original status 404 
+2006-11-03 16:44:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:44:38: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:44:38: (connections.c.1396) returning the original status 404 
+2006-11-03 16:44:38: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:44:38: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:44:38: (connections.c.1396) returning the original status 404 
+2006-11-03 16:44:38: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:48:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:48:26: (connections.c.1396) returning the original status 404 
+2006-11-03 16:48:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:48:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:48:27: (connections.c.1396) returning the original status 404 
+2006-11-03 16:48:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:48:32: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:48:32: (connections.c.1396) returning the original status 404 
+2006-11-03 16:48:32: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:48:32: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:48:32: (connections.c.1396) returning the original status 404 
+2006-11-03 16:48:32: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:49:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:49:23: (connections.c.1396) returning the original status 404 
+2006-11-03 16:49:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:49:24: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:49:24: (connections.c.1396) returning the original status 404 
+2006-11-03 16:49:24: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:51:25: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:51:25: (connections.c.1396) returning the original status 404 
+2006-11-03 16:51:25: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 16:51:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 16:51:26: (connections.c.1396) returning the original status 404 
+2006-11-03 16:51:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 17:01:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 17:01:09: (connections.c.1396) returning the original status 404 
+2006-11-03 17:01:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 17:01:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 17:01:09: (connections.c.1396) returning the original status 404 
+2006-11-03 17:01:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 17:14:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 17:14:11: (connections.c.1396) returning the original status 404 
+2006-11-03 17:14:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-03 17:14:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-03 17:14:11: (connections.c.1396) returning the original status 404 
+2006-11-03 17:14:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-04 12:57:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-04 12:57:43: (connections.c.1396) returning the original status 404 
+2006-11-04 12:57:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-04 12:57:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-04 12:57:43: (connections.c.1396) returning the original status 404 
+2006-11-04 12:57:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:18:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:18:20: (connections.c.1396) returning the original status 404 
+2006-11-05 09:18:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:18:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:18:20: (connections.c.1396) returning the original status 404 
+2006-11-05 09:18:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:18:22: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:18:22: (connections.c.1396) returning the original status 404 
+2006-11-05 09:18:22: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:18:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:18:23: (connections.c.1396) returning the original status 404 
+2006-11-05 09:18:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:18:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:18:26: (connections.c.1396) returning the original status 404 
+2006-11-05 09:18:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:18:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:18:26: (connections.c.1396) returning the original status 404 
+2006-11-05 09:18:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:30:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:30:10: (connections.c.1396) returning the original status 404 
+2006-11-05 09:30:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:30:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:30:10: (connections.c.1396) returning the original status 404 
+2006-11-05 09:30:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:31:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:31:11: (connections.c.1396) returning the original status 404 
+2006-11-05 09:31:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:31:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:31:12: (connections.c.1396) returning the original status 404 
+2006-11-05 09:31:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:31:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:31:40: (connections.c.1396) returning the original status 404 
+2006-11-05 09:31:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:31:41: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:31:41: (connections.c.1396) returning the original status 404 
+2006-11-05 09:31:41: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:31:59: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:31:59: (connections.c.1396) returning the original status 404 
+2006-11-05 09:31:59: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:32:00: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:32:00: (connections.c.1396) returning the original status 404 
+2006-11-05 09:32:00: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:32:24: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:32:24: (connections.c.1396) returning the original status 404 
+2006-11-05 09:32:24: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:32:25: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:32:25: (connections.c.1396) returning the original status 404 
+2006-11-05 09:32:25: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:34:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:34:36: (connections.c.1396) returning the original status 404 
+2006-11-05 09:34:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:34:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:34:37: (connections.c.1396) returning the original status 404 
+2006-11-05 09:34:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:46:04: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:46:04: (connections.c.1396) returning the original status 404 
+2006-11-05 09:46:04: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:46:05: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:46:05: (connections.c.1396) returning the original status 404 
+2006-11-05 09:46:05: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:46:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:46:06: (connections.c.1396) returning the original status 404 
+2006-11-05 09:46:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:46:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:46:07: (connections.c.1396) returning the original status 404 
+2006-11-05 09:46:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:46:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:46:08: (connections.c.1396) returning the original status 404 
+2006-11-05 09:46:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:46:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:46:08: (connections.c.1396) returning the original status 404 
+2006-11-05 09:46:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:46:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:46:09: (connections.c.1396) returning the original status 404 
+2006-11-05 09:46:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:46:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:46:09: (connections.c.1396) returning the original status 404 
+2006-11-05 09:46:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:22: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:22: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:22: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:22: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:22: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:22: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:23: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:24: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:24: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:24: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:25: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:25: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:25: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:26: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:28: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:28: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:28: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:28: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:28: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:28: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:30: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:30: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:39: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:39: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:39: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:40: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:41: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:41: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:41: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:41: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:41: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:41: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:43: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:47:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:47:43: (connections.c.1396) returning the original status 404 
+2006-11-05 09:47:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:05: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:05: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:05: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:06: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:07: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:07: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:08: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:09: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:10: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:10: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:12: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:12: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:26: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:48:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:48:27: (connections.c.1396) returning the original status 404 
+2006-11-05 09:48:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:53:34: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:53:34: (connections.c.1396) returning the original status 404 
+2006-11-05 09:53:34: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:53:34: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:53:34: (connections.c.1396) returning the original status 404 
+2006-11-05 09:53:34: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:56:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:56:47: (connections.c.1396) returning the original status 404 
+2006-11-05 09:56:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:56:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:56:47: (connections.c.1396) returning the original status 404 
+2006-11-05 09:56:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:56:54: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:56:54: (connections.c.1396) returning the original status 404 
+2006-11-05 09:56:54: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:56:54: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:56:54: (connections.c.1396) returning the original status 404 
+2006-11-05 09:56:54: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:01: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:01: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:01: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:01: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:01: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:01: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:04: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:04: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:04: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:04: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:04: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:04: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:06: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:06: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:08: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:08: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:11: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:12: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:15: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:15: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:15: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:16: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:16: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:16: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:18: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:18: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:18: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:18: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:18: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:18: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:19: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:19: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:19: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:20: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:21: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:21: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:21: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:22: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:22: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:22: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:23: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:24: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:24: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:24: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:26: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 09:57:26: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 09:57:26: (connections.c.1396) returning the original status 404 
+2006-11-05 09:57:26: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:43:51: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:43:51: (connections.c.1396) returning the original status 404 
+2006-11-05 13:43:51: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:43:52: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:43:52: (connections.c.1396) returning the original status 404 
+2006-11-05 13:43:52: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:43:55: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:43:55: (connections.c.1396) returning the original status 404 
+2006-11-05 13:43:55: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:43:55: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:43:55: (connections.c.1396) returning the original status 404 
+2006-11-05 13:43:55: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:43:56: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:43:56: (connections.c.1396) returning the original status 404 
+2006-11-05 13:43:56: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:43:56: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:43:56: (connections.c.1396) returning the original status 404 
+2006-11-05 13:43:56: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:43:59: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:43:59: (connections.c.1396) returning the original status 404 
+2006-11-05 13:43:59: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:43:59: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:43:59: (connections.c.1396) returning the original status 404 
+2006-11-05 13:43:59: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:00: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:00: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:00: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:01: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:01: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:01: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:02: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:02: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:02: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:02: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:02: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:02: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:04: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:04: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:04: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:05: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:05: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:05: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:06: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:06: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:08: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:08: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:08: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:08: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:09: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:09: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:09: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:09: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:10: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:44:11: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:44:11: (connections.c.1396) returning the original status 404 
+2006-11-05 13:44:11: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:39: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:39: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:39: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:39: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:39: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:39: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:40: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:40: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:44: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:44: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:44: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:45: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:45: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:45: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:47: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:47: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:49: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:49: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:49: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:49: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:49: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:49: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:56: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:56: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:56: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:47:56: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:47:56: (connections.c.1396) returning the original status 404 
+2006-11-05 13:47:56: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:48:03: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:48:03: (connections.c.1396) returning the original status 404 
+2006-11-05 13:48:03: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:48:24: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:48:24: (connections.c.1396) returning the original status 404 
+2006-11-05 13:48:24: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:48:24: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:48:24: (connections.c.1396) returning the original status 404 
+2006-11-05 13:48:24: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:48:31: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:48:31: (connections.c.1396) returning the original status 404 
+2006-11-05 13:48:31: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:48:31: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:48:31: (connections.c.1396) returning the original status 404 
+2006-11-05 13:48:31: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:56:32: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:56:32: (connections.c.1396) returning the original status 404 
+2006-11-05 13:56:32: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:56:32: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:56:32: (connections.c.1396) returning the original status 404 
+2006-11-05 13:56:32: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:59:50: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:59:50: (connections.c.1396) returning the original status 404 
+2006-11-05 13:59:50: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 13:59:51: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 13:59:51: (connections.c.1396) returning the original status 404 
+2006-11-05 13:59:51: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:34: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:34: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:34: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:35: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:35: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:35: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:41: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:41: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:41: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:42: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:42: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:42: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:45: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:45: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:45: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:45: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:45: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:45: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:46: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:46: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:46: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:47: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:48: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:48: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:48: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:48: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:48: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:48: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:50: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:50: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:50: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:01:50: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:01:50: (connections.c.1396) returning the original status 404 
+2006-11-05 14:01:50: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:14: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:14: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:14: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:14: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:14: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:14: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:23: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:23: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:27: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:27: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:35: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:35: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:35: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:36: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:38: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:38: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:38: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:38: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:38: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:38: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:47: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:02:47: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:02:47: (connections.c.1396) returning the original status 404 
+2006-11-05 14:02:47: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:03:55: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:03:55: (connections.c.1396) returning the original status 404 
+2006-11-05 14:03:55: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:03:55: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:03:55: (connections.c.1396) returning the original status 404 
+2006-11-05 14:03:55: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:04:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:04:30: (connections.c.1396) returning the original status 404 
+2006-11-05 14:04:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:04:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:04:30: (connections.c.1396) returning the original status 404 
+2006-11-05 14:04:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:05:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:05:12: (connections.c.1396) returning the original status 404 
+2006-11-05 14:05:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:05:13: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:05:13: (connections.c.1396) returning the original status 404 
+2006-11-05 14:05:13: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:05:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:05:27: (connections.c.1396) returning the original status 404 
+2006-11-05 14:05:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:05:27: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:05:27: (connections.c.1396) returning the original status 404 
+2006-11-05 14:05:27: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:05:28: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:05:28: (connections.c.1396) returning the original status 404 
+2006-11-05 14:05:28: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:05:29: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:05:29: (connections.c.1396) returning the original status 404 
+2006-11-05 14:05:29: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:05:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:05:30: (connections.c.1396) returning the original status 404 
+2006-11-05 14:05:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:05:31: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:05:31: (connections.c.1396) returning the original status 404 
+2006-11-05 14:05:31: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:05:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:05:40: (connections.c.1396) returning the original status 404 
+2006-11-05 14:05:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:05:40: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:05:40: (connections.c.1396) returning the original status 404 
+2006-11-05 14:05:40: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:09:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:09:20: (connections.c.1396) returning the original status 404 
+2006-11-05 14:09:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:09:20: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:09:20: (connections.c.1396) returning the original status 404 
+2006-11-05 14:09:20: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:09:22: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:09:22: (connections.c.1396) returning the original status 404 
+2006-11-05 14:09:22: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:09:22: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:09:22: (connections.c.1396) returning the original status 404 
+2006-11-05 14:09:22: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:09:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:09:23: (connections.c.1396) returning the original status 404 
+2006-11-05 14:09:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:09:23: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:09:23: (connections.c.1396) returning the original status 404 
+2006-11-05 14:09:23: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:09:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:09:30: (connections.c.1396) returning the original status 404 
+2006-11-05 14:09:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:09:30: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:09:30: (connections.c.1396) returning the original status 404 
+2006-11-05 14:09:30: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:09:32: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:09:32: (connections.c.1396) returning the original status 404 
+2006-11-05 14:09:32: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:09:32: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:09:32: (connections.c.1396) returning the original status 404 
+2006-11-05 14:09:32: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:06: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:06: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:06: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:06: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:10: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:10: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:10: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:10: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:13: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:13: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:13: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:13: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:13: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:13: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:31: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:31: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:31: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:31: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:31: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:31: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:33: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:33: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:33: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:33: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:33: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:33: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:35: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:35: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:35: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:35: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:35: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:35: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:39: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:39: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:39: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:10:39: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:10:39: (connections.c.1396) returning the original status 404 
+2006-11-05 14:10:39: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:12:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:12:36: (connections.c.1396) returning the original status 404 
+2006-11-05 14:12:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:12:36: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:12:36: (connections.c.1396) returning the original status 404 
+2006-11-05 14:12:36: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:12:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:12:37: (connections.c.1396) returning the original status 404 
+2006-11-05 14:12:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:12:37: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:12:37: (connections.c.1396) returning the original status 404 
+2006-11-05 14:12:37: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:13:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:13:07: (connections.c.1396) returning the original status 404 
+2006-11-05 14:13:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:13:07: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:13:07: (connections.c.1396) returning the original status 404 
+2006-11-05 14:13:07: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:19:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:19:43: (connections.c.1396) returning the original status 404 
+2006-11-05 14:19:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:19:43: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:19:43: (connections.c.1396) returning the original status 404 
+2006-11-05 14:19:43: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:20:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:20:12: (connections.c.1396) returning the original status 404 
+2006-11-05 14:20:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:20:12: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:20:12: (connections.c.1396) returning the original status 404 
+2006-11-05 14:20:12: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:21:56: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:21:56: (connections.c.1396) returning the original status 404 
+2006-11-05 14:21:56: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 14:22:00: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 14:22:00: (connections.c.1396) returning the original status 404 
+2006-11-05 14:22:00: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 15:44:05: (connections.c.1394) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.fcgi 
+2006-11-05 15:44:05: (connections.c.1396) returning the original status 404 
+2006-11-05 15:44:05: (connections.c.1398) If this is a rails app: check your production.log 
+2006-11-05 15:57:14: (server.c.1216) [note] graceful shutdown started 
+2006-11-05 15:57:14: (log.c.135) server stopped 

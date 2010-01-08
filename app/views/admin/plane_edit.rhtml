@@ -1,0 +1,13 @@
+<%= error_messages_for 'plane' %>
+
+<h1>Editing Image</h1>
+<div class="form-box">
+<%= form_tag({:action => 'plane_update', :id => @plane}, :multipart => true, :id => 'plane_form') %>
+  <%= render :partial => 'plane_edit_form' %>
+  <%= submit_tag 'Edit' %>
+
+<%= end_form_tag %>
+</div>
+<p>
+<%= link_to 'Back', :action => 'plane_list' %>
+</p>

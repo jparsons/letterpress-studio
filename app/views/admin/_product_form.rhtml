@@ -1,0 +1,42 @@
+<%= error_messages_for 'product' %>
+
+<!--[form:product]-->
+<p><label for="product_name"><strong>Name</strong></label><br/>
+<%= text_field 'product', 'name' %></p>
+
+<p><label for="product_is_active"><strong>Active?</strong></label><br />
+<%= check_box 'product', 'is_active', :checked => (@product.is_active ? 'checked' : '') %>&nbsp;<span class="small">If the box is checked, the product appears on the public site</span></p>
+
+<p><label for="product_artist"><strong>Producer</strong></label><br/>
+<%= text_area 'product', 'artist', :cols => "60", :rows => "2" %></p>
+<p><label for="product_medium"><strong>Medium</strong></label><br/>
+<%= text_area 'product', 'medium', :cols => "60", :rows => "2" %></p>
+
+<p><label for="product_price"><strong>Price</strong></label><br/>
+<%= text_area 'product', 'price', :cols => "60", :rows => "1" %></p>
+
+<p><label for="product_size"><strong>Size</strong></label><br/>
+<%= text_area 'product', 'size', :cols => "60", :rows => "1" %></p>
+
+<p><label for="product_summary"><strong>Summary</strong></label><br/>
+<%= text_area 'product', 'summary', :cols => "60", :rows => "5" %></p>
+
+<p><a href="#" onclick="Effect.toggle('created_updated','blind', {duration: .3}); return false;">(Toggle Date Information)</a></p>
+
+<div id="created_updated" style="display: none;">
+<p><label for="product_created_at"><strong>Created at</strong></label><br/>
+<%= datetime_select 'product', 'created_at' %></p>
+
+<p><label for="product_updated_at"><strong>Updated at</strong></label><br/>
+<%= datetime_select 'product', 'updated_at' %></p>
+</div>
+
+<% if @product.planes.count > 0 %>
+<div class="tiny-images">
+<p><strong><%= link_to 'Imagery', :controller => 'admin', :action => 'plane_list' %></strong> / <%= link_to 'Sort', :controller => 'admin', :action => 'product_plane_sort', :id => @product %> / <%= link_to 'Add', :controller => 'admin', :action => 'plane_new', :id => @product %></p>
+<% @product.planes.each do |plane| %>
+<%= link_to image_tag(url_for_file_column(plane, "image", "tiny")), { :action => 'plane_edit', :id => plane } %>
+<% end %>
+<p>
+</div>
+<% end %>
