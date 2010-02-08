@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   
   def create
     @user = User.new(params[:user])
-    if User.all.count == 0
+    if User.all.blank?
       @user.role = "administrator"
     else
       @user.role = "unconfirmed"
