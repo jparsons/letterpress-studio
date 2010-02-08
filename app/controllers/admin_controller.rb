@@ -1,5 +1,5 @@
 class AdminController < ApplicationController
-  before_filter :authorize
+  before_filter :admin_required
 
   def index
     @current_author = Author.find_by_id(session[:author_id])
@@ -158,7 +158,7 @@ class AdminController < ApplicationController
   # Exhibitions
   #
   def exhibition_list
-  @exhibitions = Exhibition.paginate(:page=>params[:page], :exhibitions, :per_page => 10, :order => 'id DESC')
+  @exhibitions = Exhibition.paginate(:page=>params[:page], :per_page => 10, :order => 'id DESC')
   @pageTitle = "All exhibitions"
   @nav = "exhibitions"
   end

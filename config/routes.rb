@@ -22,6 +22,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :work_days
 
   map.resources :presses
+  
+  map.resources :artists
 
   # The priority is based upon order of creation: first created -> highest priority.
   

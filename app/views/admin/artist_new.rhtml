@@ -1,11 +1,9 @@
 <h1>New Artist</h1>
 <div class="form-box">
-<%= form_tag({:action => 'artist_create'}, :multipart => true, :id => 'artist_form') %>
 
-	<%= render :partial => 'artist_form' %>
-	<%= submit_tag "Create", :id => 'submit_button' %>
-
-<%= end_form_tag %>
-</div>
+<% form_for @artist do |f| %>
+	<%= render :partial => 'artist_form', :locals => { :f => f } %>
+	<%= f.submit "Create", :id => 'submit_button' %>
+<% end %>
 
 <p><%= link_to 'Back', :action => 'artist_list' %></p>

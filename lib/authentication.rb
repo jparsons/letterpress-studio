@@ -34,11 +34,11 @@ module Authentication
     current_user
   end
   def admin?
-    logged_in && current_user.role == "administrator"
+    logged_in? && current_user.role == "administrator"
   end
   
   def confirmed?
-    logged_in && (current_user.role == "administrator" || current_user.role == "guest")
+    logged_in? && (current_user.role == "administrator" || current_user.role == "guest")
   end
   
   def login_required
