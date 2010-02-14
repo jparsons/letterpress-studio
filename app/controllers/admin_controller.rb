@@ -2,7 +2,7 @@ class AdminController < ApplicationController
   before_filter :admin_required
 
   def index
-    @current_author = Author.find_by_id(session[:author_id])
+    
   end
 
   # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)

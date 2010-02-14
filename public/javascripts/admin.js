@@ -68,7 +68,8 @@ function find_tag(el, name)
 // highlights tags that are already there
 function highlight_tags(el)
 {
-    tags = el.value.split(' ');
+    val = el.value.replace(/\,/g, '');
+    tags = val.split(' ');
     clear_highlight();
     for (var i = 0; i <= tags.length; i++)
     {

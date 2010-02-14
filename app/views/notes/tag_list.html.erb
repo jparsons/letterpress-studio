@@ -1,0 +1,6 @@
+<ul class="tags">
+<% for tag in @tags %>
+<% if tag.taggings.size > 0 %>
+<li><em><%= link_to tag.name, tags_path(:name=>tag.name), {:title => "Links to "+ tag.name + " Archive"}  %></em> (<%= tag.taggings.size %>)</li>
+<% end %>
+<% end %></ul>

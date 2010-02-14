@@ -1,0 +1,36 @@
+<% if @exhibitions_current_count > 0 %>
+<h6 class="secondary-list">Current Show</h6>
+<ul class="tags">
+<% for exhibition in @exhibitions_current %>
+
+<li><em><%= link_to exhibition.name, {:controller => 'front', :action => "exhibition_find_by_urlname", :name => exhibition.urlname}, {:title => "Links to "+ exhibition.name + " Archive"}  %></em> <% if exhibition.artists.count > 0 %>/ <% for artist in exhibition.artists %>
+<%= artist.name %><%end%>
+<%end%></li>
+
+<% end %></ul>
+<% end %>
+
+<% if @exhibitions_future_count > 0 %>
+<h6 class="secondary-list">Up &amp; Coming</h6>
+<ul class="tags">
+<% for exhibition in @exhibitions_future %>
+
+<li><em><%= link_to exhibition.name, {:controller => 'front', :action => "exhibition_find_by_urlname", :name => exhibition.urlname}, {:title => "Links to "+ exhibition.name + " Archive"}  %></em> <% if exhibition.artists.count > 0 %>/ <% for artist in exhibition.artists %>
+<%= artist.name %><%end%>
+<%end%></li>
+
+<% end %></ul>
+<% end %>
+
+
+<% if @exhibitions_past_count > 0 %>
+<h6 class="secondary-list">Past</h6>
+<ul class="tags">
+<% for exhibition in @exhibitions_past %>
+
+<li><em><%= link_to exhibition.name, {:controller => 'front', :action => "exhibition_find_by_urlname", :name => exhibition.urlname}, {:title => "Links to "+ exhibition.name + " Archive"}  %></em> <% if exhibition.artists.count > 0 %>/ <% for artist in exhibition.artists %>
+<%= artist.name %><%end%>
+<%end%></li>
+
+<% end %></ul>
+<% end %>

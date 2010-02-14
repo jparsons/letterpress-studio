@@ -1,0 +1,10 @@
+<%= render :partial => 'layouts/admin_header' %>
+<div id="content-wrap">
+<div id="content">
+<p style="color: red"><%= flash[:notice] %></p>
+<%= yield %>
+
+</div><!-- END content -->
+</div><!-- END content-wrap -->
+<div id="content-clear"></div>
+<%= render :partial => 'layouts/admin_footer' %>

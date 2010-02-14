@@ -1,0 +1,12 @@
+<%= render :partial => 'layouts/front_header' %>
+<%= render :partial => 'layouts/front_nav' %>
+</div><!-- END left_column -->
+<div id="right_column">
+<div id="content">
+<h1><%= @pageTitle %></h1>
+<%= yield %>
+</div><!-- END content -->
+<%= render :partial => 'layouts/front_footer' %>
+</div><!-- END right_column -->
+</body><!-- END Body -->
+</html><!-- END HTML -->

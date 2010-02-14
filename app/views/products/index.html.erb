@@ -1,0 +1,53 @@
+<% for product in @products %>
+<div class="unit">
+<h2><%= link_to product.name, {:controller => 'front', :action => "product_find_by_urlname", :name => product.urlname}, {:title => "Links to "+ product.name + " Archive"}  %></h2>
+<div class="goods_wrap">
+	
+<% if product.planes.count > 0 %>
+<div class="goods_img">
+<% product.planes.find(:all, :limit => 1).each do |plane| %>
+<%= link_to image_tag(url_for_file_column( plane, 'image', 'square')), {:controller => 'front', :action => "product_find_by_urlname", :name => product.urlname}, {:title => "Links to "+ product.name + " Archive"} %>
+<% end %>
+</div>
+<% end %>
+
+<div class="goods_info">
+<h3><%= product.artist %>
+<br />$<%= product.price %></h3>
+
+<!-- Summary --> 
+<%=
+r = RedCloth.new(product.summary)
+r.to_html
+%>
+
+
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="image" src="/images/add.png" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input type="hidden" name="add" value="1">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="paypal@thearmnyc.com">
+<input type="hidden" name="item_name" value="<%= product.name %>">
+<input type="hidden" name="item_number" value="<%= product.id %>">
+<input type="hidden" name="amount" value="<%= product.price %>">
+<input type="hidden" name="no_shipping" value="2">
+<input type="hidden" name="return" value="http://thearmnyc.com/goods/thanks">
+<input type="hidden" name="cancel_return" value="http://thearmnyc.com/goods">
+<input type="hidden" name="no_note" value="1">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="bn" value="PP-ShopCartBF">
+</form>
+</div>
+</div>
+<div class="goods_clear"></div>
+</div>
+<% end %>
+
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="paypal@thearmnyc.com">
+<input type="image" src="/images/view.png" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<input type="hidden" name="display" value="1">
+</form>

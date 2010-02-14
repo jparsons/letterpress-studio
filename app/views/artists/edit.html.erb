@@ -1,0 +1,9 @@
+<h1>Edit Artist</h1>
+<div class="form-box">
+
+<% form_for @artist do |f| %>
+	<%= render :partial => 'form', :locals => { :f => f } %>
+	<%= f.submit "Update", :id => 'submit_button' %>
+<% end %>
+
+<p><%= link_to 'Back', :controller => 'admin', :action => 'artist_list' %></p>

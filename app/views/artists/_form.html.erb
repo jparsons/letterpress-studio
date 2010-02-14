@@ -1,0 +1,31 @@
+<%= f.error_messages %>
+
+<p>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</p>
+
+<p>
+  <%= f.label :is_active %><br />
+  <%= f.check_box :is_active %>
+</p>
+
+<p>
+  <%= f.label 'Biography' %><br />
+  <%= f.text_area :summary, :cols => "60", :rows => "15" %>
+</p>
+
+<p>
+  <%= f.label 'CV' %><br />
+  <%= f.text_area :body, :cols => "60", :rows => "15" %>
+</p>
+
+<% if @artist.pictures.count > 0 %>
+  <div class="tiny-images">
+    <p><strong><%= link_to 'Imagery', :controller => 'admin', :action => 'picture_list' %></strong> / <%= link_to 'Sort', :controller => 'admin', :action => 'artist_picture_sort', :id => @artist %> / <%= link_to 'Add', :controller => 'admin', :action => 'picture_new', :id => @artist %></p>
+    <% @artist.pictures.each do |picture| %>
+      <%= link_to image_tag(url_for_file_column(picture, "image", "tiny")), { :action => 'picture_edit', :id => picture } %>
+    <% end %>
+    <p>
+  </div>
+<% end %>

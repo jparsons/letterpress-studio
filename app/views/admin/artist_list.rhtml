@@ -1,14 +1,14 @@
 <h1>News Items</h1>
 
 
-<h4><em>+ <%= link_to 'New Artist', :action => 'artist_new' %></em></h4>
+<h4><em>+ <%= link_to 'New Artist', new_artist_path %></em></h4>
   
 <% for artist in @artists %>
   
 <h2><em><%= artist.name %></em> / <%= artist.created_at.to_formatted_s(:iasa) %></h2>
 
 <h3>
-<%= link_to 'Edit', :action => 'artist_edit', :id => artist %> / <%= link_to 'Destroy', { :action => 'artist_destroy', :id => artist }, :confirm => 'Are you sure?', :post => true %> </h3>
+<%= link_to 'Edit', edit_artist_path(artist) %> / <%= link_to 'Destroy', artist, :confirm => 'Are you sure?', :method => :delete %> </h3>
 
 <% end %>
 

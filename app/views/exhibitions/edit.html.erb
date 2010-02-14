@@ -1,0 +1,11 @@
+<h1>Edit Show</h1>
+<div class="form-box">
+<% form_for @exhibition do |f| %>
+
+	<%= render :partial => 'form', :locals=>{:f=>f} %>
+	<%= f.submit "Update", :id => 'submit_button' %>
+
+<% end %>
+</div>
+
+<p><%= link_to 'Back', :controller=>'admin', :action => 'exhibition_list' %></p>

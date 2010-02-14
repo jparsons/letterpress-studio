@@ -18,18 +18,28 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :presses
   
   map.resources :artists
-
+  
+  map.resources :notes, :member=> {:find_by_url_name => :get }, :collection => {  :find_by_tag_name => :get, :tag_list =>:get }
+  
+  map.resources :products
+  
+  map.resources :exhibitions do |exhibitions|
+    exhibitions.resources :photos
+  end
+  
+  map.resources :photos
+  
   # The priority is based upon order of creation: first created -> highest priority.
   
   # Front-End Routing
   # Default
-  map.connect '', :controller => "front", :action => 'index'
+  map.connect '', :controller => "notes", :action => 'index'
   
   #
   # Notes
   #
   # View individual note
-  map.date 'news/:year/:month/:name', :controller => 'front', :action => 'note_find_by_urlname', :year => /\d{4}/, :month => /\d{1,2}/
+  map.date 'news/:year/:month/:name', :controller => 'notes', :action => 'find_by_urlname', :year => /\d{4}/, :month => /\d{1,2}/
   # View list of entries by year and month
   map.connect 'news/:year/:month', :controller => 'front', :action => 'note_list_by_date', :year => /\d{4}/, :month => /\d{1,2}/
   # View list of entries by year
@@ -37,10 +47,13 @@ ActionController::Routing::Routes.draw do |map|
   # View xml with a proper .xml extension
   map.xml 'news.xml', :controller => 'front', :action => 'note_feed'
   # Tags
-  map.connect 'news/tags/:name', :controller => 'front', :action => 'tag_find_by_urlname'
-  map.connect 'news/tags', :controller => 'front', :action => 'tag_list'
-  
-  map.connect 'news', :controller => "front", :action => 'index'
+  #old one: map.connect 'news/tags/:name', :controller => 'front', :action => 'tag_find_by_urlname'
+  #new one:
+  map.tags 'news/tags/:name', :controller => 'notes', :action => 'find_by_tag_name'
+  #does this one really need to be here:
+  map.connect 'news/tags', :controller => 'notes', :action => 'tag_list'
+  #map.connect 'news/tags', :controller=> 'notes', :action=>:index
+  map.connect 'news', :controller => "notes", :action => 'index'
   
   #
   # Exhibitions
@@ -72,5 +85,5 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default route as the lowest priority.
   map.connect ':controller/:action/:id'
   
-  map.root :controller =>"front", :action=>"index"
+  map.root :controller =>"notes", :action=>"index"
 end

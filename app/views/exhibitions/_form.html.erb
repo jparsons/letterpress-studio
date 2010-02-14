@@ -1,0 +1,37 @@
+<%= error_messages_for 'exhibition' %>
+
+<!--[form:exhibition]-->
+<p><label for="exhibition_name"><strong>Name</strong></label><br/>
+<%= f.text_field 'name' %></p>
+
+<p><label for="exhibition_is_active"><strong>Active?</strong></label><br />
+<%= f.check_box 'is_active', :checked => (@exhibition.is_active ? 'checked' : '') %>&nbsp;<span class="small">If the box is checked, the exhibition appears on the public site</span></p>
+
+<p><label for="exhibition_event_start_at"><strong>Exhibition Start</strong></label><br/>
+<%= f.datetime_select 'event_start_at' %></p>
+<p><label for="exhibition_event_finish_at"><strong>Exhibition Finish</strong></label><br/>
+<%= f.datetime_select 'event_finish_at' %></p>
+
+<p><label for="exhibition_summary"><strong>Summary</strong></label><br/>
+<%= f.text_area 'summary', :cols => "60", :rows => "5" %></p>
+
+<p><label for="exhibition_opening"><strong>Opening (Date and Time)</strong></label><br/>
+<%= f.text_area 'opening', :cols => "60", :rows => "1" %></p>
+
+<!-- TODO: add accepts nested attributes for? -->
+
+<p><label for="exhibition_artist"><strong>Artist(s)</strong></label><br/>
+<% for artist in @artists %>
+<input type="checkbox" id="<%=artist.id%>" name="artist_ids[]" value="<%=artist.id%>" <%if @exhibition.artists.include? artist%>checked="checked" <%end%>/><%= h artist.name %>
+<% end %>
+</p>
+
+<% if @exhibition.photos.count > 0 %>
+<div class="tiny-images">
+<p><strong><%= link_to 'Imagery', :controller => 'admin', :action => 'photo_list' %></strong> / <%= link_to 'Sort', :controller => 'admin', :action => 'exhibition_photo_sort', :id => @exhibition %> / <%= link_to 'Add', :controller => 'admin', :action => 'photo_new', :id => @exhibition %></p>
+<% @exhibition.photos.each do |photo| %>
+<%= link_to image_tag(url_for_file_column(photo, "image", "tiny")), { :action => 'photo_edit', :id => photo } %>
+<% end %>
+<p>
+</div>
+<% end %>

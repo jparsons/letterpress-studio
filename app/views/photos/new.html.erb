@@ -1,0 +1,9 @@
+<%= error_messages_for 'photo' %>
+
+<h1>Image for: <em><%=h @exhibition.name %></em></h1>
+
+<% form_for [@exhibition, @photo], :html=>{:multipart => true} do |f| %>
+  <%= render :partial => 'form', :locals=>{:f=>f} %>
+  <%= f.submit "Add image"  %>
+<% end %>
+<p><%= link_to 'Back', :controller=> :admin, :action => 'photo_list' %></p>

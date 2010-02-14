@@ -1,0 +1,48 @@
+<% form_for @note, :html => { :multipart => true, :id=>'note_form' } do |f|  %>
+<%= error_messages_for 'note' %>
+<%
+tag_list = ''
+for tag in Tag.all
+	tag_list += link_to(tag.name, 'javascript://', :id => 'tag_' + tag.name, :class => 'tag_tag', :onclick => 'tag_swap(document.forms[\'note_form\'].elements[\'tag_input\'], \'' + tag.name + '\')') + ' '
+end
+%>
+
+
+<!--[form:note]-->
+<p><label for="note_name"><strong>Name</strong></label><br/>
+<%= f.text_field 'name' %></p>
+
+<p><label for="note_is_active"><strong>Active?</strong></label><br />
+<%= f.check_box 'is_active', :checked => (@note.is_active ? 'checked' : '') %>&nbsp;<span class="small">If the box is checked, the note appears on the public site</span></p>
+
+<p><label for="note_summary"><strong>Summary</strong></label><br/>
+<%= f.text_area 'summary', :cols => "60", :rows => "15" %></p>
+
+<p><label for="note_body"><strong>Body</strong></label><br/>
+<%= f.text_area 'body', :cols => "60", :rows => "15" %></p>
+
+<p><strong><a href="#" onclick="Effect.toggle('add_additional','blind', {duration: .3}); return false;">Additional Data</a></strong><br />
+
+<div id="add_additional" style="display: none;">
+<%= f.text_area 'additional', :cols => "60", :rows => "5" %>
+</div>
+</p>
+<p>
+<label for="note_image"><strong>Image</strong></label><br />
+<%= f.file_field  :image %>
+</p>
+
+<% if !@note.new_record? && @note.image -%>
+<!-- Image --> 
+<%= image_tag @note.image.url(:thumb) %>
+<% end %>
+
+<p><label for="tag_input"><strong>Tags</strong></label><br />
+<%= f.text_field :tag_list, {:id => 'tag_input', :onkeyup => 'highlight_tags(this)'} %></p>
+<p>
+<%= tag_list %></span></p>
+
+
+<%= f.submit "save", :id => 'submit_button' %>
+
+<% end %>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100108194622) do
+ActiveRecord::Schema.define(:version => 20100214223925) do
 
   create_table "artists", :force => true do |t|
     t.string   "name",       :default => "",    :null => false
@@ -73,24 +73,30 @@ ActiveRecord::Schema.define(:version => 20100108194622) do
   end
 
   create_table "notes", :force => true do |t|
-    t.string   "name",       :default => "",    :null => false
-    t.text     "summary",    :default => "",    :null => false
-    t.text     "body",       :default => "",    :null => false
-    t.boolean  "is_active",  :default => false
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
-    t.string   "image",      :default => "",    :null => false
-    t.text     "additional", :default => "",    :null => false
+    t.string   "name",               :default => "",    :null => false
+    t.text     "summary",            :default => "",    :null => false
+    t.text     "body",               :default => "",    :null => false
+    t.boolean  "is_active",          :default => false
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
+    t.string   "image_file_name",    :default => "",    :null => false
+    t.text     "additional",         :default => "",    :null => false
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "photos", :force => true do |t|
-    t.string   "name",          :default => "", :null => false
-    t.text     "summary",       :default => "", :null => false
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
-    t.string   "image",         :default => "", :null => false
+    t.string   "name",               :default => "", :null => false
+    t.text     "summary",            :default => "", :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.string   "image_file_name",    :default => "", :null => false
     t.integer  "position"
-    t.integer  "exhibition_id", :default => 1,  :null => false
+    t.integer  "exhibition_id",      :default => 1,  :null => false
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "photos", ["exhibition_id"], :name => "fk_exhibition"
@@ -158,13 +164,26 @@ ActiveRecord::Schema.define(:version => 20100108194622) do
     t.datetime "updated_at"
   end
 
-  add_index "sessions", ["session_id"], :name => "sessions_session_id_index"
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
 
   create_table "statics", :force => true do |t|
     t.string "name",    :default => "", :null => false
     t.text   "summary", :default => "", :null => false
     t.text   "body",    :default => "", :null => false
   end
+
+  create_table "taggings", :force => true do |t|
+    t.integer  "tag_id"
+    t.integer  "taggable_id"
+    t.integer  "tagger_id"
+    t.string   "tagger_type"
+    t.string   "taggable_type"
+    t.string   "context"
+    t.datetime "created_at"
+  end
+
+  add_index "taggings", ["tag_id"], :name => "index_taggings_on_tag_id"
+  add_index "taggings", ["taggable_id", "taggable_type", "context"], :name => "index_taggings_on_taggable_id_and_taggable_type_and_context"
 
   create_table "tags", :force => true do |t|
     t.string "name",        :default => "", :null => false
