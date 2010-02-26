@@ -3,12 +3,12 @@
 <div class="form-box">
 <p>Drag and drop the pictures below into the correct order you want them to appear on the site's front-end.</p>
 
-<p><%= link_to 'Edit Artist', :controller => 'admin', :action => 'artist_edit', :id => @artist %> / <%= link_to 'List Imagery', :controller => 'admin', :action => 'picture_list' %> / <%= link_to 'All Artists', :controller => 'admin', :action => 'artist_list' %></p>
+<p><%= link_to 'Edit Artist', edit_artist_path(@artist) %> / <%= link_to 'List Imagery', :controller => 'admin', :action => 'picture_list' %> / <%= link_to 'All Artists', :controller => 'admin', :action => 'artist_list' %></p>
 
 <ul id="photo-list">
 <% @artist.pictures.each do |picture| %>
 <li id="item_<%= picture.id %>">
-<%= image_tag(url_for_file_column( picture, 'image', 'thumb'), :class => 'pictures-img') %>
+<%= image_tag(picture.image.url(:thumb), :class=> "photos-img" ) %>
 
 </li>
 <% end %>

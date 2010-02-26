@@ -2,11 +2,19 @@ class ReservationsController < ApplicationController
   # GET /reservations
   # GET /reservations.xml
   def index
-    @reservations = Reservation.all
-
+    
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
+    @holiday = Holiday.find_by_date(@date)
+    day_of_the_week = @date.wday + 1 
+    @studio_hours = WorkDay.find_by_day_number(day_of_the_week)
+    @presses = Press.find :all, :include => [:reservations]
+    @pageTitle = "Reserve Press Time"
+    @section = "Reservations"
+    @links = "yes"  
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @reservations }
+      format.js { render :layout => false }
     end
   end
 
@@ -40,18 +48,31 @@ class ReservationsController < ApplicationController
   # POST /reservations
   # POST /reservations.xml
   def create
-    @reservation = Reservation.new(params[:reservation])
-
-    respond_to do |format|
-      if @reservation.save
-        flash[:notice] = 'Reservation was successfully created.'
-        format.html { redirect_to(@reservation) }
-        format.xml  { render :xml => @reservation, :status => :created, :location => @reservation }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @reservation.errors, :status => :unprocessable_entity }
-      end
+  
+    params[:reservation].each do |reservation|
+      Reservation.create(reservation)
     end
+    respond_to do |format|
+      format.html { redirect_to(reservations_path(:date=>params[:reservation][0][:date])) }
+      format.js {
+        @date = Date.parse(params[:reservation][0][:date])
+        @holiday = Holiday.find_by_date(@date)
+        day_of_the_week = @date.wday + 1 
+        @studio_hours = WorkDay.find_by_day_number(day_of_the_week)
+        @presses = Press.find :all, :include => [:reservations]
+        render :action=> :index, :format=>"js"
+      }
+    end
+    
+    
+    # TODO: add error handling
+  end
+  
+  def bulk_create
+  
+  for reservation in params[:reservations]
+  
+  end
   end
 
   # PUT /reservations/1

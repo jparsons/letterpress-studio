@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100214223925) do
+ActiveRecord::Schema.define(:version => 20100223153119) do
 
   create_table "artists", :force => true do |t|
     t.string   "name",       :default => "",    :null => false
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(:version => 20100214223925) do
   end
 
   create_table "holidays", :force => true do |t|
-    t.datetime "date"
+    t.date     "date"
     t.text     "note"
     t.string   "name"
     t.datetime "created_at"
@@ -54,13 +54,16 @@ ActiveRecord::Schema.define(:version => 20100214223925) do
   end
 
   create_table "icons", :force => true do |t|
-    t.string   "name",       :default => "", :null => false
-    t.text     "summary",    :default => "", :null => false
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
-    t.string   "image",      :default => "", :null => false
+    t.string   "name",               :default => "", :null => false
+    t.text     "summary",            :default => "", :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.string   "image_file_name",    :default => "", :null => false
     t.integer  "position"
-    t.integer  "static_id",  :default => 1,  :null => false
+    t.integer  "static_id",          :default => 1,  :null => false
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "icons", ["static_id"], :name => "fk_static"
@@ -102,25 +105,31 @@ ActiveRecord::Schema.define(:version => 20100214223925) do
   add_index "photos", ["exhibition_id"], :name => "fk_exhibition"
 
   create_table "pictures", :force => true do |t|
-    t.string   "name",       :default => "", :null => false
-    t.text     "summary",    :default => "", :null => false
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
-    t.string   "image",      :default => "", :null => false
+    t.string   "name",               :default => "", :null => false
+    t.text     "summary",            :default => "", :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.string   "image_file_name",    :default => "", :null => false
     t.integer  "position"
-    t.integer  "artist_id",  :default => 1,  :null => false
+    t.integer  "artist_id",          :default => 1,  :null => false
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "pictures", ["artist_id"], :name => "fk_artist"
 
   create_table "planes", :force => true do |t|
-    t.string   "name",       :default => "", :null => false
-    t.text     "summary",    :default => "", :null => false
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
-    t.string   "image",      :default => "", :null => false
+    t.string   "name",               :default => "", :null => false
+    t.text     "summary",            :default => "", :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.string   "image_file_name",    :default => "", :null => false
     t.integer  "position"
-    t.integer  "product_id", :default => 1,  :null => false
+    t.integer  "product_id",         :default => 1,  :null => false
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "planes", ["product_id"], :name => "fk_product"
@@ -152,7 +161,7 @@ ActiveRecord::Schema.define(:version => 20100214223925) do
   create_table "reservations", :force => true do |t|
     t.integer  "user_id"
     t.integer  "press_id"
-    t.datetime "date"
+    t.date     "date"
     t.integer  "hour"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -215,11 +224,11 @@ ActiveRecord::Schema.define(:version => 20100214223925) do
   end
 
   create_table "work_days", :force => true do |t|
-    t.string   "name"
     t.integer  "start_hour"
     t.integer  "end_hour"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "day_number"
   end
 
 end

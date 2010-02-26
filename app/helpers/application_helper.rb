@@ -33,13 +33,22 @@ module ApplicationHelper
       ).delete_if { |x| !image_files.index(x[-4,4]) }
     files[rand(files.length)]
   end
-	
-	def random_bgd
+  def random_bgd
     image_files = %w( .jpg .gif .png )
     files = Dir.entries(
           "#{RAILS_ROOT}/public/bgd" 
       ).delete_if { |x| !image_files.index(x[-4,4]) }
     files[rand(files.length)]
+  end
+  
+  def available_days
+    @workdays = WorkDay.all 
+    @workdays.map{|d| d.display_name}.join(",").to_json
+  end
+  
+  def holidays
+    @holidays = Holiday.all
+    @holidays.map{|h| [h.date.month, h.date.day, h.date.year] }.to_json
   end
 	
 end

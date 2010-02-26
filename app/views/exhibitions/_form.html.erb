@@ -28,9 +28,9 @@
 
 <% if @exhibition.photos.count > 0 %>
 <div class="tiny-images">
-<p><strong><%= link_to 'Imagery', :controller => 'admin', :action => 'photo_list' %></strong> / <%= link_to 'Sort', :controller => 'admin', :action => 'exhibition_photo_sort', :id => @exhibition %> / <%= link_to 'Add', :controller => 'admin', :action => 'photo_new', :id => @exhibition %></p>
+<p><strong><%= link_to 'Imagery', :controller => 'admin', :action => 'photo_list' %></strong> / <%= link_to 'Sort', :controller => 'admin', :action => 'exhibition_photo_sort', :id => @exhibition %> / <%= link_to 'Add', new_exhibition_photo_url(@exhibition) %></p>
 <% @exhibition.photos.each do |photo| %>
-<%= link_to image_tag(url_for_file_column(photo, "image", "tiny")), { :action => 'photo_edit', :id => photo } %>
+<%= link_to image_tag(photo.image.url(:tiny)), edit_exhibition_photo_path(@exhibition, photo)  %>
 <% end %>
 <p>
 </div>

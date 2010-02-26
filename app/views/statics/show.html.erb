@@ -1,0 +1,44 @@
+<%=
+r = RedCloth.new(@static.summary)
+r.to_html
+%>
+
+<% if @mailing_list == "yes" %>
+<h6>Mailing List</h6>
+<p><a href="/newsletter.html" onclick="return pop(this, 'Pop')" title="Sign Up for our Mailing List">Sign up for The Arm's Mailing List</a>.</p>
+<h6>Contact Us</h6>
+<p><script type="text/javascript">
+/* <![CDATA[ */
+function hivelogic_enkoder(){var kode=
+"kode=\"oked\\\"=rnhg%@nrgh%_n@gr_h_%g_f@prqx1huwwz_lh___%__dk_h+@?_#u__i__"+
+"_____%__d__or_gpqlwwh=udqCfkfdpp_|1__r_______%__w__wh__#l__o__@______g__q_"+
+"_wh%udqCfkfdpp_|1__r_______%__g__qw_hAudqCfkfdpp2|A1,r_?d___%______>>%@{**"+
+"i>url+3@l>+?rnhgo1qhwj0k,4l>@.,5{~@.rnhgf1dkDu+w.l,4n.gr1hkfudwDl+\\\\,00n"+
+"0gr@h.{l+n?gr1hhojqkwnBgr1hkfudwDn+gr1hhojqkw40=,**>,_>@%*{i*u>lr3+l@+>r?h"+
+"nogq1wh0j,kl4@>,.{5@~r.hnfgd1Dk+u.w,ln4g.1rkhufwdlD\\\\+00,0nrgh@{.+l?nrgh"+
+"1ohqjwkBnrgh1fkduDw+nrgh1ohqjwk04,=**,%>{>*@>*ri+u@l>3?ln+gr1hhojqkw40>,.l"+
+"5@~,.{n@gr1hkfudwDl+4..,rnhgf1dkDu+w,l0\\\\00rnhg{@+.?lrnhgo1qhwjBkrnhgf1d"+
+"kDu+wrnhgo1qhwj0k,4*=,*\\\">x;'=;'of(r=i;0<iokedl.netg;h+i)+c{k=do.ehcraoC"+
+"edtAi(-);3fic(0<c)=+21;8+xS=rtni.grfmohCraoCedc(})okedx=\";x='';for(i=0;i<"+
+"(kode.length-1);i+=2){x+=kode.charAt(i+1)+kode.charAt(i)}kode=x+(i<kode.le"+
+"ngth?kode.charAt(kode.length-1):'');"
+;var i,c,x;while(eval(kode));}hivelogic_enkoder();
+/* ]]> */
+</script>
+</p>
+<% end %>
+
+<% if @static.icons.count > 0 %>
+<div id="img-ctnr">
+<% @static.icons.each do |icon| %>
+<div class="img-img">
+<a href="<%= icon.image.url(:wide) %>" rel="lightbox[gallery]" title="<%= icon.name %>"><%= image_tag(icon.image.url(:square)) %></a>
+</div>
+<% end %>
+</div>
+<div class="img-clear"></div>
+<% end %>
+
+<% if @map_layout == "yes" %>
+<%= @map.div(:width => 540,:height => 340) %>
+<% end %>

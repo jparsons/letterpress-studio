@@ -1,0 +1,19 @@
+<% form_for(@work_day) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :day_number, "Day of the week" %><br />
+    <%= f.select :day_number, WEEKDAYS.sort {|a,b| a[1]<=>b[1]}.to_a %>
+  </p>
+  <p>
+    <%= f.label :start_hour, "Opening hour" %><br />
+    <%= f.select :start_hour, HOURS.sort {|a,b| a[1]<=>b[1]}.to_a  %>
+  </p>
+  <p>
+    <%= f.label :end_hour, "Closing hour" %><br />
+    <%= f.select :end_hour, HOURS.sort {|a,b| a[1]<=>b[1]}.to_a %>
+  </p>
+  <p>
+    <%= f.submit 'save' %>
+  </p>
+<% end %>

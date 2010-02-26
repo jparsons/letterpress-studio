@@ -6,22 +6,18 @@
 <th>Images (click on image to edit it) or <em><%= link_to 'Delete Images', { :action => 'plane_deletes' } %></em></th>
 <th width="20">Actions</th>
 </tr>
-<%
-odd_or_even = 1
-for @product in @products
-odd_or_even = 1 - odd_or_even
-%>
-<tr valign="top" class="row-<%=odd_or_even%>">
+<% for product in @products %>
+<tr valign="top" class="row-<%= cycle("even", "odd") %>">
 <td width="80">
-<strong><%=h @product.name %></strong>
+<strong><%=h product.name %></strong>
 </td>
 <td>
-<% for @plane in @product.planes -%>
-<%= link_to image_tag(url_for_file_column("plane", "image", "tiny")), { :action => 'plane_edit', :id => @plane } %>
+<% for plane in product.planes -%>
+<%= link_to image_tag(plane.image.url(:tiny)), edit_product_plane_path(product,plane) %>
 <% end -%>
 </td>
-<td width="60"><%= link_to 'New', :controller => 'admin', :action => 'plane_new', :id => @product %><br />
-<%= link_to 'Sort', :controller => 'admin', :action => 'product_plane_sort', :id => @product %></td>
+<td width="60"><%= link_to 'New', new_product_plane_path(product) %><br />
+<%= link_to 'Sort', :controller => 'admin', :action => 'product_plane_sort', :id => product %></td>
 </tr>
 <% end %>
 </table>

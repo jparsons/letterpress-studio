@@ -1,0 +1,33 @@
+$("#reservations").text('');
+$("#reservations").append("<%= escape_javascript(render :partial=>"reservations") %>");
+<% if confirmed? %>
+$(".open").bind("click", function (){
+            if ($(this).hasClass("open")){
+              $(this).removeClass("open");
+              $(this).addClass("selected");
+              $("#submit-button").show();
+              insertFields($(this).attr("id"));
+            } else {
+              $(this).removeClass("selected");
+              $(this).addClass("open");
+              $("input." + $(this).attr("id")).remove();
+          if ($("#reservations-form input").length == 1){
+            $("#submit-button").hide();
+           }
+  
+            }
+            
+    });
+     $(".owned").bind("click", function (){
+       if ($(this).hasClass("owned")){
+         $(this).removeClass("owned");
+         $(this).addClass("open");
+         $(this).find(".message").text("");
+         
+       } else {
+         $(this).removeClass("open");
+         $(this).addClass("owned");
+         $(this).find(".message").text("R");
+       }
+     });  
+<% end %>

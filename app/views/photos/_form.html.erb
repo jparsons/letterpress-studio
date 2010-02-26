@@ -1,6 +1,10 @@
 <%= error_messages_for 'photo' %>
 <div class="form-box">
 <!--[form:photo]-->
+<% if !@photo.new_record? && @photo.image %>
+<p>Current image</p>
+<p><%= image_tag(@photo.image.url(:thumb)) %></p>
+<% end %>
 <p>
 <%= f.file_field  :image %>
 </p>

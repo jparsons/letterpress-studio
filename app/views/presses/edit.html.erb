@@ -1,16 +1,6 @@
 <h1>Editing press</h1>
 
-<% form_for(@press) do |f| %>
-  <%= f.error_messages %>
+<%= render :partial=>"form" %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
 
-<%= link_to 'Show', @press %> |
-<%= link_to 'Back', presses_path %>
+<%= link_to 'list all presses', :controller=>"admin", :action=>"press_list" %>

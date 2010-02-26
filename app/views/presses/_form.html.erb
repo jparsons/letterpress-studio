@@ -1,0 +1,18 @@
+<% form_for @press, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <% if  @press.image -%>
+  <!-- Image --> 
+    <%= image_tag @press.image.url(:thumb) %>
+  <% end %>
+  <p>
+	<%= f.label :image %><br />
+	<%= f.file_field :image %>
+  <p>
+    <%= f.submit 'save' %>
+  </p>
+<% end %>

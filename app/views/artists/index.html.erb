@@ -3,7 +3,7 @@
 
 <% if artist.summary != '' -%>
 
-<li><em><%= link_to artist.name, {:controller => 'front', :action => "artist_find_by_urlname", :name => artist.urlname}, {:title => "Links to "+ artist.name + " Archive"}  %></em></li>
+<li><em><%= link_to artist.name, artist_path(artist), {:title => "Links to "+ artist.name + " Archive"}  %></em></li>
 
 <% else %>
 <li><em><%= artist.name %></em></li>

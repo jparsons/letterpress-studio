@@ -531,4 +531,19 @@ class AdminController < ApplicationController
     @products = Product.find(:all, :order => 'id desc')
     @nav = "products"
   end
+  
+  def workday_list
+    @workdays = WorkDay.all
+    @nav = "workdays"
+  end
+  
+  def holiday_list 
+    @holidays = Holiday.find(:all, :conditions=> ["date >= ?", Date.parse("1/1/#{Date.today.year}")])
+    @nav = "holidays"
+  end
+  
+  def press_list
+    @presses = Press.find(:all)
+    @nav = "presses"
+  end
 end

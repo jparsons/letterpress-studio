@@ -27,7 +27,7 @@ class HolidaysController < ApplicationController
     @holiday = Holiday.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout => 'admin' }
       format.xml  { render :xml => @holiday }
     end
   end
@@ -35,6 +35,11 @@ class HolidaysController < ApplicationController
   # GET /holidays/1/edit
   def edit
     @holiday = Holiday.find(params[:id])
+    
+    respond_to do |format|
+      format.html { render :layout => 'admin' }
+
+    end
   end
 
   # POST /holidays
@@ -45,7 +50,7 @@ class HolidaysController < ApplicationController
     respond_to do |format|
       if @holiday.save
         flash[:notice] = 'Holiday was successfully created.'
-        format.html { redirect_to(@holiday) }
+        format.html { redirect_to(:controller => 'admin', :action => 'holiday_list') }
         format.xml  { render :xml => @holiday, :status => :created, :location => @holiday }
       else
         format.html { render :action => "new" }
@@ -62,7 +67,7 @@ class HolidaysController < ApplicationController
     respond_to do |format|
       if @holiday.update_attributes(params[:holiday])
         flash[:notice] = 'Holiday was successfully updated.'
-        format.html { redirect_to(@holiday) }
+        format.html { redirect_to(:controller=> 'admin', :action => 'holiday_list' ) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -78,7 +83,7 @@ class HolidaysController < ApplicationController
     @holiday.destroy
 
     respond_to do |format|
-      format.html { redirect_to(holidays_url) }
+      format.html { redirect_to(:controller => 'admin', :action => 'holiday_list') }
       format.xml  { head :ok }
     end
   end

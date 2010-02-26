@@ -1,0 +1,9 @@
+<%= error_messages_for 'icon' %>
+
+<h1>Image for: <em><%=h @static.name %></em></h1>
+
+<% form_for [@static, @icon], :html=>{:multipart => true} do |f| %>
+  <%= render :partial => 'form', :locals=>{:f=>f} %>
+  <%= f.submit "Edit image"  %>
+<% end %>
+<p><%= link_to 'Back', :controller=> :admin, :action => 'icon_list' %></p>

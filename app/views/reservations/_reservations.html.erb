@@ -1,0 +1,40 @@
+<!-- this should only be here if the user is logged in and confirmed -->
+<!-- after they make their selections there has to be some way of submitting them to the server -->
+
+<% if @holiday %>
+<p>Today is <%= @holiday.name %>. No studio hours</p>
+<% else %>
+<p>Studio hours for today are <%= @studio_hours.display_start_hour %> to <%= @studio_hours.display_end_hour %></p>
+<% for press in @presses %>
+<!-- what reservations have already been made? --> 
+<% reservations = press.reservations.find(:all, :conditions=>["date=?", @date]) %>
+<% if reservations %>
+<% reserved_hours = reservations.map{|r| r.hour} %>
+<% end %>
+<% this_users_reservations = [] %>
+<% if confirmed? %>
+<% for reservation in reservations %>
+  <% this_users_reservations << reservation.hour if reservation.user == current_user %>
+<% end %>
+<% end %>
+<div style="clear:both;"><%= press.name %></div>
+<%= image_tag press.image.url(:thumb), :align=>"left", :class=>"press-image"  %>
+<div class="hours">
+<!-- what day of the week is this? what are the studio hours for that day? -->
+
+<% (@studio_hours.start_hour...@studio_hours.end_hour).each do |hour| %>
+  <div class="hour <%= reserved_hours.include?(hour) ? "reserved" : "open" %> <%= "owned" if this_users_reservations.include?(hour) %>" id="<%= press.id %>-<%= hour %>-<%= @date.strftime("%Y%m%d") %>">
+    <%= HOURS.index(hour) %><br />
+    <br />
+    <span class="message"><%= "R" if reserved_hours.include?(hour) %></span>
+  </div>
+<% end %>
+</div>
+<br />
+
+<% end %>
+<% end %>
+<% remote_form_for :reservations, bulk_create_reservations_path, :method=>:post, :html=>{:id=>"reservations-form"} do |f| %>
+
+<input type="submit" value="save" id="submit-button" style="display:none" />
+<% end %>

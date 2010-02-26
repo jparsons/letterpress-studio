@@ -291,3 +291,12 @@ clear: both;
 margin:0;
 padding:0;
 }
+
+/* =reservations
+---------------------------------------------------- */
+.press-image { margin-right:8px;}
+.hours { float:left; width:477px; height:75px; }
+.hour {font-size:9px; float:left; width:41px;height:50px;  margin-left:1px; margin-right:1px;}
+.open {background: url("pepper-grinder/images/ui-bg_fine-grain_10_eceadf_60x60.png") repeat scroll 50% 50% #ECEADF;}
+.reserved {background-color:#cc0000;}
+.selected {background-color:#aa0000;}

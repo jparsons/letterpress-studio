@@ -25,9 +25,9 @@ class WorkDaysController < ApplicationController
   # GET /work_days/new.xml
   def new
     @work_day = WorkDay.new
-
+    
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout => 'admin' }
       format.xml  { render :xml => @work_day }
     end
   end
@@ -35,6 +35,9 @@ class WorkDaysController < ApplicationController
   # GET /work_days/1/edit
   def edit
     @work_day = WorkDay.find(params[:id])
+    respond_to do |format|
+      format.html { render :layout => 'admin' }
+    end    
   end
 
   # POST /work_days
@@ -45,10 +48,10 @@ class WorkDaysController < ApplicationController
     respond_to do |format|
       if @work_day.save
         flash[:notice] = 'WorkDay was successfully created.'
-        format.html { redirect_to(@work_day) }
+        format.html { redirect_to(:controller=>:admin, :action=>:workday_list) }
         format.xml  { render :xml => @work_day, :status => :created, :location => @work_day }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "new", :layout=>'admin' }
         format.xml  { render :xml => @work_day.errors, :status => :unprocessable_entity }
       end
     end
@@ -62,10 +65,10 @@ class WorkDaysController < ApplicationController
     respond_to do |format|
       if @work_day.update_attributes(params[:work_day])
         flash[:notice] = 'WorkDay was successfully updated.'
-        format.html { redirect_to(@work_day) }
+        format.html { redirect_to(:controller=>:admin, :action=>:workday_list) }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
+        format.html { render :layout=>'admin', :action => :edit }
         format.xml  { render :xml => @work_day.errors, :status => :unprocessable_entity }
       end
     end
@@ -78,7 +81,7 @@ class WorkDaysController < ApplicationController
     @work_day.destroy
 
     respond_to do |format|
-      format.html { redirect_to(work_days_url) }
+      format.html { redirect_to(:controller=> 'admin', :action=> 'workday_list') }
       format.xml  { head :ok }
     end
   end

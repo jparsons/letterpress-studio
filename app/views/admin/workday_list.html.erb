@@ -1,0 +1,11 @@
+<h4><em>+ <%= link_to 'Add studio hours', new_work_day_path  %></em></h4>
+  
+<% for workday in @workdays %>
+  
+<h2><em><%= workday.display_name %></em>: <%= workday.display_start_hour %> - <%= workday.display_end_hour %></h2>
+
+<h3>
+<%= link_to 'Edit', edit_work_day_path(workday) %> / <%= link_to 'Destroy', workday, :confirm => 'Are you sure?', :method => :delete %> </h3>
+
+<% end %>
+

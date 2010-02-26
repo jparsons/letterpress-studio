@@ -2,26 +2,22 @@
 
 <table cellspacing="0" cellpadding="0" border="0" width="100%">
 <tr valign="top" style="background-color: #191919; color: #eee; text-align:left;">
-<th>Artist</th>
+<th>Static</th>
 <th>Images (click on image to edit it) or <em><%= link_to 'Delete Images', { :action => 'icon_deletes' } %></em></th>
 <th width="20">Actions</th>
 </tr>
-<%
-odd_or_even = 1
-for @static in @statics
-odd_or_even = 1 - odd_or_even
-%>
-<tr valign="top" class="row-<%=odd_or_even%>">
+<% for static in @statics %>
+<tr valign="top" class="row-<%= cycle("even", "odd") %>">
 <td width="80">
-<strong><%=h @static.name %></strong>
+<strong><%=h static.name %></strong>
 </td>
 <td>
-<% for @icon in @static.icons -%>
-<%= link_to image_tag(url_for_file_column("icon", "image", "tiny")), { :action => 'icon_edit', :id => @icon } %>
+<% for icon in static.icons -%>
+<%= link_to image_tag(icon.image.url(:tiny)), edit_static_icon_path(static,icon) %>
 <% end -%>
 </td>
-<td width="60"><%= link_to 'New', :controller => 'admin', :action => 'icon_new', :id => @static %><br />
-<%= link_to 'Sort', :controller => 'admin', :action => 'static_icon_sort', :id => @static %></td>
+<td width="60"><%= link_to 'New', new_static_icon_path(static) %><br />
+<%= link_to 'Sort', :controller => 'admin', :action => 'static_icon_sort', :id => static %></td>
 </tr>
 <% end %>
 </table>

@@ -1,21 +1,21 @@
 <h1><%= @product.name %> / Sort Order</h1>
 
 <div class="form-box">
-<p>Drag and drop the planes below into the correct order you want them to appear on the site's front-end.</p>
+<p>Drag and drop the photos below into the correct order you want them to appear on the site's front-end.</p>
 
-<p><%= link_to 'Edit Good', :controller => 'admin', :action => 'product_edit', :id => @product %> / <%= link_to 'List Imagery', :controller => 'admin', :action => 'plane_list' %> / <%= link_to 'All Goods', :controller => 'admin', :action => 'product_list' %></p>
+<p><%= link_to 'Edit Show', edit_product_path(@product) %> / <%= link_to 'List Imagery', :controller => 'admin', :action => 'plane_list' %> / <%= link_to 'All Shows', :controller => 'admin', :action => 'product_list' %></p>
 
 <ul id="photo-list">
 <% @product.planes.each do |plane| %>
 <li id="item_<%= plane.id %>">
-<%= image_tag(url_for_file_column( plane, 'image', 'thumb'), :class => 'planes-img') %>
+<%= image_tag(plane.image.url(:thumb), :class=> "photos-img" ) %>
 
 </li>
 <% end %>
 </ul>
 
 <%= sortable_element 'photo-list',
-:url => { :action => "plane_sort", :id => @product },
+:url => { :action => "photo_sort", :id => @product },
 :complete => visual_effect(:highlight, 'photo-list', {:endcolor => "'#222222'"})
 %>
 </div>

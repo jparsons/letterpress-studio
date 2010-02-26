@@ -8,16 +8,16 @@
 </tr>
 <%
 odd_or_even = 1
-for @product in @products
+for product in @products
 odd_or_even = 1 - odd_or_even
 %>
 <tr valign="top" class="row-<%=odd_or_even%>">
 <td width="80">
-<strong><%=h @product.name %></strong>
+<strong><%=h product.name %></strong>
 </td>
 <td>
-<% for @plane in @product.planes -%>
-<%= link_to image_tag(url_for_file_column("plane", "image", "tiny")), { :action => 'plane_destroy', :id => @plane }, :confirm => 'Are you sure you want to delete this image?' %>
+<% for plane in product.planes -%>
+<%= link_to(image_tag(plane.image.url(:tiny)), product_plane_url(product, plane), :confirm => 'Are you sure?', :method => :delete  ) %>
 <% end -%>
 </td>
 </tr>

@@ -8,16 +8,16 @@
 </tr>
 <%
 odd_or_even = 1
-for @static in @statics
+for static in @statics
 odd_or_even = 1 - odd_or_even
 %>
 <tr valign="top" class="row-<%=odd_or_even%>">
 <td width="80">
-<strong><%=h @static.name %></strong>
+<strong><%=h static.name %></strong>
 </td>
 <td>
-<% for @icon in @static.icons -%>
-<%= link_to image_tag(url_for_file_column("icon", "image", "tiny")), { :action => 'icon_destroy', :id => @icon }, :confirm => 'Are you sure you want to delete this image?' %>
+<% for icon in static.icons -%>
+<%= link_to(image_tag(icon.image.url(:tiny)), static_icon_url(static, icon), :confirm => 'Are you sure?', :method => :delete  ) %>
 <% end -%>
 </td>
 </tr>

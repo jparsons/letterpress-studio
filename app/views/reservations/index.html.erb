@@ -1,26 +1,115 @@
-<h1>Listing reservations</h1>
-
-<table>
-  <tr>
-    <th>User</th>
-    <th>Press</th>
-    <th>Date</th>
-    <th>Hour</th>
-  </tr>
-
-<% @reservations.each do |reservation| %>
-  <tr>
-    <td><%=h reservation.user_id %></td>
-    <td><%=h reservation.press_id %></td>
-    <td><%=h reservation.date %></td>
-    <td><%=h reservation.hour %></td>
-    <td><%= link_to 'Show', reservation %></td>
-    <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
-    <td><%= link_to 'Destroy', reservation, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<% content_for :head do -%>
+<script type="text/javascript">
+  
+  var holidays = <%= holidays %>;
+  var availableWeekdays = <%= available_days %>;
+	$(function() {
+		$("#datepicker").datepicker(
+	          { 
+	            minDate: new Date(),
+	            defaultDate: new Date(),
+	            onSelect: selectDate,
+	            beforeShowDay:verifyDates
+	          }
+		
+		);
+	});
+	
+  function verifyDates(date){
+     if ((availableWeekdays.indexOf(date.getDayName()) > -1) && (!date.isHoliday())){
+       return [true, "2"];
+     } else {
+       return [false, ""];
+     }
+  }
+  
+  function selectDate(dateText, inst) { 
+    $("#selected-date").text(dateText); 
+    $.ajax({
+      url: '<%= reservations_path %>?date=' + dateText, type: 'get', dataType: 'script'
+    }); 
+    
+  }
+  Date.prototype.getDayName = function(){
+    var weekday=new Array(7);
+    weekday[0]="Sunday";
+    weekday[1]="Monday";
+    weekday[2]="Tuesday";
+    weekday[3]="Wednesday";
+    weekday[4]="Thursday";
+    weekday[5]="Friday";
+    weekday[6]="Saturday";
+    return weekday[this.getDay()];
+  }
+  Date.prototype.isHoliday = function(){
+    isHoliday = false;
+    if (holidays != null){
+      for (i = 0; i < holidays.length; i++) {
+        if (this.getMonth() == holidays[i][0] - 1 && this.getDate() == holidays[i][1] && this.getFullYear() == holidays[i][2]){
+          isHoliday = true;
+        }
+      }
+    }
+    return isHoliday;
+  }
+<% if confirmed? %>
+$(document).ready(function() {
+    // TODO: this needs to be DRYed up ... same function is currently in index.js.erb
+    
+    $(".open").bind("click", function (){
+        if ($(this).hasClass("open")){
+          $(this).removeClass("open");
+          $(this).addClass("selected");
+          $("#submit-button").show();
+          insertFields($(this).attr("id"));
+        } else {
+          $(this).removeClass("selected");
+          $(this).addClass("open");
+          $("input." + $(this).attr("id")).remove();
+          if ($("#reservations-form input").length == 1){
+            $("#submit-button").hide();
+          }
+          
+        }
+        
+    });
+     $(".owned").bind("click", function (){
+       if ($(this).hasClass("owned")){
+         $(this).removeClass("owned");
+         $(this).addClass("open");
+         $(this).find(".message").text("");
+         
+       } else {
+         $(this).removeClass("open");
+         $(this).addClass("owned");
+         $(this).find(".message").text("R");
+       }
+     });  
+    
+  });
+    
+    function insertFields(strFields) {
+      fields = strFields.split("-");
+      
+      $("#submit-button").before("<input class=\"" + strFields + "\" type=\"hidden\" name=\"reservation[][press_id]\" value=\"" + fields[0] + "\" />");
+      $("#submit-button").before("<input class=\"" + strFields + "\" type=\"hidden\" name=\"reservation[][hour]\" value=\"" + fields[1] + "\" />");
+      $("#submit-button").before("<input class=\"" + strFields + "\" type=\"hidden\" name=\"reservation[][date]\" value=\"" + fields[2] + "\" />");
+      $("#submit-button").before("<input class=\"" + strFields + "\" type=\"hidden\" name=\"reservation[][user_id]\" value=\"" + "<%= current_user ? current_user.id : ''  %>" + "\" />");
+    }  
 <% end %>
-</table>
+</script>
+<% end %>
 
-<br />
 
-<%= link_to 'New reservation', new_reservation_path %>
+
+
+<p>Select a date: </p>
+<div id="datepicker"></div>
+<h2><span id="selected-date"><%= @date.strftime("%m/%d/%Y") %></span></h2>
+
+<% if !confirmed? %> 
+<p>You need to get an account junior</p>
+<% end %>
+<div id ="reservations">
+<%= render :partial => "reservations" %>
+</div>

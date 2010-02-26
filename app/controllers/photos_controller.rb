@@ -37,13 +37,17 @@ class PhotosController < ApplicationController
   # GET /photos/1/edit
   def edit
     @photo = Photo.find(params[:id])
+    respond_to do |format|
+      format.html { render :layout => 'admin'}
+      format.xml  { render :xml => @photo }
+    end    
   end
 
   # POST /photos
   # POST /photos.xml
   def create
     @photo = Photo.new(params[:photo])
-
+    @photo.exhibition = @exhibition
     respond_to do |format|
       if @photo.save
         flash[:notice] = 'Photo was successfully created.'
@@ -64,7 +68,7 @@ class PhotosController < ApplicationController
     respond_to do |format|
       if @photo.update_attributes(params[:photo])
         flash[:notice] = 'Photo was successfully updated.'
-        format.html { redirect_to(@photo) }
+        format.html { redirect_to(:controller=>:admin, :action=>:photo_list) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -80,7 +84,7 @@ class PhotosController < ApplicationController
     @photo.destroy
 
     respond_to do |format|
-      format.html { redirect_to(photos_url) }
+      format.html { redirect_to(:controller=>:admin, :action=>:photo_deletes) }
       format.xml  { head :ok }
     end
   end
@@ -89,7 +93,7 @@ class PhotosController < ApplicationController
   
   def find_exhibition
 
-    @exhibition = Exhibition.find(params[:exhibition_id])
+    @exhibition = Exhibition.find_by_urlname(params[:exhibition_id])
 
     rescue
       redirect_to :controller => :admin, :action => :photo_list

@@ -4,25 +4,30 @@ class ArtistsController < ApplicationController
   # GET /artists
   # GET /artists.xml
   def index
-    @artists = Artist.find(:all, :order => "name ASC")
+    @artists = Artist.all(:order => "name ASC")
     @pageTitle = "Artists"
     @section = "Artist"
   end
+  
+  
   # GET /artists/1
   # GET /artists/1.xml
   def show
-    @artist = Artist.find(params[:id])
-
+    @artist = Artist.find_by_urlname(params[:id])
+    @pageTitle = "#{@artist.name}"
+    @section = "Artist"
     respond_to do |format|
       format.html # artist.html.erb
       format.xml  { render :xml => @artist }
     end
   end
+  
 
   # GET /artists/new
   # GET /artists/new.xml
   def new
     @artist = Artist.new
+    @nav = "artists"
 
     respond_to do |format|
       format.html { render :layout => 'admin' }
@@ -32,7 +37,8 @@ class ArtistsController < ApplicationController
 
   # GET /artists/1/edit
   def edit
-    @artist = Artist.find(params[:id])    
+    @artist = Artist.find_by_urlname(params[:id])    
+    @nav = "artists"    
     respond_to do |format|
       format.html { render :layout => 'admin' }
       format.xml  { render :xml => @artist }
@@ -60,7 +66,7 @@ class ArtistsController < ApplicationController
   # PUT /artists/1
   # PUT /artists/1.xml
   def update
-    @artist = Artist.find(params[:id])
+    @artist = Artist.find_by_urlname(params[:id])
 
     respond_to do |format|
       if @artist.update_attributes(params[:artist])
@@ -77,7 +83,7 @@ class ArtistsController < ApplicationController
   # DELETE /artists/1
   # DELETE /artists/1.xml
   def destroy
-    @artist = Artist.find(params[:id])
+    @artist = Artist.find_by_urlname(params[:id])
     @artist.destroy
 
     respond_to do |format|

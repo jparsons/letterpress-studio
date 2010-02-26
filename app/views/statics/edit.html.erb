@@ -1,0 +1,11 @@
+<h1>Edit Information Page</h1>
+<div class="form-box">
+<% form_for @static, :html=>{:id => 'static_form'} do |f| %>
+
+	<%= render :partial => 'form', :locals=>{ :f=> f } %>
+	<%= f.submit "Update", :id => 'submit_button' %>
+
+<% end %>
+</div>
+
+<p><%= link_to 'Back', :controller=>:admin, :action => 'static_list' %></p>

@@ -3,8 +3,12 @@ class Exhibition < ActiveRecord::Base
   has_many :photos, :dependent => :destroy, :order => :position
   acts_as_urlnameable :name, :overwrite => true
   validates_presence_of :name
-
-    
+  
+  named_scope :future, :conditions => ['is_active = ? and event_start_at > ?', true, Time.now], :order => 'event_start_at desc'
+  named_scope :active,  :conditions => ['is_active = ?', true], :order => 'event_start_at desc'
+  named_scope :current, :conditions => ['is_active = ? and event_start_at < ? and event_finish_at > ?', true, Time.now, Time.now], :order => 'event_start_at desc'
+  named_scope :past, :conditions => ['is_active = ? and event_finish_at < ?', true, Time.now], :order => 'event_start_at desc'
+  
   def self.all_future_shows
     self.find(:all, :conditions => ['is_active = 1 and event_start_at > ?', Time.now], :order => 'event_start_at desc')
   end
@@ -27,5 +31,10 @@ class Exhibition < ActiveRecord::Base
       ORDER BY artist_counter desc
       })
   end
+  
+  def to_param
+    urlname
+  end
+ 
 
 end

@@ -1,14 +1,14 @@
 <h1>Goods</h1>
 
 
-<h4><em>+ <%= link_to 'New Good', :action => 'product_new' %></em></h4>
+<h4><em>+ <%= link_to 'New Good', new_product_path %></em></h4>
   
 <% for product in @products %>
   
 <h2><em><%= product.name %></em> / <%= product.created_at.to_formatted_s(:iasa) %></h2>
 
 <h3>
-<%= link_to 'Edit', :action => 'product_edit', :id => product %> / <%= link_to 'Destroy', { :action => 'product_destroy', :id => product }, :confirm => 'Are you sure?', :post => true %> </h3>
+<%= link_to 'Edit', edit_product_path(product) %> / <%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %> </h3>
 
 <% end %>
 

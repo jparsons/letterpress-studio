@@ -1,0 +1,6 @@
+<ul class="tags">
+<% for static in @statics %>
+
+<li><em><%= link_to static.name, {:controller => 'front', :action => "static_find_by_urlname", :name => static.urlname}, {:title => "Links to "+ static.name + " Archive"}  %></em></li>
+
+<% end %></ul>

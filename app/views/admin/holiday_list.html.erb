@@ -1,0 +1,11 @@
+<h4><em>+ <%= link_to 'Add holiday', new_holiday_path  %></em></h4>
+  
+<% for holiday in @holidays %>
+  
+<h2><em><%= holiday.date.strftime("%m/%d/%Y") %></em></h2>
+
+<h3>
+<%= link_to 'Edit', edit_holiday_path(holiday) %> / <%= link_to 'Destroy', holiday, :confirm => 'Are you sure?', :method => :delete %> </h3>
+
+<% end %>
+

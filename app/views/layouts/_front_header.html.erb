@@ -5,14 +5,14 @@
 <%= render :partial => 'layouts/front_meta' %>
 <title>The Arm NYC / <%= @pageTitle || "Art!" %> </title>
 <%= stylesheet_link_tag 'front' %>
-<%= stylesheet_link_tag 'lightbox' %>
-<%= javascript_include_tag :defaults %>
-<%= javascript_include_tag "lightbox" %>
-<%= javascript_include_tag "framework" %>
+<%= stylesheet_link_tag 'jquery.lightbox-0.5.css' %>
+<%= javascript_include_tag  'jquery-1.3.2.min', "jquery-ui-1.7.2.custom.min", "jrails", "jquery.lightbox-0.5.min.js", "application"%>
+<%= stylesheet_link_tag 'pepper-grinder/jquery-ui-1.7.2.custom' %>
 <% if @map_layout == "yes" %>
 <%= GMap.header %>
 <%= @map.to_html %>
 <% end %>
+<%= yield(:head) %>
 </head>
 <body style="background: url(<%= url_for('/bgd/'+ random_bgd ) %>) repeat top left">
 <a name="top"></a>

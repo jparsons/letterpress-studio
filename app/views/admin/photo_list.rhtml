@@ -6,18 +6,14 @@
 <th>Images (click on image to edit it) or <em><%= link_to 'Delete Images', { :action => 'photo_deletes' } %></em></th>
 <th width="20">Actions</th>
 </tr>
-<%
-odd_or_even = 1
-for exhibition in @exhibitions
-odd_or_even = 1 - odd_or_even
-%>
-<tr valign="top" class="row-<%=odd_or_even%>">
+<% for exhibition in @exhibitions %>
+<tr valign="top" class="row-<%= cycle("even", "odd") %>">
 <td width="80">
 <strong><%=h exhibition.name %></strong>
 </td>
 <td>
 <% for photo in exhibition.photos -%>
-<%= link_to image_tag(url_for_file_column("photo", "image", "tiny")),  edit_exhibition_photo_path(exhibition, photo)  %>
+<%= link_to image_tag(photo.image.url(:tiny)), edit_exhibition_photo_path(exhibition,photo) %>
 <% end -%>
 </td>
 <td width="60"><%= link_to 'New', new_exhibition_photo_path(exhibition) %><br />

@@ -27,7 +27,7 @@ class PressesController < ApplicationController
     @press = Press.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout=>"admin" }
       format.xml  { render :xml => @press }
     end
   end
@@ -35,6 +35,9 @@ class PressesController < ApplicationController
   # GET /presses/1/edit
   def edit
     @press = Press.find(params[:id])
+    respond_to do |format|
+      format.html { render :layout=>"admin" }
+    end
   end
 
   # POST /presses
@@ -45,10 +48,10 @@ class PressesController < ApplicationController
     respond_to do |format|
       if @press.save
         flash[:notice] = 'Press was successfully created.'
-        format.html { redirect_to(@press) }
+        format.html { redirect_to(:controller=>"admin", :action=>"press_list") }
         format.xml  { render :xml => @press, :status => :created, :location => @press }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "new", :layout=> "admin" }
         format.xml  { render :xml => @press.errors, :status => :unprocessable_entity }
       end
     end
@@ -62,10 +65,10 @@ class PressesController < ApplicationController
     respond_to do |format|
       if @press.update_attributes(params[:press])
         flash[:notice] = 'Press was successfully updated.'
-        format.html { redirect_to(@press) }
+        format.html { redirect_to(:controller=>"admin", :action=>"press_list") }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
+        format.html { render :action => "edit", :layout=> "admin"}
         format.xml  { render :xml => @press.errors, :status => :unprocessable_entity }
       end
     end
@@ -78,7 +81,7 @@ class PressesController < ApplicationController
     @press.destroy
 
     respond_to do |format|
-      format.html { redirect_to(presses_url) }
+      format.html { redirect_to(:controller=>"admin", :action=>"press_list") }
       format.xml  { head :ok }
     end
   end

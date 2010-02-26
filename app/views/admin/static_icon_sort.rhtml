@@ -3,12 +3,12 @@
 <div class="form-box">
 <p>Drag and drop the icons below into the correct order you want them to appear on the site's front-end.</p>
 
-<p><%= link_to 'Edit Artist', :controller => 'admin', :action => 'artist_edit', :id => @artist %> / <%= link_to 'List Imagery', :controller => 'admin', :action => 'picture_list' %> / <%= link_to 'All Artists', :controller => 'admin', :action => 'artist_list' %></p>
+<p><%= link_to 'Edit Information Page', edit_static_path(@static) %> / <%= link_to 'List Imagery', :controller => 'admin', :action => 'icon_list' %> / <%= link_to 'All Information Pages', :controller => 'admin', :action => 'static_list' %></p>
 
 <ul id="photo-list">
 <% @static.icons.each do |icon| %>
 <li id="item_<%= icon.id %>">
-<%= image_tag(url_for_file_column( icon, 'image', 'thumb'), :class => 'icons-img') %>
+<%= image_tag(icon.image.url(:thumb), :class=> "photo-img" ) %>
 
 </li>
 <% end %>

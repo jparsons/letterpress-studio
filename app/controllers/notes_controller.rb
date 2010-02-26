@@ -48,6 +48,39 @@ class NotesController < ApplicationController
       render :action=>:index
     end  
   end
+  
+  def list_by_date 
+    @section = "Notes"
+    @recent = "yes"
+    if params["month"]
+      lower_date = Date.new(params["year"].to_i,params["month"].to_i,1)
+      date = Date.new(params["year"].to_i,params["month"].to_i,1)
+      @title = "Posted in #{date.month.name_of_month} #{date.year}"
+      @notes = Note.find(:all,:conditions => "created_at >= '#{lower_date}' AND created_at < '#{(lower_date >> 1)-1}'",:order => "created_at desc")
+      @pageTitle = "#{date.month.name_of_month} #{date.year}"
+    elsif params["year"]
+      lower_date = Date.new(params["year"].to_i,1,1)
+      date = Date.new(params["year"].to_i,1,1)
+      @title = "Posted in #{date.year}"
+      @notes = Note.find(:all, :conditions => "created_at >= '#{lower_date}' AND created_at < '#{lower_date.year+1}'",:order => "created_at desc")
+      @pageTitle = "#{date.year}"
+    else
+      @title = "Archive"
+      @notes = Note.find(:all, :order => "created_at desc")
+    end
+    if @notes.empty?
+      redirect_to_index("No notes in that time frame")
+    else
+      render :action => 'index'
+    end  
+  
+  
+  end
+  
+  def list_by_year
+  
+  
+  end
 
   # GET /notes/new
   # GET /notes/new.xml

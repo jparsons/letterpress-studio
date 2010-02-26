@@ -6,22 +6,18 @@
 <th>Images (click on image to edit it) or <em><%= link_to 'Delete Images', { :action => 'picture_deletes' } %></em></th>
 <th width="20">Actions</th>
 </tr>
-<%
-odd_or_even = 1
-for @artist in @artists
-odd_or_even = 1 - odd_or_even
-%>
-<tr valign="top" class="row-<%=odd_or_even%>">
+<% for artist in @artists %>
+<tr valign="top" class="row-<%= cycle("even", "odd") %>">
 <td width="80">
-<strong><%=h @artist.name %></strong>
+<strong><%=h artist.name %></strong>
 </td>
 <td>
-<% for @picture in @artist.pictures -%>
-<%= link_to image_tag(url_for_file_column("picture", "image", "tiny")), { :action => 'picture_edit', :id => @picture } %>
+<% for picture in artist.pictures -%>
+<%= link_to image_tag(picture.image.url(:tiny)), edit_artist_picture_path(artist,picture) %>
 <% end -%>
 </td>
-<td width="60"><%= link_to 'New', :controller => 'admin', :action => 'picture_new', :id => @artist %><br />
-<%= link_to 'Sort', :controller => 'admin', :action => 'artist_picture_sort', :id => @artist %></td>
+<td width="60"><%= link_to 'New', new_artist_picture_path(artist) %><br />
+<%= link_to 'Sort', :controller => 'admin', :action => 'artist_picture_sort', :id => artist %></td>
 </tr>
 <% end %>
 </table>

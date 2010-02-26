@@ -1,0 +1,34 @@
+<%= error_messages_for 'product' %>
+
+<!--[form:product]-->
+<p><label for="product_name"><strong>Name</strong></label><br/>
+<%= f.text_field 'name' %></p>
+
+<p><label for="product_is_active"><strong>Active?</strong></label><br />
+<%= f.check_box 'is_active', :checked => (@product.is_active ? 'checked' : '') %>&nbsp;<span class="small">If the box is checked, the product appears on the public site</span></p>
+
+<p><label for="product_artist"><strong>Producer</strong></label><br/>
+<%= f.text_area 'artist', :cols => "60", :rows => "2" %></p>
+<p><label for="product_medium"><strong>Medium</strong></label><br/>
+<%= f.text_area 'medium', :cols => "60", :rows => "2" %></p>
+
+<p><label for="product_price"><strong>Price</strong></label><br/>
+<%= f.text_area 'price', :cols => "60", :rows => "1" %></p>
+
+<p><label for="product_size"><strong>Size</strong></label><br/>
+<%= f.text_area 'size', :cols => "60", :rows => "1" %></p>
+
+<p><label for="product_summary"><strong>Summary</strong></label><br/>
+<%= f.text_area 'summary', :cols => "60", :rows => "5" %></p>
+
+
+
+<% if @product.planes.count > 0 %>
+  <div class="tiny-images">
+    <p><strong><%= link_to 'Imagery', :controller => 'admin', :action => 'plane_list' %></strong> / <%= link_to 'Sort', :controller => 'admin', :action => 'product_plane_sort', :id => @product %> / <%= link_to 'Add', new_product_plane_path(@product) %></p>
+    <% @product.planes.each do |plane| %>
+      <%= link_to image_tag(url_for_file_column(plane, "image", "tiny")), edit_product_plane(@product, plane) %>
+    <% end %>
+    <p>
+  </div>
+<% end %>
