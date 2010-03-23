@@ -4,7 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.login 'login', :controller => 'user_sessions', :action => 'new'
   map.resources :user_sessions
 
-  map.resources :users
+  map.resources :users, :member => { :confirm => :get, :suspend => :get, :unsuspend => :get }
 
 
   map.resources :no_shows

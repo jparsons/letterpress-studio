@@ -50,7 +50,11 @@ class ReservationsController < ApplicationController
   def create
   
     params[:reservation].each do |reservation|
-      Reservation.create(reservation)
+      r = Reservation.find_or_initialize_by_date_and_hour_and_press_id_and_user_id(Date.parse(reservation[:date]), reservation[:hour], reservation[:press_id], reservation[:user_id])
+      r.cancelled = reservation[:cancelled]
+      r.save
+      # send e-mails to user and to admin?
+      
     end
     respond_to do |format|
       format.html { redirect_to(reservations_path(:date=>params[:reservation][0][:date])) }

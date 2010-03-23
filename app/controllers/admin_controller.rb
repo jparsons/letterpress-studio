@@ -242,7 +242,7 @@ class AdminController < ApplicationController
   end
   
   def exhibition_photo_sort
-     @exhibition = Exhibition.find(params[:id])
+     @exhibition = Exhibition.find_by_urlname(params[:id])
      @nav = "exhibitions"
    end                                            
    
@@ -355,7 +355,7 @@ class AdminController < ApplicationController
   end
 
   def artist_picture_sort
-    @artist = Artist.find(params[:id])
+    @artist = Artist.find_by_urlname(params[:id])
     @nav = "artists"
   end                                            
 
@@ -419,7 +419,7 @@ class AdminController < ApplicationController
   end
 
   def static_icon_sort
-    @static = Static.find(params[:id])
+    @static = Static.find_by_urlname(params[:id])
     @nav = "information"
   end                                            
 
@@ -484,7 +484,7 @@ class AdminController < ApplicationController
   end
 
   def product_plane_sort
-    @product = Product.find(params[:id])
+    @product = Product.find_by_urlname(params[:id])
     @nav = "products"
   end                                            
 

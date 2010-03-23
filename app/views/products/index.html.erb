@@ -6,7 +6,7 @@
 <% if product.planes.count > 0 %>
 <div class="goods_img">
 <% product.planes.find(:all, :limit => 1).each do |plane| %>
-<%= link_to image_tag(url_for_file_column( plane, 'image', 'square')), {:controller => 'front', :action => "product_find_by_urlname", :name => product.urlname}, {:title => "Links to "+ product.name + " Archive"} %>
+<%= link_to image_tag(plane.image.url(:square)), {:controller => 'front', :action => "product_find_by_urlname", :name => product.urlname}, {:title => "Links to "+ product.name + " Archive"} %>
 <% end %>
 </div>
 <% end %>

@@ -11,8 +11,8 @@ class Plane < ActiveRecord::Base
   #            }
   #}
   has_attached_file :image, :styles => { :tiny => "50x50!", :thumb => "180x120!", :square => "100x100!", :wide => "540x500>", :normal => "800x800"}, 
-  :url => "/:class/:attachment/:id/:style_:basename.:extension",
-  :path => ":rails_root/public/:class/:attachment/:id/:style_:basename.:extension"
+  :url => "/plane/image/:id/:style_:basename.:extension",
+  :path => ":rails_root/public/plane/image/:id/:style_:basename.:extension"
   
   belongs_to :product
   validates_presence_of :image

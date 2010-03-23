@@ -1,7 +1,7 @@
-<% if flash[:notice] %>
+<% if flash[:error] %>
 <div class="notice">
 <h2>Problem!</h2>
-<p><%= flash[:notice] %></p>
+<p><%= flash[:error] %></p>
 </div>
 <% end %>
 <%= render :partial => 'note' %>

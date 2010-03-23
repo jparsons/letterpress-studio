@@ -5,7 +5,7 @@
 
 <p><%= link_to 'Edit Artist', edit_artist_path(@artist) %> / <%= link_to 'List Imagery', :controller => 'admin', :action => 'picture_list' %> / <%= link_to 'All Artists', :controller => 'admin', :action => 'artist_list' %></p>
 
-<ul id="photo-list">
+<ul id="picture-list">
 <% @artist.pictures.each do |picture| %>
 <li id="item_<%= picture.id %>">
 <%= image_tag(picture.image.url(:thumb), :class=> "photos-img" ) %>
@@ -14,8 +14,26 @@
 <% end %>
 </ul>
 
-<%= sortable_element 'photo-list',
-:url => { :action => "picture_sort", :id => @artist },
-:complete => visual_effect(:highlight, 'photo-list', {:endcolor => "'#222222'"})
-%>
+
 </div>
+
+<% content_for :head do -%>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#picture-list').sortable({
+    axis:'y', 
+    update:function(){
+      $.ajax({
+        complete:function(request){
+          $("#picture-list").effect('highlight',{endcolor:'#222222'});
+        }, 
+        data:$(this).sortable('serialize',{key:'picture-list[]'}), 
+        dataType:'script', 
+        type:'post', 
+        url:'/admin/picture_sort/<%= @artist.id %>'
+      })
+    }
+  });
+});
+</script>
+<% end %>

@@ -16,8 +16,8 @@ class Note < ActiveRecord::Base
 #              }
 #  }
   has_attached_file :image, :styles => { :tiny => "50x50!", :thumb => "180x120!", :square => "100x100!", :wide => "540x500>", :normal => "800x800"}, 
-  :url => "/:class/:attachment/:id/:style_:basename.:extension",
-  :path => ":rails_root/public/:class/:attachment/:id/:style_:basename.:extension"
+  :url => "/note/image/:id/:style_:basename.:extension",
+  :path => ":rails_root/public/note/image/:id/:style_:basename.:extension"
 
   # before a note is created, set its modification date to now
   #def before_create

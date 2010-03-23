@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100223153119) do
+ActiveRecord::Schema.define(:version => 20100227161817) do
 
   create_table "artists", :force => true do |t|
     t.string   "name",       :default => "",    :null => false
@@ -165,6 +165,7 @@ ActiveRecord::Schema.define(:version => 20100223153119) do
     t.integer  "hour"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "cancelled",  :default => false
   end
 
   create_table "sessions", :force => true do |t|

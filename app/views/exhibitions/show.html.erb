@@ -12,8 +12,8 @@
 <% if @exhibition.photos.count > 0 %>
 <div id="img-ctnr">
 <% @exhibition.photos.each do |photo| %>
-<div class="exhibition_img">
-<a href="<%= url_for_file_column( photo, 'image', 'wide') %>" rel="lightbox[gallery]" title="<%= photo.name %>"><%= image_tag(url_for_file_column( photo, 'image', 'square')) %></a>
+<div class="exhibition_img lightbox">
+<a href="<%= photo.image.url(:wide) %>" rel="lightbox[gallery]"><%= image_tag(photo.image.url(:square), :alt=>photo.name) %></a>
 </div>
 <% end %>
 </div>

@@ -13,9 +13,30 @@
 </li>
 <% end %>
 </ul>
-
+<!--
 <%= sortable_element 'photo-list',
-:url => { :action => "photo_sort", :id => @exhibition },
+:url => { :action => "photo_sort", :id => @exhibition.id },
 :complete => visual_effect(:highlight, 'photo-list', {:endcolor => "'#222222'"})
-%>
+%> -->
 </div>
+
+<% content_for :head do -%>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#photo-list').sortable({
+    axis:'y', 
+    update:function(){
+      $.ajax({
+        complete:function(request){
+          $("#photo-list").effect('highlight',{endcolor:'#222222'});
+        }, 
+        data:$(this).sortable('serialize',{key:'photo-list[]'}), 
+        dataType:'script', 
+        type:'post', 
+        url:'/admin/photo_sort/<%= @exhibition.id %>'
+      })
+    }
+  });
+});
+</script>
+<% end %>

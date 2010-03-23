@@ -3,11 +3,14 @@
 
 <% if @holiday %>
 <p>Today is <%= @holiday.name %>. No studio hours</p>
+<% elsif @studio_hours.nil? %>
+<h2>Sorry, the studio is closed today.</h2>
 <% else %>
-<p>Studio hours for today are <%= @studio_hours.display_start_hour %> to <%= @studio_hours.display_end_hour %></p>
+<p>Studio hours for today are <strong><%= @studio_hours.display_start_hour %> to <%= @studio_hours.display_end_hour %></strong></p>
+<p><% if confirmed? %>To reserve press time click on any open hour for the press you want to use below (open hours are light gray). Click it a second time if you change your mind and want to cancel (your selections are ?what color?). <% end %></p>
 <% for press in @presses %>
 <!-- what reservations have already been made? --> 
-<% reservations = press.reservations.find(:all, :conditions=>["date=?", @date]) %>
+<% reservations = press.reservations.find(:all, :conditions=>["date=? and cancelled = ?", @date, false]) %>
 <% if reservations %>
 <% reserved_hours = reservations.map{|r| r.hour} %>
 <% end %>
@@ -17,7 +20,7 @@
   <% this_users_reservations << reservation.hour if reservation.user == current_user %>
 <% end %>
 <% end %>
-<div style="clear:both;"><%= press.name %></div>
+<div style="clear:both;" class="press-name"><%= press.name %></div>
 <%= image_tag press.image.url(:thumb), :align=>"left", :class=>"press-image"  %>
 <div class="hours">
 <!-- what day of the week is this? what are the studio hours for that day? -->
@@ -33,8 +36,4 @@
 <br />
 
 <% end %>
-<% end %>
-<% remote_form_for :reservations, bulk_create_reservations_path, :method=>:post, :html=>{:id=>"reservations-form"} do |f| %>
-
-<input type="submit" value="save" id="submit-button" style="display:none" />
 <% end %>

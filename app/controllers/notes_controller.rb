@@ -115,10 +115,10 @@ class NotesController < ApplicationController
     respond_to do |format|
       if @note.save
         flash[:notice] = 'Note was successfully created.'
-        format.html { redirect_to(@note) }
+        format.html { redirect_to(:controller=>"admin", :action=>"note_list") }
         format.xml  { render :xml => @note, :status => :created, :location => @note }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "new", :layout => "admin" }
         format.xml  { render :xml => @note.errors, :status => :unprocessable_entity }
       end
     end
@@ -135,7 +135,7 @@ class NotesController < ApplicationController
         format.html { redirect_to(@note) }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
+        format.html { render :action => "edit", :layout => "admin" }
         format.xml  { render :xml => @note.errors, :status => :unprocessable_entity }
       end
     end

@@ -27,9 +27,9 @@ class ExhibitionsController < ApplicationController
       format.xml  { render :xml => @exhibition }
     end
     
-  rescue
-    logger.error("Attempt to access invalid Exhibition #{params[:id]}")
-    redirect_to_index('Invalid Exhibition')    
+  #rescue
+  #  logger.error("Attempt to access invalid Exhibition #{params[:id]}")
+  #  redirect_to_index('Invalid Exhibition')    
   end
   
   def find_by_urlname 

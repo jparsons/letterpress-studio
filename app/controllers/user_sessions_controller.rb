@@ -1,5 +1,5 @@
 class UserSessionsController < ApplicationController
-  layout 'admin'
+  layout 'front'
   
   def new
     @user_session = UserSession.new

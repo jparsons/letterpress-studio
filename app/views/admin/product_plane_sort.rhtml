@@ -5,7 +5,7 @@
 
 <p><%= link_to 'Edit Show', edit_product_path(@product) %> / <%= link_to 'List Imagery', :controller => 'admin', :action => 'plane_list' %> / <%= link_to 'All Shows', :controller => 'admin', :action => 'product_list' %></p>
 
-<ul id="photo-list">
+<ul id="plane-list">
 <% @product.planes.each do |plane| %>
 <li id="item_<%= plane.id %>">
 <%= image_tag(plane.image.url(:thumb), :class=> "photos-img" ) %>
@@ -14,8 +14,27 @@
 <% end %>
 </ul>
 
-<%= sortable_element 'photo-list',
-:url => { :action => "photo_sort", :id => @product },
-:complete => visual_effect(:highlight, 'photo-list', {:endcolor => "'#222222'"})
-%>
+
 </div>
+
+<% content_for :head do -%>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#plane-list').sortable({
+    axis:'y', 
+    update:function(){
+      $.ajax({
+        complete:function(request){
+          $("#plane-list").effect('highlight',{endcolor:'#222222'});
+        }, 
+        data:$(this).sortable('serialize',{key:'plane-list[]'}), 
+        dataType:'script', 
+        type:'post', 
+        url:'/admin/plane_sort/<%= @product.id %>'
+      })
+    }
+  });
+});
+</script>
+<% end %>
+

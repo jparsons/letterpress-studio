@@ -31,8 +31,8 @@ function hivelogic_enkoder(){var kode=
 <% if @static.icons.count > 0 %>
 <div id="img-ctnr">
 <% @static.icons.each do |icon| %>
-<div class="img-img">
-<a href="<%= icon.image.url(:wide) %>" rel="lightbox[gallery]" title="<%= icon.name %>"><%= image_tag(icon.image.url(:square)) %></a>
+<div class="img-img lightbox">
+<a href="<%= icon.image.url(:wide) %>" rel="lightbox[gallery]"><%= image_tag(icon.image.url(:square), {:alt=>icon.name}) %></a>
 </div>
 <% end %>
 </div>

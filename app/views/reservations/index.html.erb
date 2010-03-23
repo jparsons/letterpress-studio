@@ -24,11 +24,27 @@
   }
   
   function selectDate(dateText, inst) { 
-    $("#selected-date").text(dateText); 
-    $.ajax({
-      url: '<%= reservations_path %>?date=' + dateText, type: 'get', dataType: 'script'
-    }); 
     
+    $("#selected-date").text(dateText); 
+    
+    $.ajax({
+      url: '<%= reservations_path %>?date=' + dateText, type: 'get', dataType: 'script', success: setSelections
+    }); 
+
+    
+  }
+  function setSelections(){
+  
+    $(".pending-reservation[name='reservation[][date]']").each(function (index, obj) {
+      if ($("#" + $(obj).attr("class").split(' ')[1]).hasClass("open")){
+        $("#" + $(obj).attr("class").split(' ')[1]).removeClass("open");
+        $("#" + $(obj).attr("class").split(' ')[1]).addClass("selected");
+      } else if($("#" + $(obj).attr("class").split(' ')[1]).hasClass("reserved")){
+        $("#" + $(obj).attr("class").split(' ')[1]).removeClass("reserved");
+        $("#" + $(obj).attr("class").split(' ')[1]).addClass("open");
+        $("#" + $(obj).attr("class").split(' ')[1]).find(".message").text("");
+      }
+    });
   }
   Date.prototype.getDayName = function(){
     var weekday=new Array(7);
@@ -54,48 +70,71 @@
   }
 <% if confirmed? %>
 $(document).ready(function() {
-    // TODO: this needs to be DRYed up ... same function is currently in index.js.erb
     
-    $(".open").bind("click", function (){
-        if ($(this).hasClass("open")){
-          $(this).removeClass("open");
-          $(this).addClass("selected");
-          $("#submit-button").show();
-          insertFields($(this).attr("id"));
-        } else {
-          $(this).removeClass("selected");
-          $(this).addClass("open");
-          $("input." + $(this).attr("id")).remove();
-          if ($("#reservations-form input").length == 1){
-            $("#submit-button").hide();
-          }
-          
-        }
-        
+    $(".open").live("click", function (){
+      $(this).removeClass("open");
+      $(this).addClass("selected");
+      $("#submit-button").show();
+      insertFields($(this).attr("id"));
+      $("#success").hide();      
+      $("#reminder").fadeIn();
+
+      
+
     });
-     $(".owned").bind("click", function (){
-       if ($(this).hasClass("owned")){
-         $(this).removeClass("owned");
-         $(this).addClass("open");
-         $(this).find(".message").text("");
-         
-       } else {
-         $(this).removeClass("open");
-         $(this).addClass("owned");
-         $(this).find(".message").text("R");
+    
+    $(".owned").live("click", function (){
+      $(this).removeClass("owned");
+      $(this).removeClass("reserved");
+      $(this).addClass("cancelled");
+      $(this).find(".message").text("");
+      $("#submit-button").show();
+        insertFields($(this).attr("id"), true);
+        $("#success").hide();        
+        $("#reminder").fadeIn();
+
+     }); 
+     
+     $(".selected").live("click", function (){
+       $(this).removeClass("selected");
+       $(this).addClass("open");
+       $("input." + $(this).attr("id")).remove();
+       if ($("#reservations-form input").length == 1){
+         $("#submit-button").fade();
+         $("#reminder").fade();
        }
-     });  
+     }); 
+     
+    $(".cancelled").live("click", function (){
+      $(this).removeClass("cancelled");
+      $(this).addClass("owned");
+      $(this).addClass("reserved");
+      $(this).find(".message").text("R");      
+      $("input." + $(this).attr("id")).remove();
+      if ($("#reservations-form input").length == 1){
+        $("#submit-button").fade();
+        $("#reminder").fade();
+      }      
+    });     
     
   });
     
-    function insertFields(strFields) {
+    function insertFields(strFields, isCancelled) {
+      if (isCancelled == null){
+        isCancelled = false;
+      }
       fields = strFields.split("-");
       
-      $("#submit-button").before("<input class=\"" + strFields + "\" type=\"hidden\" name=\"reservation[][press_id]\" value=\"" + fields[0] + "\" />");
-      $("#submit-button").before("<input class=\"" + strFields + "\" type=\"hidden\" name=\"reservation[][hour]\" value=\"" + fields[1] + "\" />");
-      $("#submit-button").before("<input class=\"" + strFields + "\" type=\"hidden\" name=\"reservation[][date]\" value=\"" + fields[2] + "\" />");
-      $("#submit-button").before("<input class=\"" + strFields + "\" type=\"hidden\" name=\"reservation[][user_id]\" value=\"" + "<%= current_user ? current_user.id : ''  %>" + "\" />");
-    }  
+      $("#submit-button").before("<input class=\"pending-reservation " + strFields + "\" type=\"hidden\" name=\"reservation[][press_id]\" value=\"" + fields[0] + "\" />");
+      $("#submit-button").before("<input class=\"pending-reservation " + strFields + "\" type=\"hidden\" name=\"reservation[][hour]\" value=\"" + fields[1] + "\" />");
+      $("#submit-button").before("<input class=\"pending-reservation " + strFields + "\" type=\"hidden\" name=\"reservation[][date]\" value=\"" + fields[2] + "\" />");
+      $("#submit-button").before("<input class=\"pending-reservation " + strFields + "\" type=\"hidden\" name=\"reservation[][user_id]\" value=\"" + "<%= current_user ? current_user.id : ''  %>" + "\" />");
+      $("#submit-button").before("<input class=\"pending-reservation " + strFields + "\" type=\"hidden\" name=\"reservation[][cancelled]\" value=\"" + isCancelled + "\" />");
+    }
+    
+
+    
+    
 <% end %>
 </script>
 <% end %>
@@ -105,11 +144,42 @@ $(document).ready(function() {
 
 <p>Select a date: </p>
 <div id="datepicker"></div>
+<div id="inline-login">
+<% if !confirmed? %> 
+<p>You need to log in before you can start making reservations. If you don't have an account, <%= link_to 'click here to sign up', signup_path %></p>
+<% session[:return_to] = request.request_uri %>
+<% form_for UserSession.new do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :email, "E-mail" %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </p>
+  <p><%= f.submit "Log in" %></p>
+<% end %>
+<% else %>
+<p><strong>Hi, <%= current_user.first_name %></strong>. <em><%= link_to "Not #{current_user.first_name}? Click here to logout", logout_path %></em></p>
+<p>Thanks for logging in. Make your selections below. Don't forget to save when you are finished. </p>
+<p style="display:none;" id="reminder">You have unsaved selections or changes! Don't forget to click save when you are done.</p>
+<p style="display:none;" id="success">Your requests have been saved. You should receive a confirmation e-mail soon.</p>
+<% end %>
+</div>
+<br style="clear:both;" />
+<br />
 <h2><span id="selected-date"><%= @date.strftime("%m/%d/%Y") %></span></h2>
 
-<% if !confirmed? %> 
-<p>You need to get an account junior</p>
-<% end %>
+
 <div id ="reservations">
 <%= render :partial => "reservations" %>
+
+</div>
+<div id="reservations-form">
+<% remote_form_for :reservations, bulk_create_reservations_path, :method=>:post, :html=>{:id=>"reservations-form"} do |f| %>
+
+<input type="submit" value="save" id="submit-button" style="display:none" />
+
+<% end %>
 </div>

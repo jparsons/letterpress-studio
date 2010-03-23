@@ -1,10 +1,4 @@
-<% content_for(:head) do -%>
-<script>
-$(function() {
-	$('.img-img a').lightBox({fixedNavigation:true});
-});
-</script>
-<% end %>
+
 
 <% if @artist.summary != '' -%>
 <!-- BIO -->
@@ -17,8 +11,8 @@ r.to_html
 <% if @artist.pictures.count > 0 %>
 <div id="img-ctnr">
 <% @artist.pictures.each do |picture| %>
-<div class="img-img">
-<a href="<%= picture.image.url(:wide) %>"  title="<%= picture.name %>"><%= image_tag(picture.image.url(:square)) %></a>
+<div class="img-img lightbox">
+<a href="<%= picture.image.url(:wide) %>"  title="<%= picture.name %>" rel="lightbox[gallery]"><%= image_tag(picture.image.url(:square)) %></a>
 </div>
 <% end %>
 </div>

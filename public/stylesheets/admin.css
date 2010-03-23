@@ -415,7 +415,7 @@ a.tag_tag { color: #fff; font-size: 11px; white-space: nowrap; padding: 3px 4px;
 a.tag_tag:hover { background-color: #eee; color: #333; }
 .tag_selected { background-color: #ccc; color: #000; }
 
-ul#photo-list, ul#picture-list {
+ul#photo-list, ul#picture-list, ul#plane-list, ul#icon-list {
 	width:180px;
 	padding:5px;
 	

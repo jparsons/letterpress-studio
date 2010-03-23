@@ -5,7 +5,7 @@
 
 <p><%= link_to 'Edit Information Page', edit_static_path(@static) %> / <%= link_to 'List Imagery', :controller => 'admin', :action => 'icon_list' %> / <%= link_to 'All Information Pages', :controller => 'admin', :action => 'static_list' %></p>
 
-<ul id="photo-list">
+<ul id="icon-list">
 <% @static.icons.each do |icon| %>
 <li id="item_<%= icon.id %>">
 <%= image_tag(icon.image.url(:thumb), :class=> "photo-img" ) %>
@@ -19,3 +19,24 @@
 :complete => visual_effect(:highlight, 'photo-list', {:endcolor => "'#222222'"})
 %>
 </div>
+
+<% content_for :head do -%>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#icon-list').sortable({
+    axis:'y', 
+    update:function(){
+      $.ajax({
+        complete:function(request){
+          $("#icon-list").effect('highlight',{endcolor:'#222222'});
+        }, 
+        data:$(this).sortable('serialize',{key:'icon-list[]'}), 
+        dataType:'script', 
+        type:'post', 
+        url:'/admin/icon_sort/<%= @static.id %>'
+      })
+    }
+  });
+});
+</script>
+<% end %>

@@ -41,8 +41,8 @@ r.to_html
 <% if @product.planes.count > 0 %>
 <div id="img-ctnr">
 <% @product.planes.each do |plane| %>
-<div class="img-img">
-<a href="<%= url_for_file_column( plane, 'image', 'wide') %>" rel="lightbox[gallery]" title="<%= plane.name %>"><%= image_tag(url_for_file_column( plane, 'image', 'square')) %></a>
+<div class="img-img lightbox">
+<a href="<%= plane.image.url(:wide) %>"  title="<%= plane.name %>" rel="lightbox[gallery]"><%= image_tag(plane.image.url(:square)) %></a>
 </div>
 <% end %>
 </div>
