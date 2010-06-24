@@ -38,7 +38,7 @@ module Authentication
   end
   
   def confirmed?
-    logged_in? && (current_user.role == "administrator" || current_user.role == "guest")
+    logged_in? && (current_user.role == "administrator" || current_user.role == "confirmed")
   end
   
   def login_required
@@ -55,6 +55,14 @@ module Authentication
       store_target_location
       redirect_to login_url
     end
+  end
+  
+  def require_no_user
+    if logged_in?
+      flash[:error] = "You are currently logged in. How did you log in if you can't remember your password."
+      redirect_to :back
+    end
+  
   end
   
   def redirect_to_target_or_default(default)

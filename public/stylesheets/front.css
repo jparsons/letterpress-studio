@@ -294,15 +294,83 @@ padding:0;
 
 /* =reservations
 ---------------------------------------------------- */
-.press-image { margin-right:8px;}
-.hours { float:left; width:477px; height:75px; }
-.hour {font-size:9px; float:left; width:41px;height:50px;  margin-left:1px; margin-right:1px; text-align:center;color:#000000;}
-.open {background: url("pepper-grinder/images/ui-bg_fine-grain_10_eceadf_60x60.png") repeat scroll 50% 50% #ECEADF;color:#000000;}
-.cancelled {background: url("pepper-grinder/images/ui-bg_fine-grain_10_eceadf_60x60.png") repeat scroll 50% 50% #ECEADF;color:#000000;}
-.reserved {background-color:#000000; color:#000000;}
-.selected {background-color:#FF562F;color:#000000;}
-.press-name { font-weight:bold; }
-.owned { background-color:#D4CFFF }
-#inline-login { float:left; padding:10px; width:232px; border:1px solid #d9d6c4;}
-#datepicker {float:left; margin-right:20px; }
-label {font-weight:bold;}
+.press-image { 
+  margin-right:8px;
+}
+.hours {
+  float:left; 
+  width:477px; 
+  height:75px; 
+  cursor: pointer;
+}
+.hour {
+  font-size:9px; 
+  float:left; 
+  width:41px;
+  height:50px;  
+  margin-left:1px; 
+  margin-right:1px; 
+  text-align:center;
+  color:#000000;
+}
+.open {
+  background: url("pepper-grinder/images/ui-bg_fine-grain_10_eceadf_60x60.png") repeat scroll 50% 50% #ECEADF;
+  color:#000000;
+}
+.cancelled {
+  background: url("images/cancelled.png") repeat scroll 50% 50% #ECEADF;
+  color:#000000;
+}
+.reserved {
+  background: url("images/reserved.png") repeat scroll 50% 50% #ECEADF;
+  color:#000000;
+}
+.selected {
+  background: url("images/selected.png") repeat scroll 50% 50% #ECEADF;
+  color:#000000;
+}
+.press-name { 
+  font-weight:bold; 
+}
+.owned { 
+  background: url("images/owned.png") repeat scroll 50% 50% #ECEADF;
+}
+#inline-login { 
+  float:left; 
+  padding:10px; 
+  width:232px; 
+  
+}
+#datepicker {
+  float:left; 
+  margin-right:20px; 
+}
+label {
+  font-weight:bold;
+}
+
+#tooltip { 
+    display:none; 
+    background-color:#ffffff;
+    font-size:12px; 
+    height:70px; 
+    width:160px; 
+    padding:25px; 
+    color:#000;     
+}
+
+/* sidebar hours */
+div#studio-hours-box {
+  font-size:10px;
+  color:#000000;
+  text-align:left;
+  margin-left:5px;
+  border:1px solid #d9ffff;
+  padding:5px;
+  margin-top:5px;
+  }
+ div.studio-hours-day {
+   float:left; 
+   width:20px;
+   font-weight:bold;
+ }

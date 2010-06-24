@@ -1,2 +1,10 @@
-alert("<%= @date %>");
 $("#reservations").text('');
+
+$("#reservations").append("<%= escape_javascript(render(:partial=>"reservations")) %>");
+
+$(document).ready(function() {
+     $("#submit-button").fadeOut();
+     $("#reminder").hide();
+     $("#success").fadeIn();
+     setTooltips();
+}); 

@@ -2,14 +2,19 @@
 <div id="nav">
 <ul>
 <li><%= link_to("News", notes_url) %></li>
-<li><%= link_to("Shows", exhibitions_url) %></li>
-<li><%= link_to("Artists", artists_url) %></li>
 <li><%= link_to("Goods", products_url) %></li>
 <li><%= link_to("Reserve Press Time", reservations_url)%>
 <% all_static do |static| -%>
 <li><%= link_to static.name, information_page_path(static), {:title => "Links to " + static.name} %></li>
 <% end -%>
-
+<li id="studio-hours">
+<div id="studio-hours-box">
+<strong>Studio Hours</strong><br />
+<% for day in WorkDay.all %>
+<div class="studio-hours-day"><%= day.display_name.first %>:</div><div style="float:left;"> <%= day.display_start_hour %> - <%= day.display_end_hour %></div><br />
+<% end %>
+</div>
+</li>
 </ul>
 </div><!-- END nav -->
 

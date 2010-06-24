@@ -4,6 +4,11 @@
 <p><%= flash[:error] %></p>
 </div>
 <% end %>
+<% if flash[:notice] %>
+<div class="notice">
+<p><%= flash[:notice] %></p>
+</div>
+<% end %>
 <%= render :partial => 'note' %>
 <p class="pagination">
 <!-- will_paginate(@notes) -->

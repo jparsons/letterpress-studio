@@ -53,9 +53,11 @@ class ReservationsController < ApplicationController
       r = Reservation.find_or_initialize_by_date_and_hour_and_press_id_and_user_id(Date.parse(reservation[:date]), reservation[:hour], reservation[:press_id], reservation[:user_id])
       r.cancelled = reservation[:cancelled]
       r.save
-      # send e-mails to user and to admin?
-      
     end
+    @current_reservations = current_user.reservations.find(:all, :conditions=>["date >= ? and cancelled = ?", Date.today, false], :order=>'date, hour asc')
+    @cancellations = current_user.reservations.find(:all, :conditions=>["date >= ? and cancelled = ?", Date.today, true], :order=>'date, hour asc')
+    ReservationMailer.deliver_confirmation(current_user, @current_reservations, @cancellations)
+    
     respond_to do |format|
       format.html { redirect_to(reservations_path(:date=>params[:reservation][0][:date])) }
       format.js {
@@ -64,7 +66,7 @@ class ReservationsController < ApplicationController
         day_of_the_week = @date.wday + 1 
         @studio_hours = WorkDay.find_by_day_number(day_of_the_week)
         @presses = Press.find :all, :include => [:reservations]
-        render :action=> :index, :format=>"js"
+        render :action=> :create, :format=>"js"
       }
     end
     

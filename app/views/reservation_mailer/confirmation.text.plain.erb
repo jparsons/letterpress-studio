@@ -1,0 +1,22 @@
+<%= @user.first_name %>, 
+
+Here is a list of your recent reservation activity. Please check it carefully. If there are any mistakes you can correct them on our web site or e-mail us at dan@thearmnyc.com.
+
+<% if @current_reservations.size > 0 %> 
+Your reservations: 
+
+<% @current_reservations.each do |reservation| %>
+<%= reservation.date.strftime("%m/%d/%Y") %> - <%= HOURS.index(reservation.hour) %> - <%= reservation.press.name %>
+<% end %>
+<% end %>
+
+<% if @cancellations.size > 0 %>
+Cancellations:
+<% @cancellations.each do |reservation| %>
+<%= reservation.date.strftime("%m/%d/%Y") %> - <%= HOURS.index(reservation.hour) %> - <%= reservation.press.name %>
+<% end %>
+<% end %>
+
+Thanks,
+
+The Arm

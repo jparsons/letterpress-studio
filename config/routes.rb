@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.resources :password_resets, :only => [ :new, :create, :edit, :update ]
+
   map.signup 'signup', :controller => 'users', :action => 'new'
   map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
   map.login 'login', :controller => 'user_sessions', :action => 'new'
@@ -97,4 +100,5 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id'
   
   map.root :controller =>"notes", :action=>"index"
+  
 end

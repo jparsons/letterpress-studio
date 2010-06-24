@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     if @user.save
       # send mail to user
       flash[:notice] = "Thank you for signing up! Your request will be reviewed as soon as possible."
-      redirect_to root_url
+      redirect_to reservations_url
     else
       render :action => 'new'
     end
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
     @unconfirmed_users = User.unconfirmed
     @confirmed_users = User.confirmed
     @suspended_users = User.suspended
-    @admin_users = User.admin
+    @admin_users = User.administrator
 
     render :layout=>"admin"
   end

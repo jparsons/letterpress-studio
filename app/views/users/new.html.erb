@@ -1,12 +1,13 @@
-<h1> Sign up so you can reserve studio time online</h1>
+<h1> Sign up!</h1>
 
 <p>Already have an account? <%= link_to "Log in", login_path %>.</p>
+<p>After you sign up we will need to review your request. We will try and get back to you soon.</p>
 
 <% form_for @user do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :email, "Email Address" %><br />
+    <%= f.label :email, "E-mail Address" %><br />
     <%= f.text_field :email %>
   </p>
   <p>

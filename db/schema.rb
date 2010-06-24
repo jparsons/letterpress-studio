@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100227161817) do
+ActiveRecord::Schema.define(:version => 20100331000431) do
 
   create_table "artists", :force => true do |t|
     t.string   "name",       :default => "",    :null => false
@@ -222,7 +222,11 @@ ActiveRecord::Schema.define(:version => 20100227161817) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "phone_number"
+    t.string   "perishable_token",  :default => "", :null => false
   end
+
+  add_index "users", ["email"], :name => "index_users_on_email"
+  add_index "users", ["perishable_token"], :name => "index_users_on_perishable_token"
 
   create_table "work_days", :force => true do |t|
     t.integer  "start_hour"
